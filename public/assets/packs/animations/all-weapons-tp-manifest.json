@@ -1,0 +1,547 @@
+{
+  "families": {
+    "classic": "BasePistol",
+    "shorty": "Slim",
+    "frenzy": "AutoPistol",
+    "stinger": "Vector",
+    "spectre": "MP5",
+    "bucky": "PumpShotgun",
+    "judge": "AutoShotgun",
+    "bulldog": "Burst",
+    "guardian": "Dmr",
+    "marshal": "Leversniper",
+    "operator": "Boltsniper",
+    "ares": "LMG",
+    "odin": "HMG"
+  },
+  "clips": [
+    {
+      "name": "classic-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "classic-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "classic-equip",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "classic-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "classic-reload",
+      "frames": 61,
+      "tracks": 97,
+      "duration": 1.9672131147540983
+    },
+    {
+      "name": "shorty-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "shorty-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "shorty-equip",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "shorty-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "shorty-reload",
+      "frames": 60,
+      "tracks": 97,
+      "duration": 1.9338889032334459
+    },
+    {
+      "name": "frenzy-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "frenzy-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "frenzy-equip",
+      "frames": 41,
+      "tracks": 97,
+      "duration": 1.3008130081300813
+    },
+    {
+      "name": "frenzy-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "frenzy-reload",
+      "frames": 51,
+      "tracks": 97,
+      "duration": 1.6339869077347535
+    },
+    {
+      "name": "frenzy-fire-subtract",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "stinger-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "stinger-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "stinger-equip",
+      "frames": 42,
+      "tracks": 97,
+      "duration": 1.334127014420381
+    },
+    {
+      "name": "stinger-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "stinger-reload",
+      "frames": 74,
+      "tracks": 97,
+      "duration": 2.400450574193589
+    },
+    {
+      "name": "stinger-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "stinger-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "stinger-fire-subtract",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "spectre-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "spectre-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "spectre-equip",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "spectre-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "spectre-reload",
+      "frames": 71,
+      "tracks": 97,
+      "duration": 2.300469462968088
+    },
+    {
+      "name": "spectre-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "spectre-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "spectre-fire-subtract",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "bucky-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "bucky-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "bucky-equip",
+      "frames": 37,
+      "tracks": 97,
+      "duration": 1.1675676157180215
+    },
+    {
+      "name": "bucky-fire",
+      "frames": 41,
+      "tracks": 97,
+      "duration": 1.3008130081300813
+    },
+    {
+      "name": "bucky-reload",
+      "frames": 62,
+      "tracks": 97,
+      "duration": 2.0005375790190802
+    },
+    {
+      "name": "judge-upper",
+      "frames": 3,
+      "tracks": 97,
+      "duration": 0.0222222241060235
+    },
+    {
+      "name": "judge-crouch-upper",
+      "frames": 3,
+      "tracks": 97,
+      "duration": 0.0222222241060235
+    },
+    {
+      "name": "judge-equip",
+      "frames": 46,
+      "tracks": 97,
+      "duration": 1.467391334769857
+    },
+    {
+      "name": "judge-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "judge-reload",
+      "frames": 91,
+      "tracks": 97,
+      "duration": 2.967032904844328
+    },
+    {
+      "name": "bulldog-upper",
+      "frames": 3,
+      "tracks": 97,
+      "duration": 0.0222222241060235
+    },
+    {
+      "name": "bulldog-crouch-upper",
+      "frames": 3,
+      "tracks": 97,
+      "duration": 0.0222222241060235
+    },
+    {
+      "name": "bulldog-equip",
+      "frames": 36,
+      "tracks": 97,
+      "duration": 1.1342592392275204
+    },
+    {
+      "name": "bulldog-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "bulldog-reload",
+      "frames": 86,
+      "tracks": 97,
+      "duration": 2.8003875658450657
+    },
+    {
+      "name": "bulldog-alt-upper",
+      "frames": 3,
+      "tracks": 97,
+      "duration": 0.0222222241060235
+    },
+    {
+      "name": "bulldog-alt-crouch-upper",
+      "frames": 3,
+      "tracks": 97,
+      "duration": 0.0222222241060235
+    },
+    {
+      "name": "guardian-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "guardian-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "guardian-equip",
+      "frames": 47,
+      "tracks": 97,
+      "duration": 1.5007092157980486
+    },
+    {
+      "name": "guardian-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "guardian-reload",
+      "frames": 86,
+      "tracks": 97,
+      "duration": 2.8003875658450657
+    },
+    {
+      "name": "guardian-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "guardian-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "marshal-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "marshal-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "marshal-equip",
+      "frames": 51,
+      "tracks": 97,
+      "duration": 1.6339869077347535
+    },
+    {
+      "name": "marshal-fire",
+      "frames": 21,
+      "tracks": 97,
+      "duration": 0.6349206349206349
+    },
+    {
+      "name": "marshal-reload",
+      "frames": 66,
+      "tracks": 97,
+      "duration": 2.1338385277263536
+    },
+    {
+      "name": "marshal-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "marshal-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "marshal-fire-zoomed",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "operator-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "operator-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "operator-equip",
+      "frames": 53,
+      "tracks": 97,
+      "duration": 1.700628914497146
+    },
+    {
+      "name": "operator-fire",
+      "frames": 69,
+      "tracks": 97,
+      "duration": 2.2338163592553957
+    },
+    {
+      "name": "operator-reload",
+      "frames": 142,
+      "tracks": 97,
+      "duration": 4.666901301884554
+    },
+    {
+      "name": "operator-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "operator-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "operator-fire-zoomed",
+      "frames": 69,
+      "tracks": 97,
+      "duration": 2.2338163592553957
+    },
+    {
+      "name": "ares-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "ares-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "ares-equip",
+      "frames": 55,
+      "tracks": 97,
+      "duration": 1.7672726292129446
+    },
+    {
+      "name": "ares-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "ares-reload",
+      "frames": 121,
+      "tracks": 97,
+      "duration": 3.9669421487603307
+    },
+    {
+      "name": "ares-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "ares-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "ares-fire-subtract",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "odin-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "odin-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "odin-equip",
+      "frames": 66,
+      "tracks": 97,
+      "duration": 2.1338385277263536
+    },
+    {
+      "name": "odin-fire",
+      "frames": 31,
+      "tracks": 97,
+      "duration": 0.967741935483871
+    },
+    {
+      "name": "odin-reload",
+      "frames": 161,
+      "tracks": 97,
+      "duration": 5.300207039337474
+    },
+    {
+      "name": "odin-alt-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "odin-alt-crouch-upper",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    },
+    {
+      "name": "odin-fire-subtract",
+      "frames": 2,
+      "tracks": 97,
+      "duration": 0.016666667726304863
+    }
+  ]
+}

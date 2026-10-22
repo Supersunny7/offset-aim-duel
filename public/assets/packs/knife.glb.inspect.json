@@ -1,0 +1,87 @@
+{
+  "source": "C:\\Users\\sunny\\Documents\\MSIT Northwestern\\projects\\project-0006-Aim-Duel\\01-\u9700\u6c42\u4e0e\u539f\u59cb\u8d44\u6599\\asset-pack\\Weapons/Knife.blend",
+  "objects": [
+    {
+      "name": "EQ_Melee_S0_Skelmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        0.0868292972445488,
+        0.03044789470732212,
+        0.4658701419830322
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 986,
+      "bones": []
+    },
+    {
+      "name": "Melee S0",
+      "type": "ARMATURE",
+      "dimensions": [
+        0.010000000707805157,
+        1.343588684754593e-09,
+        1.6858742180048125e-09
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 0,
+      "bones": [
+        "Skeleton",
+        "Root"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "EQ_Melee_S0_AEM.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//Melee\\Melee S0\\Textures PSK\\EQ_Melee_S0_AEM.tga"
+    },
+    {
+      "name": "EQ_Melee_S0_DF.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//Melee\\Melee S0\\Melee S0 Cinema4d\\tex\\EQ_Melee_S0_DF.tga"
+    },
+    {
+      "name": "EQ_Melee_S0_MRS.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//Melee\\Melee S0\\Textures PSK\\EQ_Melee_S0_MRS.tga"
+    },
+    {
+      "name": "EQ_Melee_S0_NM.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//Melee\\Melee S0\\Melee S0 Cinema4d\\tex\\EQ_Melee_S0_NM.tga"
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "packed": false,
+      "path": ""
+    }
+  ]
+}

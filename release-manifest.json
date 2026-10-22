@@ -1,0 +1,3906 @@
+{
+  "version": "2026-10-21-free-preview",
+  "files": 780,
+  "entries": [
+    {
+      "path": ".dockerignore",
+      "bytes": 36,
+      "sha256": "8609f1d11ab80781e0e6aecadc0c5cbda2c4574c812363010d876706339e2ec8"
+    },
+    {
+      "path": "accuracy.mjs",
+      "bytes": 8054,
+      "sha256": "771804dab0ec22bf9859346f21559e503f4718a99cd43b21128faabcf7106674"
+    },
+    {
+      "path": "ascent-data.mjs",
+      "bytes": 292858,
+      "sha256": "8137565bcd03862dc5eb714653f61ecb8a26761d5e61aae2099478649c475175"
+    },
+    {
+      "path": "combat-projectiles.mjs",
+      "bytes": 1468,
+      "sha256": "f7c565187385e3a5efb87d5122a1bc752023f56b0fcc96a3f8c326eee2283301"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 375,
+      "sha256": "ef9cb2ace3104e167f7b3bccfd40ef6fc42650ee292ea672bca101c19c87b9b9"
+    },
+    {
+      "path": "equipment-catalog.mjs",
+      "bytes": 11246,
+      "sha256": "add97e7778a1ac063119e5997549420bebb958e278f8076729ef532a51a6bdb9"
+    },
+    {
+      "path": "hitbox-action-data.mjs",
+      "bytes": 7292004,
+      "sha256": "3ac45bbc6c3cc7f010e3b0f5f1307a9a496e734f24a6b7ff185845036d059096"
+    },
+    {
+      "path": "hitbox-combat-ads-additions.mjs",
+      "bytes": 558620,
+      "sha256": "82a297fcbf4f95e1e035e9282f039ac6491ad208818218d6c522244d69ced29b"
+    },
+    {
+      "path": "hitbox-combat-all-weapon-additions.mjs",
+      "bytes": 23498696,
+      "sha256": "1e1e5b54743c3c34577bc2236d3917e65bcd3e607a0a78b58e35d8b58dbae687"
+    },
+    {
+      "path": "hitbox-combat-phantom-sheriff-data.mjs",
+      "bytes": 3417001,
+      "sha256": "6efee36f6ed2696e4ff3949af01843bb29a1db463b7178849a8cf66ea8f05ae0"
+    },
+    {
+      "path": "hitbox-combat-skeleton-all-weapon-data.mjs",
+      "bytes": 32504066,
+      "sha256": "c707378534e2a0fa809e91a808ff16d6b02bc551d51b79ba6eb858af1944f42f"
+    },
+    {
+      "path": "hitbox-combat-skeleton-data.mjs",
+      "bytes": 33062378,
+      "sha256": "13038dcd02bbe4ab932dc2d4ee4ed5f126d08d2afba08c8daf5e0f47b1f4e102"
+    },
+    {
+      "path": "hitbox-motion-ads-additions.mjs",
+      "bytes": 9425198,
+      "sha256": "1ab068cd6d737c32156c0249ad851cc8261a606f2009db05224be3349f0b7074"
+    },
+    {
+      "path": "hitbox-motion-all-weapon-additions.mjs",
+      "bytes": 15308437,
+      "sha256": "40b3a9600b5f654b4ff340535f760c943a924e999a3e33e07c8a50ab77acc5b8"
+    },
+    {
+      "path": "hitbox-motion-all-weapon-data.mjs",
+      "bytes": 21328695,
+      "sha256": "0708d51bc9039338471390682ccbe32ef532c019c4b97b563cff702ef6257d26"
+    },
+    {
+      "path": "hitbox-motion-data.mjs",
+      "bytes": 30753863,
+      "sha256": "b485b6d9a0a27ba4ff0d00387daca43862ffe90b656d640c7ac0c11ff45bf461"
+    },
+    {
+      "path": "hitbox-motion-phantom-sheriff-data.mjs",
+      "bytes": 2358893,
+      "sha256": "2ef6fa40ea4b15edfbbeb34705e173245ed864d2a7575724e2d607923e98165f"
+    },
+    {
+      "path": "hitbox-motion.mjs",
+      "bytes": 3633,
+      "sha256": "1b0a6889792699819b51feafb6b39f2dcbe391b06d0b89911221e57113284121"
+    },
+    {
+      "path": "hitbox-profile.mjs",
+      "bytes": 11926,
+      "sha256": "7bdc311d5435de72fec121f73192e89b04cc177b5065ec010f3b47d98bc7c5a6"
+    },
+    {
+      "path": "hitbox-skeleton-ads-additions.mjs",
+      "bytes": 4506169,
+      "sha256": "50198fa0cd5e17da4ccb7070dc0ab0d4a74a04971cca839ab8ee3c15ec5e6db7"
+    },
+    {
+      "path": "hitbox-skeleton-all-weapon-additions.mjs",
+      "bytes": 6517596,
+      "sha256": "c409e200ea0c7381d3abdf4ac19a4cdd671ca07f46be6129247eb3a1fb1a2c9a"
+    },
+    {
+      "path": "hitbox-skeleton-all-weapon-data.mjs",
+      "bytes": 9315408,
+      "sha256": "f724968e7dea68a82bdd9c36e04e38a6a32bf4c267f54a9672c988e65086ab30"
+    },
+    {
+      "path": "hitbox-skeleton-data.mjs",
+      "bytes": 17806250,
+      "sha256": "46255e62390d7486f1a76c1747373d00a465988c648de1b77eff6e45d6f5fca5"
+    },
+    {
+      "path": "hitbox-skeleton-phantom-sheriff-data.mjs",
+      "bytes": 2089051,
+      "sha256": "75d41e6ac471d9c7f23df594c641ceca229dedb18d5f86f43de659d492319627"
+    },
+    {
+      "path": "hitbox-skeleton-stinger-ads-dense-additions.mjs",
+      "bytes": 6442784,
+      "sha256": "1f09018025d913c54a53d1abc813437cf226a87e3439cf6a2140ece688ec7ecc"
+    },
+    {
+      "path": "hitbox-skeleton.mjs",
+      "bytes": 8134,
+      "sha256": "187ad069b3ed87eb76a05b7f2478654d473ee7496c1ef99381e2be739169441c"
+    },
+    {
+      "path": "lag-compensation.mjs",
+      "bytes": 6850,
+      "sha256": "2a12bbc61001e0c860804dfd6da72eda0030695e4fedacf4da8defb37c66b955"
+    },
+    {
+      "path": "loadout.mjs",
+      "bytes": 2502,
+      "sha256": "e471cf8810f8ab7058da0375d55291e8a54b5e603dc5bc3134b2ba90c7cef2e9"
+    },
+    {
+      "path": "map-collision.mjs",
+      "bytes": 6854,
+      "sha256": "4ca2d16663eff67f9a921d994fd281537bf9e73712fdf719dc13226c7fc428f2"
+    },
+    {
+      "path": "movement-feel.mjs",
+      "bytes": 906,
+      "sha256": "a2dabd1a4bc6acd5aa6a1cf43e13ee606befda491d5f8d364668fbe108d90960"
+    },
+    {
+      "path": "movement-net.mjs",
+      "bytes": 4270,
+      "sha256": "ef28b512b01d00f18b3c307aa602754c86177ee52f799ed3d07d9f078256d107"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 1187,
+      "sha256": "95dc20ced2512f73a5d5f6eedcedb6bf47aed76ca6ced3751aee86c0bc1f1ee3"
+    },
+    {
+      "path": "package.json",
+      "bytes": 309,
+      "sha256": "ca53b037b1b5ca9688e4264dbacd8bd055aa5feda015b006a5cead7755a39035"
+    },
+    {
+      "path": "public/additional-first-person.mjs",
+      "bytes": 23285,
+      "sha256": "08120c6e9da5b4eef5b1c432063e6bfa3d1e155ef51c7749779860daaeb4017e"
+    },
+    {
+      "path": "public/additional-weapon.mjs",
+      "bytes": 16655,
+      "sha256": "60ee7bbe50eccd6ccbf7cd0e1b9a6c74bca7e500b325666c9d433d01e15c8b26"
+    },
+    {
+      "path": "public/ads-lab.html",
+      "bytes": 1938,
+      "sha256": "8ae9d6caf58cdfe7d66f897195740df1554f9557c0585dd2173ce5b98da6b6af"
+    },
+    {
+      "path": "public/ads-lab.mjs",
+      "bytes": 14386,
+      "sha256": "bd3a158147a73e2015d45de62c4d6f43c3e535cf2ebc60324429ff32bdbd06d7"
+    },
+    {
+      "path": "public/ads-reticle.css",
+      "bytes": 252,
+      "sha256": "927400194f87bbfadc3313cb817eba6acbdb51a798a18e11a8392fc016d63306"
+    },
+    {
+      "path": "public/ads-reticle.mjs",
+      "bytes": 3767,
+      "sha256": "68d517b33afcf95e1710fd946a259a58254d6cdcb3e9a74acc4d1a03bb32ac3d"
+    },
+    {
+      "path": "public/ads-view-profile.mjs",
+      "bytes": 178,
+      "sha256": "201a97494eae7ccdb76d3b5b1d2fc943b346ebf3aca204e2d33e2290d4b9bead"
+    },
+    {
+      "path": "public/ads.mjs",
+      "bytes": 8585,
+      "sha256": "ccf0e3ebb9fbcb7e4aa706d51187c1e53467fb422495111dbe42b6d1b710d56c"
+    },
+    {
+      "path": "public/app.mjs",
+      "bytes": 64518,
+      "sha256": "812ee98e834146213a4479828f06b053dd0804b23939a1ebc17731c6a9befbd0"
+    },
+    {
+      "path": "public/armory-ui.css",
+      "bytes": 7748,
+      "sha256": "3d8d15436deab6eeb2ff478e16edbb7d7df9df1f7cc502b4f6eacaed0bafc200"
+    },
+    {
+      "path": "public/armory-ui.mjs",
+      "bytes": 61898,
+      "sha256": "f75f64f9822bfa7853a20a133b3439490fe2bf9f97c718106023bb92b686c4f5"
+    },
+    {
+      "path": "public/asset-lab.html",
+      "bytes": 1874,
+      "sha256": "7d1a30cecbb6a75e15bccb36d8df0aeb17b838aad3cc41faf6f0f7f861fbbb94"
+    },
+    {
+      "path": "public/asset-lab.mjs",
+      "bytes": 2734,
+      "sha256": "8f478bf161930db8f7ef9a6a24fb4492740ae7db96b08b8eb78c1213a43be843"
+    },
+    {
+      "path": "public/assets/audio/ares-fire.mp3",
+      "bytes": 26522,
+      "sha256": "fd8d3fdcab5ce55939725f9f4240444c030bb88dab97b234807d836a3ec6ab98"
+    },
+    {
+      "path": "public/assets/audio/ares-reload.mp3",
+      "bytes": 70779,
+      "sha256": "7fbda7054a3ea9fb91f4f325125a2e2570a39c4e840bf009274b496995ac45e8"
+    },
+    {
+      "path": "public/assets/audio/body-hit.wav",
+      "bytes": 28844,
+      "sha256": "564f58c2a36fe10e989bdaa9342b0d9d51e0f1d6dd38a95867f0c3964f739ba9"
+    },
+    {
+      "path": "public/assets/audio/bucky-fire.mp3",
+      "bytes": 31820,
+      "sha256": "478262d4bb4947a534c1f4c8d62e5f353a75e527aa0f83246d8e3111de9657fb"
+    },
+    {
+      "path": "public/assets/audio/bucky-reload.mp3",
+      "bytes": 81904,
+      "sha256": "df97ca0537ec9080c810a579b557eb94db518a67bff21203b3ae42d92068efa7"
+    },
+    {
+      "path": "public/assets/audio/bulldog-fire.mp3",
+      "bytes": 14629,
+      "sha256": "14c1cc46e06d5204efbd4ef86c3146505b7234c04a9254b18c83598b0075dfd5"
+    },
+    {
+      "path": "public/assets/audio/bulldog-reload.mp3",
+      "bytes": 48808,
+      "sha256": "ac9c307f704be25eddd21cc575c070716d11e7f92e6b0664a4be81509698cea7"
+    },
+    {
+      "path": "public/assets/audio/classic-fire.mp3",
+      "bytes": 17556,
+      "sha256": "b44c2c7838fc3a1f5f33996c5b1bc07cd1ecef55b756157f750d3eb1c5aaa6be"
+    },
+    {
+      "path": "public/assets/audio/classic-reload.mp3",
+      "bytes": 36968,
+      "sha256": "85aa101e3ccda712c05b7399edfc4ae01d789842270959f8aac43e9772ea3a8d"
+    },
+    {
+      "path": "public/assets/audio/frenzy-fire.mp3",
+      "bytes": 10195,
+      "sha256": "e51105697ed10db5983c21460b0a614b03567249ebf978be1963884ba3d25902"
+    },
+    {
+      "path": "public/assets/audio/frenzy-reload.mp3",
+      "bytes": 62852,
+      "sha256": "38ced630067495cb5da7d21d5fbd97acd9c6c81facc60f6620902a60fe074da3"
+    },
+    {
+      "path": "public/assets/audio/ghost-fire.mp3",
+      "bytes": 12883,
+      "sha256": "0bce170a99411ed403a8c35db3acdfb2ff75688325578b622fcab8b0f9ffdf7c"
+    },
+    {
+      "path": "public/assets/audio/ghost-reload.mp3",
+      "bytes": 41458,
+      "sha256": "49d14ad2e439cf418bb9d3b2f70157dae5b0dd17f2afc2cb562b5d56875f4a09"
+    },
+    {
+      "path": "public/assets/audio/guardian-fire.mp3",
+      "bytes": 26118,
+      "sha256": "3b8b43d57969ecff7c73c3d6939f41de5a8716715ef2e342126789cd224c999c"
+    },
+    {
+      "path": "public/assets/audio/guardian-reload.mp3",
+      "bytes": 71771,
+      "sha256": "560f37bb6a5f41500023a7eb086c26a5fcf4ed11f368eea179adceb7550c876e"
+    },
+    {
+      "path": "public/assets/audio/headshot.mp3",
+      "bytes": 28311,
+      "sha256": "fb66fb7f9e5938bc49dff7a1f7949b67b7ea49e9ca002b238ce8353a3c536ba6"
+    },
+    {
+      "path": "public/assets/audio/hit-reference.wav",
+      "bytes": 21644,
+      "sha256": "4e5551ca1e9f1ae56050ebab8461556996ce31a1e976625fa86ce8c4395842e3"
+    },
+    {
+      "path": "public/assets/audio/judge-fire.mp3",
+      "bytes": 23603,
+      "sha256": "28391d29d55215a29b11163b42e89c168a5fa8491bc93c35e50f282c795de428"
+    },
+    {
+      "path": "public/assets/audio/judge-reload.mp3",
+      "bytes": 47558,
+      "sha256": "5183f35f5608c872b41322474a857da4f9844c299c8aa39a362c08e32a6fba82"
+    },
+    {
+      "path": "public/assets/audio/kill-1.mp3",
+      "bytes": 18186,
+      "sha256": "2218545d78ef2dd2741bc9ebdc5e861588dce58d3b8b90563ed2ca3c2a7f25fb"
+    },
+    {
+      "path": "public/assets/audio/kill-2.mp3",
+      "bytes": 19335,
+      "sha256": "e6ea3b2d5dbbc4f8e3a93ef1a68ebc5aace8ba94b9cf20288db86b78d93515b3"
+    },
+    {
+      "path": "public/assets/audio/kill-3.mp3",
+      "bytes": 18187,
+      "sha256": "4a3c4c6e60b859250b8a3a28a8c7b6eaee7bb341c1b85fccaf45785576388eec"
+    },
+    {
+      "path": "public/assets/audio/kill-4.mp3",
+      "bytes": 19074,
+      "sha256": "518934eb8269a8a300421bc6fc40ec413338343d87dc7408371d1e5dca2a99bb"
+    },
+    {
+      "path": "public/assets/audio/knife-equip.mp3",
+      "bytes": 5292,
+      "sha256": "be068e441fcb6be362d1d26b0afcee5262db2d10033237d342b3ebb29e6c10d5"
+    },
+    {
+      "path": "public/assets/audio/knife-heavy.mp3",
+      "bytes": 5661,
+      "sha256": "bc7a18f6ba87a86ea434d7c88275e3e53493bc09a62bdb09e2083264c890e241"
+    },
+    {
+      "path": "public/assets/audio/knife-hit.wav",
+      "bytes": 29804,
+      "sha256": "38ab054c285e250e704f695644ca720a8219d7f68927e956fddcfe87dd993903"
+    },
+    {
+      "path": "public/assets/audio/knife-light.mp3",
+      "bytes": 4514,
+      "sha256": "7ecc9c0c4d3c56533b9d2411b158df1b351814390670450c08a83ef21ae3f4e5"
+    },
+    {
+      "path": "public/assets/audio/manifest.json",
+      "bytes": 26933,
+      "sha256": "fc92bc7f85f61f1cbb1d0ef5ce473094a61f72bb158623203e91b41a4fc3d540"
+    },
+    {
+      "path": "public/assets/audio/marshal-fire.mp3",
+      "bytes": 68648,
+      "sha256": "7b760616ede91e667440722fab5e6e6e1b7413379fe85c1539d6164488b29029"
+    },
+    {
+      "path": "public/assets/audio/marshal-reload.mp3",
+      "bytes": 88915,
+      "sha256": "ff99549da47b8966fc5d98c72dcf3696e85d8e02e40ec8db1f466c940f090f08"
+    },
+    {
+      "path": "public/assets/audio/odin-fire.mp3",
+      "bytes": 4932,
+      "sha256": "4a7336aa30cd9fbe6b7d60e725a1b53dbb7cb72fa7e2b22fa3f67af660d67a14"
+    },
+    {
+      "path": "public/assets/audio/odin-reload.mp3",
+      "bytes": 175259,
+      "sha256": "7b010711fb3aa35d5b6442ffc7d4e173018651b55191d3fc77b447e19bd9ce1e"
+    },
+    {
+      "path": "public/assets/audio/operator-fire.mp3",
+      "bytes": 48735,
+      "sha256": "0f78570d34c6de03108ce5c3474e0f94a745f63476d8ad65dd47ee61118f34ef"
+    },
+    {
+      "path": "public/assets/audio/operator-reload.mp3",
+      "bytes": 77139,
+      "sha256": "5c3eb4fca3dd7aaa8e28f647d9fb618d3c3e56df837f9a42dbaacbe1d2181c37"
+    },
+    {
+      "path": "public/assets/audio/phantom-fire.mp3",
+      "bytes": 13640,
+      "sha256": "64f1ef9e12789b7aa4c0e9422dd7175e3b46aca42f67b66a48be15155cff8d1d"
+    },
+    {
+      "path": "public/assets/audio/phantom-reload.mp3",
+      "bytes": 64681,
+      "sha256": "0c4c7738ec02846d7a2024b84662a27d5b1e4791ab8b9b175fff7d9b6ae279e6"
+    },
+    {
+      "path": "public/assets/audio/sheriff-fire.mp3",
+      "bytes": 16560,
+      "sha256": "8406dd52bd4934fd0bf4f38b998f8c523bbec7053b6d4b36690a66969a4d3fb4"
+    },
+    {
+      "path": "public/assets/audio/sheriff-reload.mp3",
+      "bytes": 84868,
+      "sha256": "8e03156394af06e989fa37e9db5aefa6f7f8602f717ec90250ed0a2a512c89ab"
+    },
+    {
+      "path": "public/assets/audio/shield-hit.wav",
+      "bytes": 28844,
+      "sha256": "564f58c2a36fe10e989bdaa9342b0d9d51e0f1d6dd38a95867f0c3964f739ba9"
+    },
+    {
+      "path": "public/assets/audio/shorty-fire.mp3",
+      "bytes": 23608,
+      "sha256": "bb23244d752474fd4138a411d83fec42b9982156ec40c12bd42e1abd85004b7d"
+    },
+    {
+      "path": "public/assets/audio/shorty-reload.mp3",
+      "bytes": 45361,
+      "sha256": "fda519cc7b2e609dda10789dbb03ea38d075a40fa8d0c8bb40324e0007e4a848"
+    },
+    {
+      "path": "public/assets/audio/spectre-fire.mp3",
+      "bytes": 3575,
+      "sha256": "04662c568d6e0554c2ea317208ab76ec2ebc1f858d08650d5c2a5cada32bd09f"
+    },
+    {
+      "path": "public/assets/audio/spectre-reload.mp3",
+      "bytes": 53717,
+      "sha256": "481b0a2851177542987964aac93c95991dd3b2ef86051a852dce83962a7181f2"
+    },
+    {
+      "path": "public/assets/audio/stinger-fire.mp3",
+      "bytes": 3367,
+      "sha256": "2e207334192bf305cc0cacb83845240cc69689dc6f72157ba0df6fca91e0c0ef"
+    },
+    {
+      "path": "public/assets/audio/stinger-reload.mp3",
+      "bytes": 47821,
+      "sha256": "9f13d07faf825442daa984e1147f659c094cd9b847af1fda05ed32ba7eb172dd"
+    },
+    {
+      "path": "public/assets/audio/vandal-fire.mp3",
+      "bytes": 19480,
+      "sha256": "98b0f6566871c62ead43cbf7b1d14e49cca82ecb7604f3b2c2a16ae3069edbcd"
+    },
+    {
+      "path": "public/assets/audio/vandal-reload.mp3",
+      "bytes": 51999,
+      "sha256": "9658997fd60309ab70b4e9e11499b62e1a415aa523d0f89f3cdbdb592931cda4"
+    },
+    {
+      "path": "public/assets/packs/animations/all-weapons-tp-manifest.json",
+      "bytes": 11775,
+      "sha256": "96618cc907598c95c2038dcd4ac4f9f64c719fb9029136171530fed0e839159b"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-equip.json",
+      "bytes": 203273,
+      "sha256": "3c86fea9c18f46ab5e9ba3f1b12ecac41d7fdcaa6cae4ece6fdce6a3ba83d139"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-equipfast.json",
+      "bytes": 112282,
+      "sha256": "2688c447809309d0f78fd6d154b625596a2560e37e9aed5d0bb13a8ec1096e3e"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-fire-source-delta.json",
+      "bytes": 38076,
+      "sha256": "24a4496a64c9fa19f9f23db0aa631dced7d6652550a27ac172f870882017d258"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-fire.json",
+      "bytes": 41871,
+      "sha256": "3337f6899c266aeddcdecda1d5d6de10fe49303f8f4c4b570358a685dacc60a0"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-fireadd.json",
+      "bytes": 57837,
+      "sha256": "ab8c584b68f92cb0bde8c249b886e0888be248b64ff32658a324e5498ae8c6bc"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-idleadd.json",
+      "bytes": 152331,
+      "sha256": "c5e47447462280fc6f42d807cde2b4fa39bb647ebdbf093e5345e916d613827c"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-idlepose.json",
+      "bytes": 4917,
+      "sha256": "9298fb256c2045960f5a7446aa3c2417230f4bc5cc433e7b77d42ebfa292dde9"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-jumpadd.json",
+      "bytes": 316671,
+      "sha256": "5c77a55acbcc820dcfba4d3deab6985e3b9d8a074487c9e6509655881fa1e61c"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-jumplandadd.json",
+      "bytes": 47423,
+      "sha256": "e8f2b08ec415e407d097a925959c0a97b3fbf3f98610923c9a7a5fc73185237b"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-native-index.json",
+      "bytes": 26295,
+      "sha256": "091c9fd557192d5f6ab866aa11b036f131cc4386e6f4f71e28f72c7fa97c2379"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-reload.json",
+      "bytes": 463796,
+      "sha256": "8d12738e73cacfc57227efcbe1c09bcacd4ef7e8e80270a02aa0cb409b2b9c20"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-runadd.json",
+      "bytes": 76097,
+      "sha256": "a7adbbd25c5c56626c4961970338a8d51d9216dfc42b9ce121038d36d9b6afcd"
+    },
+    {
+      "path": "public/assets/packs/animations/ares-walkadd.json",
+      "bytes": 75919,
+      "sha256": "2974c9f52d3b008e35974df57fb2126935a494651b8bcb8f3b3b1d77462c0930"
+    },
+    {
+      "path": "public/assets/packs/animations/bucky-equip.json",
+      "bytes": 52565,
+      "sha256": "3b93b1d590abd19b230c9af1a10ca28034a4405f02f8bd47184010512bee3149"
+    },
+    {
+      "path": "public/assets/packs/animations/bucky-fire.json",
+      "bytes": 127055,
+      "sha256": "f10d0c536f74f67c763467244015b92534cc65a395e39d466cddbb32ea2ab1b9"
+    },
+    {
+      "path": "public/assets/packs/animations/bucky-inspect.json",
+      "bytes": 400743,
+      "sha256": "23e8f9918aa2accf66758990ecc9ab90b66c1a2ef07e161770cf9223f6e0af22"
+    },
+    {
+      "path": "public/assets/packs/animations/bucky-native-index.json",
+      "bytes": 18447,
+      "sha256": "8e9ffea15e6f3a275c13d67dba316bb6d0b2ed17ad5b2e3e383f305429fd71fb"
+    },
+    {
+      "path": "public/assets/packs/animations/bucky-reload.json",
+      "bytes": 205131,
+      "sha256": "237b6835b8ce826a233fc95ecd269fd579b8f9eaa9c41e905d061b952a7b9014"
+    },
+    {
+      "path": "public/assets/packs/animations/bulldog-equip.json",
+      "bytes": 161163,
+      "sha256": "5a43b2e45d586c52e8b0af6dce29574719b87719b49ba9fb1961d4010fef9a13"
+    },
+    {
+      "path": "public/assets/packs/animations/bulldog-fire.json",
+      "bytes": 21777,
+      "sha256": "5018ffae76770da05407845a27fb2b416805be9638a9611c6196ce098025af91"
+    },
+    {
+      "path": "public/assets/packs/animations/bulldog-fireadd.json",
+      "bytes": 59247,
+      "sha256": "1786cf63568158d3ead43a3c14dc6fbc040acedf84e51876dcf2040f3363c887"
+    },
+    {
+      "path": "public/assets/packs/animations/bulldog-native-index.json",
+      "bytes": 19744,
+      "sha256": "2b0f672532a4ed41ef8d3edcbc9766116e832a5eb278839a20cc89f00f5007eb"
+    },
+    {
+      "path": "public/assets/packs/animations/bulldog-reload.json",
+      "bytes": 337379,
+      "sha256": "cafe4031c27008aaa67bfb9213d938f598f7eb7a3eb499ee412827852dbba00c"
+    },
+    {
+      "path": "public/assets/packs/animations/classic-equip.json",
+      "bytes": 95045,
+      "sha256": "bcaaa1219a670777b99a90362dcf18fdb0e4390704f53e92b2e4439d56c72212"
+    },
+    {
+      "path": "public/assets/packs/animations/classic-fire.json",
+      "bytes": 38632,
+      "sha256": "ca2ba9596135e4290e910af790169b5e1ad5d92fffce16d0cbc517a11ccb742e"
+    },
+    {
+      "path": "public/assets/packs/animations/classic-fireadd.json",
+      "bytes": 49309,
+      "sha256": "5818b4deb8ebc35914d96394fd7f71f233da17d26f4177b345605f3142987901"
+    },
+    {
+      "path": "public/assets/packs/animations/classic-native-index.json",
+      "bytes": 22974,
+      "sha256": "8f4c5423201a5f5f50eed33b95b4ed375df3236d01fbae05b3d29275d8b5992b"
+    },
+    {
+      "path": "public/assets/packs/animations/classic-reload.json",
+      "bytes": 198204,
+      "sha256": "d42c2a814079e738f95df371874dafa9d007772f89214f58749ee98dafb01ad8"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_AK_S0_Equip.json",
+      "bytes": 721616,
+      "sha256": "7369e0c094795e6a8493c8b09e0ee82a1dac97b1a719db3e12715f23e183bb79"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_AK_S0_Fire.json",
+      "bytes": 129565,
+      "sha256": "056626bb395cbd1a1cf12c56039386cdeae53f853510767b9dd4a5ed24dacc15"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_AK_S0_IdlePose.json",
+      "bytes": 30787,
+      "sha256": "7c339240d65047b7ecdad667bfe7f22f2b2790b7c07d7b6d922896a53dacb784"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_AK_S0_Reload.json",
+      "bytes": 1250558,
+      "sha256": "dcd09dec096ad0d86993ed2880d4063eeb8862c90c0b49f86899b140bf7aeea5"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Luger_S0_Equip.json",
+      "bytes": 606789,
+      "sha256": "8bc6500537e1393a5268cbb7e29630250b0f55965d54d40343429f64c9d99fb9"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Luger_S0_Fire.json",
+      "bytes": 144564,
+      "sha256": "c0f6cfdbc87aaad08d6d5d3211b9faa9c9a7dbed3a1f907cbe15241e206f3b47"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Luger_S0_IdlePose.json",
+      "bytes": 30618,
+      "sha256": "2ea6927168c2510999ea78342298012b71f3c48499f23c55510c4cb2ef9df293"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Luger_S0_Reload.json",
+      "bytes": 1089748,
+      "sha256": "ae509eb81fcf0a50094734e185a0e7a3d6bbbfb7f6e6ef8ecc35d8a4d57fcb24"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Melee_S0_Attack1.json",
+      "bytes": 819702,
+      "sha256": "e4ea0d34fa44e4bba2cb535f540f183b282e2e8bd875b6517f0cede35bf6ca7c"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Melee_S0_Equip.json",
+      "bytes": 765597,
+      "sha256": "c92f4297a253e38a86efe5965efe4106306e169e456efd4239a1853d600572b3"
+    },
+    {
+      "path": "public/assets/packs/animations/FP_Core_Melee_S0_IdlePose.json",
+      "bytes": 37291,
+      "sha256": "0f5ec42eaa442dc204792dcfff8bfeb689e4553acdb592584a9be4fc818f3aa9"
+    },
+    {
+      "path": "public/assets/packs/animations/frenzy-equip.json",
+      "bytes": 103471,
+      "sha256": "b6d6865e1ec23dad582a916489cb6cdb53c5c1a44bf0399e6a12b4dba4469456"
+    },
+    {
+      "path": "public/assets/packs/animations/frenzy-fire.json",
+      "bytes": 27405,
+      "sha256": "3a01808a27b5ac34103bb0d882eea2ce9477dbaa6185d2aa961d3984d19545e2"
+    },
+    {
+      "path": "public/assets/packs/animations/frenzy-native-index.json",
+      "bytes": 14272,
+      "sha256": "933961a35309b88142358909aa557cd6871cb123238ad603984f0af6681e50ac"
+    },
+    {
+      "path": "public/assets/packs/animations/frenzy-reload.json",
+      "bytes": 141435,
+      "sha256": "d4bc09877fca3b7d65143be068a5b936c873d09bdda8e97a440346731e490898"
+    },
+    {
+      "path": "public/assets/packs/animations/ghost-equip.json",
+      "bytes": 118994,
+      "sha256": "23550c18486ddf160e01fae875c4828c62efef55dfb2fe34a9c486c876079133"
+    },
+    {
+      "path": "public/assets/packs/animations/ghost-fire.json",
+      "bytes": 31871,
+      "sha256": "169b1a0b3bbcb9cd181d4a597597a44a4765da24d2c0ceb64b159efc00c94cff"
+    },
+    {
+      "path": "public/assets/packs/animations/ghost-reload.json",
+      "bytes": 216034,
+      "sha256": "231422532344128fb738f683f66ad2d54c968a391e36441c85d84605afc6e219"
+    },
+    {
+      "path": "public/assets/packs/animations/guardian-equip.json",
+      "bytes": 206741,
+      "sha256": "53b92a59af04e160b1403eee1c8a326acca74a36eaf015bf38cbedf4826cb82c"
+    },
+    {
+      "path": "public/assets/packs/animations/guardian-fire.json",
+      "bytes": 40163,
+      "sha256": "3e01adc1a0ced1e6209d280a02a1281c54c3ddfee4311f99323024f22edcca0c"
+    },
+    {
+      "path": "public/assets/packs/animations/guardian-fireadd.json",
+      "bytes": 58844,
+      "sha256": "6f02deb3427c6c0708ac34e592ef7d3e8b744543844f6f70803189b84ae03c70"
+    },
+    {
+      "path": "public/assets/packs/animations/guardian-native-index.json",
+      "bytes": 17265,
+      "sha256": "526b13c0b03f277223aa1e430ae516945a5ac3135e90b3f2d755ea53263d3223"
+    },
+    {
+      "path": "public/assets/packs/animations/guardian-reload.json",
+      "bytes": 355384,
+      "sha256": "51649147a3d2b15e9967730fdcd3b6d55eaee8336ec0931e53537f46d5a3fded"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-aime.json",
+      "bytes": 36896,
+      "sha256": "b6ec7d37db009da3baa682274aaaeab785d455b72b9353eee38ac038b9254ace"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-aimn.json",
+      "bytes": 37046,
+      "sha256": "3065d14d0d785590e728ecde5769422aa156dccec3b22643927e6396a7899080"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-aims.json",
+      "bytes": 37016,
+      "sha256": "fe6afc695d90ecd06f62d7d4c840cbe674ff88e90d14fb280afeb0265194083f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-aimw.json",
+      "bytes": 36830,
+      "sha256": "ea60ecf572eadc094d8ddb588b621d0b6d0a31f2d918170f3b2424224418b2db"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altcrouchin.json",
+      "bytes": 282931,
+      "sha256": "d900dc5cd866414de339951a8d1f6814bab72166eee69ee71c2758f7eef7d9ea"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altcrouchout.json",
+      "bytes": 440983,
+      "sha256": "28bb44805308dc2422e7b86f9dffe53580e7f9529cd8a7847e77e621fde7e134"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altidleadd.json",
+      "bytes": 1227485,
+      "sha256": "8f0c0c8116f5a9a6548f2c5cfeeea1c5a9dc76f1aba237dca7b79709fa7dd252"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altidlepose.json",
+      "bytes": 35544,
+      "sha256": "1a37c86ea1396b24f7917f5229b6bac280359a965a8a8b3e9e89ef5769423e29"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altjumpadd.json",
+      "bytes": 2702058,
+      "sha256": "7bdb33c152a13aec4a702a250571a2838efdf75f31e62e294de1579323793325"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altjumplandadd.json",
+      "bytes": 393179,
+      "sha256": "44de359ba7eb57e266a1426fe7a77a3d98615390483ca27f65237f5cae941355"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altrunadd.json",
+      "bytes": 334417,
+      "sha256": "c4dbe4022f2ca07c1744346e6e509e6336648e5247651c75c45019d5187d40bc"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-altwalkadd.json",
+      "bytes": 646920,
+      "sha256": "dfae34d74483f239d3303ac4bfbeea9a8514e0c175d7f053a0d3805e2034d62b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-equip.json",
+      "bytes": 1651559,
+      "sha256": "a20579b79ab2f16708e1e5b001ee76faab971d657080c9e620a6b3bf59f98229"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-equipfast.json",
+      "bytes": 909614,
+      "sha256": "2fa928779ed5dd2b2355e5658f836c7004403615262081f52e4e929c92f1217b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-fire.json",
+      "bytes": 300056,
+      "sha256": "89e0f34dcfd4da8649d714db5ddfc787fb49c5e071cd597fab0450e15b967b61"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-idleadd.json",
+      "bytes": 2576208,
+      "sha256": "1537089d62bf4111eb12f53b40d9c4bfaafbf6f01b2b5266982ad5ed6e36248c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-idlepose.json",
+      "bytes": 50460,
+      "sha256": "2ea946179f899440457f887bd967430e6cc3569297bb8ef83c1b95ab04bbe907"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-inspect.json",
+      "bytes": 3943719,
+      "sha256": "afbb12b184ccfe87e051e1d5df77660a5ded23b1286b33bb9037ff3c50b23f2f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-jumpadd.json",
+      "bytes": 2682426,
+      "sha256": "93e2ab1d49f13d923202b6cc46cb79de97bbcfa4e96dbfa965a2e97b218ae777"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-jumplandadd.json",
+      "bytes": 391414,
+      "sha256": "8ec4cdc306e6a2aa6dc1f082fccdd98b1ae32c5d4a8cb0fef49d2901cf70ea44"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-neutral-delta.json",
+      "bytes": 21673,
+      "sha256": "8c0bbb5c39d0ceecc36095653c4b40dc696aaf3b1c229e61db1e73a00f99646c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-reload.json",
+      "bytes": 3725458,
+      "sha256": "7ff276f0886bf1a91bf4323e8006e145f17d3394c23ff84e1618c8a9e9fdab02"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-runadd.json",
+      "bytes": 332903,
+      "sha256": "d6624b5fa19fb268d8308a3022708c076b26df40dbf4b8cf5948bbd5912cf5ce"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ares-walkadd.json",
+      "bytes": 644470,
+      "sha256": "0a68f89d0706fcde0ecc5505c0a19b2f447f6a26d87bc316d92ad932dfdc0bfd"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-aim2e.json",
+      "bytes": 52039,
+      "sha256": "1e2e379a0851b2b690bb1745b21347e626b8c3fee26b462f92e0fede087a47a4"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-aim2n.json",
+      "bytes": 52183,
+      "sha256": "6b9ff3b0e68816bdf22fb476d25603003f0cc6dd3ce9d826fc07d81cc96f95dd"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-aim2s.json",
+      "bytes": 52006,
+      "sha256": "3d558fd19360138f82ab8fd0f7a82100f1badc9abfd7d60a1ecc6745b3733664"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-aim2w.json",
+      "bytes": 52456,
+      "sha256": "f104dab0c65970e6ccd4a35b2277434af313341f5aee8cf2bbed77145882ac71"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-equip.json",
+      "bytes": 1204784,
+      "sha256": "a1ba97f5257a673af10f1f3d305d6ef634cec8fa4c20e663a45130854819d016"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-equipfast.json",
+      "bytes": 759866,
+      "sha256": "37642d8024eab2915f25ad99fecc91f63d384918e1bebac0900bbf6769cf80a0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-fire.json",
+      "bytes": 1243497,
+      "sha256": "25dec87af8b807bed633c1a9dfb68282c555e54c40987818710a1cf572959e1b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-idleadd.json",
+      "bytes": 2534346,
+      "sha256": "c0e080e34a1ce3d4ed297f399d9453fd37380e99a9e75507bf3548d874159dfa"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-idlepose.json",
+      "bytes": 50313,
+      "sha256": "1506c5ebd5ab2d051ee2ee0b8f3d14cd257f75da7dd4013d3e79793316a37d44"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-inspect.json",
+      "bytes": 3789644,
+      "sha256": "2b6fa7030952a3311b1ad9a4b679e5474a38e0c18fb04fb88ad121c55bc2b875"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-jumpadd.json",
+      "bytes": 1136037,
+      "sha256": "8e55a16c8561a11561f0a577de287c0b067cde3dfd6d9cfe2094722c6cbfc553"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-jumplandadd.json",
+      "bytes": 392904,
+      "sha256": "b27245a6eb0dbfd77f6e36822c2efb3e0ed41e9f8c0a3cfec9bbb67a051c2fbe"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-neutral-delta.json",
+      "bytes": 20670,
+      "sha256": "a203c042c6e03508de697988aaa277b462d5098f3d4afc97afd58c2e7fe3ba9d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-reload.json",
+      "bytes": 1942162,
+      "sha256": "6b207cde38f1bbefc7e094e46ad4a25ce509fe8749a041b29b9c883e00260ae3"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-runadd.json",
+      "bytes": 362403,
+      "sha256": "a493b9a89cb9c733b0f6358523b952c1bbcf505b2296ab112f7628240252671d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bucky-walkadd.json",
+      "bytes": 641155,
+      "sha256": "8fbec101f1505934c2688b63992ef25d30a030fb2280ba0540055c286a1ec63b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aim2e.json",
+      "bytes": 52009,
+      "sha256": "928c4aac1b4baa30775dba8b26a75ca8b4686404797f6157c7ba34bf2d218ad2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aim2n.json",
+      "bytes": 52432,
+      "sha256": "a76782fff2d2ce42ddc6b0ee1c005a4ef9f7f92c104fa8efddda88b820c74517"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aim2s.json",
+      "bytes": 52300,
+      "sha256": "fee90f1c4266a5edee1d02a270892ca4e91f92b656cc35d45a56da1995cdb335"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aim2w.json",
+      "bytes": 51763,
+      "sha256": "3282658960ef8a7f738ba2977c725a3faa0a9232b0cacd34d82bf14a3210c51c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aime.json",
+      "bytes": 50327,
+      "sha256": "75da048183dcf8e6074696505cde75a472daed8055b069b2d5b2f84fc97cfb75"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aimn.json",
+      "bytes": 50363,
+      "sha256": "3364ec47ac1bbe6f88b7ecfc437d3fa9dd2070157d562ff88b43a1f445a1c825"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aims.json",
+      "bytes": 50348,
+      "sha256": "ced98dcb1245eb6a1b0aa398f4db4d0004a1fa62cfaeb5faea55db0e5a626623"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-aimw.json",
+      "bytes": 50318,
+      "sha256": "5b4a9db1d080ace4a2f83f17d70c9bacfc05c2fbec10d8cedce3ca68650fd1de"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-equip.json",
+      "bytes": 1279703,
+      "sha256": "9d8ba0cfdb081ede113eda6721d8ff7277b0407025c9ec14a31365adf1c2739b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-equipfast.json",
+      "bytes": 1235934,
+      "sha256": "d7d844aaedbf792f7be1388c8024d170ec4f4b576ed77724164d8166faf37c47"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-fireadd.json",
+      "bytes": 175573,
+      "sha256": "408811c2c0fad6aff09442c2971e9f70a58eeab082ddfe1fd538e3f74ed1dd01"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-idleadd.json",
+      "bytes": 2447786,
+      "sha256": "957adf7d1ea61aa21ac2ea81b82da5f23e2d9397c5295fe022ad09453144f926"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-idlepose.json",
+      "bytes": 50508,
+      "sha256": "819adf6764bf619f2a0a99ea60f8d41c0aefced4103ef2b08fdade8f64fabff2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-inspect.json",
+      "bytes": 3731104,
+      "sha256": "7c43e3fb1c05de25a6ec4a80fd1c75c4f4e5896e0a293baea196e487744a866d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-jumpadd.json",
+      "bytes": 1139339,
+      "sha256": "2035c9e68550134eb33da1539e989538448a65942850b9cbc6a8322e4cc86a91"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-jumplandadd.json",
+      "bytes": 392215,
+      "sha256": "990eeaea7fbfd014cf44a44b16b93b4ed2c96d6dd555fa3dc6681289d0664bd2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-neutral-delta.json",
+      "bytes": 20889,
+      "sha256": "c5d82f4825594c58e69270d53af8e76b8677fe557c41e605f2ab540e75369529"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-reload.json",
+      "bytes": 2690167,
+      "sha256": "aad929365821805e73be4483355cb4f51f0bbe821a11683babd78d2847a36326"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-runadd.json",
+      "bytes": 301451,
+      "sha256": "4b23c934b69951c47e1fcbfa576b65f7af10b6ed41dc69f1c27a3ce92dbb61d9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-bulldog-walkadd.json",
+      "bytes": 643079,
+      "sha256": "1f9ceec84eda6a36a5d8c17e755920140f6eac6fe5e51e70f4173d708511f24e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-activefidget.json",
+      "bytes": 1800276,
+      "sha256": "dd78638b4e3fbc68239ef76e9b92acc7f41ba28cd3fabfb6a1c6bceefe8dc5e7"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aim2e.json",
+      "bytes": 51565,
+      "sha256": "9bf4ea2c52229d51e90dfcca8aa265cea9737a984ec618979b3efaf1aca80f1a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aim2n.json",
+      "bytes": 52177,
+      "sha256": "85310733c17fea333fe5e1db45966ad40cd24d084dbdd60bd091e243cd38f81e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aim2s.json",
+      "bytes": 52219,
+      "sha256": "8db9baeb391e7d517d6586ae896d0d10d8c5dd2bea16543562b29d7a13275d65"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aim2w.json",
+      "bytes": 51775,
+      "sha256": "cec4aaa130c49c036654c168e9208d67e36bc40fa6aeddaa565c2f3ff90f642b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aime.json",
+      "bytes": 50354,
+      "sha256": "8cf31fce08891043fb00fa2df624e1da45f42db4179f443768f9c82f7aa23343"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aimn.json",
+      "bytes": 50360,
+      "sha256": "18d96048e303fc29b3d830b12cd4f136303cc880658da5ae33827c5d71a5e2f9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aims.json",
+      "bytes": 50285,
+      "sha256": "f83583ec778cd56ef650a1b15c5aa808c08453e4d753aeec2fcab7ca9a341f02"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-aimw.json",
+      "bytes": 52421,
+      "sha256": "1fcf920a48167f96ac02e24952a0dade283538d90c377ba91baba0b592e9be5f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-crouchin.json",
+      "bytes": 286170,
+      "sha256": "9d2be259f6217c5b573480b09b8e84837d19b6b35c36b610f1a99174651ce77a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-crouchout.json",
+      "bytes": 438230,
+      "sha256": "d3bece2b9cea0694ce22ab793942c1137296bcdc2e4bbb2a5e60673084c536c6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-crouchwalkadd.json",
+      "bytes": 393452,
+      "sha256": "b9271c20ecc9ec6ee005bb52aed1d86a52b9de31c34ac60af22f1965d6a0260e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-equip.json",
+      "bytes": 907951,
+      "sha256": "69bfc51ab9064a36ecf60c03d679e7550b50951649f14afa39eff52b0d7ac0c1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-equipfast.json",
+      "bytes": 687824,
+      "sha256": "7aa30edc31b2fa2c418092c5de50f529074ef143ee9a9ee594957bac72cec43c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-fire.json",
+      "bytes": 361562,
+      "sha256": "027f70ce7dea5cc2feb47c9d52f62f55fef0dbdbc5235277020f3fa2f0011cb7"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-gundownpose.json",
+      "bytes": 467272,
+      "sha256": "6f307d0dab7d097d78b776f78b5b091ae2a2dd7921dec077816a34441689207f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-idleadd.json",
+      "bytes": 2449227,
+      "sha256": "2e4a897a31201f0cc7b5515decc790d3d6e92cc77df0c4a03fe527692ec9cab2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-idlepose.json",
+      "bytes": 50511,
+      "sha256": "887816eb315d8f574c79370ef6dfa6a90bbec1c088f3eb88507ce54af0999747"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-inspect.json",
+      "bytes": 2864937,
+      "sha256": "1031511b03bec07f132d0907287798fafb95405459d7b59ac06db0e4d33b9586"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-jumpadd.json",
+      "bytes": 1122263,
+      "sha256": "7c931756503497a93f296fecea34742f2fa20110e3be9899ea63b25d729b7e0e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-jumplandadd.json",
+      "bytes": 390883,
+      "sha256": "9f581b7975ee15861b98be1f9b894098d22dc51a1592b4f7c48a43ddba46f45f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-neutral-delta.json",
+      "bytes": 20749,
+      "sha256": "883560ac8cf6300f706aaf29750203e8088dde380ac409661d240f322993b350"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-reload.json",
+      "bytes": 1900774,
+      "sha256": "5a467cd813825ae8800c38a54957b340ac586a8e9ce8e154e46586952a37d8a3"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-runadd.json",
+      "bytes": 299873,
+      "sha256": "3a20d6337172367a6f8ad6178fd41e4988623d9f7258560b41b8f4b62ef9194b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-classic-walkadd.json",
+      "bytes": 393442,
+      "sha256": "0de73eae507ed834600483975ccb970e7f5730a09dbde7fde3df7a2246586a1f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-crouchin.json",
+      "bytes": 286221,
+      "sha256": "22f696bf0111b97e7c4f5b968a6bbd968bb245d7c03dfb4f6723dfb92084d184"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-crouchwalkadd.json",
+      "bytes": 395285,
+      "sha256": "3be831702f037d6401d0fbc7c13933f454d4367edf2225957d152c0cf2c8fff0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-equip.json",
+      "bytes": 1207098,
+      "sha256": "c5b500e2a93073bfc8245d0149417bd27301cde3e39c0457a02d57c29b21a67d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-equipfast.json",
+      "bytes": 762253,
+      "sha256": "fad21df85979aac2de9412f729d2b29dcfbd8c2b5ef076e4fc081dca9805036b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-fire.json",
+      "bytes": 329063,
+      "sha256": "13f1fc87d3e02f4660fe3ae69a5160cded5c0f0009405a6fa8a10e29507a16cf"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-idleadd.json",
+      "bytes": 2445938,
+      "sha256": "f1110cb5e3593397634be5762c3f17833ce48f682d7c12a176d817a958003ea5"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-idlepose.json",
+      "bytes": 35665,
+      "sha256": "863b66172e391b4b4ef70f85ed6675198b77bbce640fcebfe83cd3e35394f2e9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-inspect.json",
+      "bytes": 2869759,
+      "sha256": "8584b3831e7713c5f6ba647ff6beabc9567dbe1248cf6d3dce43fd2a661a8981"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-jumpadd.json",
+      "bytes": 1123398,
+      "sha256": "73858dbde2bf81a8a2ecda6cae8d9e37981e78f427b662b095d7034167af50ad"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-jumplandadd.json",
+      "bytes": 390862,
+      "sha256": "c9c09385ee43a73dd7897aad1882f1d0359c509b9930680734bc809cbff514cb"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-neutral-delta.json",
+      "bytes": 20730,
+      "sha256": "3db7f41553c331dd5c94278446f33bd98436b5328d8064e05020d0a7d6fad8b8"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-reload.json",
+      "bytes": 1652305,
+      "sha256": "af7d11fc7c1c9c89c665152335a53b7d537f118b996cb15ca01328a7e3167edf"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-runadd.json",
+      "bytes": 300073,
+      "sha256": "65157759ef8d196c7b36e607b2b611c453dbe71e04ae0d8d74dfeeefabb173cf"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-frenzy-walkadd.json",
+      "bytes": 395275,
+      "sha256": "d554dd1843b4a1e3b9f2834f2c404416a44fdc999c7d53f3a6f1e8687eecde0d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-crouchwalkadd.json",
+      "bytes": 392331,
+      "sha256": "7c1059540eb368cb777fd39bc131250fa75d6da1c0a082924574fb743f1d5364"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-equip.json",
+      "bytes": 1249056,
+      "sha256": "140dc9bb816a549fc833663a71f2ecfb55fc4b37f1f3b8f5838d87e25cc7f326"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-fire.json",
+      "bytes": 344127,
+      "sha256": "8de9323b592a007cfa61e3867b461100ecdaeb160f003ebe4df7f6bf0bb89503"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-idlepose.json",
+      "bytes": 35238,
+      "sha256": "c7ac6ac3f0ca016aa1aa7c7519d561e107194ae8425a035fb792a7a6122472ec"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-jumpadd.json",
+      "bytes": 1121683,
+      "sha256": "2b593c5a3eada6ee8fc73a39a3ce5650f4faeeefc2a40d1a91ce837adc10844e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-jumplandadd.json",
+      "bytes": 390742,
+      "sha256": "84acd76ab5c55e4a95c622ef38b2f2221e70dbb9261cb8b4f5d1093f45a9e3fc"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-reload.json",
+      "bytes": 2270567,
+      "sha256": "c31b09af10037b5b6307062922bca5cc0aae5be89fdb9bab62b4a65ff53d556e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-runadd.json",
+      "bytes": 299262,
+      "sha256": "a134e5ee24d130345edff0cf25fb94d50b2860a91c273fb8a77fa81904d4ff8d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-ghost-walkadd.json",
+      "bytes": 392327,
+      "sha256": "7b2c338d6fa00d6fdd18e6097041ffe62a7a7aaae249c3b0f3ef76d8b139b9b8"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aim2e.json",
+      "bytes": 51967,
+      "sha256": "95d2915749f52688e900820e8b6780d22368e86c3a6ccde9a565d1a7f4359780"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aim2n.json",
+      "bytes": 52444,
+      "sha256": "9dd26c431ac653f0d246e668e45441a7fd82f102773f94feddc8c9e66538c30b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aim2s.json",
+      "bytes": 52414,
+      "sha256": "5d83662d8fc7246025b09bbc89a24922b9392e7dc39650de1ea633acef00aadd"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aim2w.json",
+      "bytes": 52048,
+      "sha256": "19b24ab76e0f541334bbb49a03d3a7a161ea536f003f0caafad28ad495bb4eca"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aime.json",
+      "bytes": 50378,
+      "sha256": "bf0d0d3b51c75798fd6a7608992846e954db04fdb2ee3fce5641bb19f0672d01"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aimn.json",
+      "bytes": 50306,
+      "sha256": "bf2b7a8941d62bd750d4c81f8dda493e5ef4edf4fb8631ce9c9003bff531cef4"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aims.json",
+      "bytes": 50333,
+      "sha256": "235c4fc8b85d4c1a077e19258d0830aa38573a94e5adb0c932d70413e3169e2a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-aimw.json",
+      "bytes": 50336,
+      "sha256": "824d6ca76bfadc938ef34fa9d13c7f9f3d63360c45d2cc35b6d777d62799529e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-equip.json",
+      "bytes": 1654031,
+      "sha256": "d2fc2d680d242edec5a5af5336411d9c978e0376d1ccf38a98971948a846f393"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-equipfast.json",
+      "bytes": 1235291,
+      "sha256": "b9089622c7cfd6791a78399a32fc1cb63427cb0b5044ef79aaf0c016ab7a4c85"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-fire.json",
+      "bytes": 330492,
+      "sha256": "38bc2b01b4c7096b37eefa1b546e6c1554e497e46b89f44259d8e9a158ec81b9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-idleadd.json",
+      "bytes": 2566271,
+      "sha256": "ea55520a691c4074b2f48c570902c624e543304c5ee7455569e47c8ecc84d7f5"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-idlepose.json",
+      "bytes": 50487,
+      "sha256": "3a96eb1f77f6dc694660fa9d603efda577a565ad2d17749326aedfea7959aea0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-inspect.json",
+      "bytes": 3724348,
+      "sha256": "9ee8c71c21edc889ebfcf001438e193d0d3656830a76232d916a8189e11ce885"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-jumpadd.json",
+      "bytes": 1134971,
+      "sha256": "b91f70f30e5c55beab0ad9e986f0a5a25f2af9bf6306baefa194c831c3476d50"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-jumplandadd.json",
+      "bytes": 377632,
+      "sha256": "79b55f3a0138ec09445578e7362213b1ea6aa38bd6c018364817640dae3b0daa"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-neutral-delta.json",
+      "bytes": 20868,
+      "sha256": "3ccc2afd06dd9628aa0962a80868f47e67a516594f4a3e41d5f246563c0f4a91"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-reload.json",
+      "bytes": 2839989,
+      "sha256": "bc2a85d8421f43a91538051d5b86cc81913cdb41801b9f2dfc63f6128825438a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-guardian-runadd.json",
+      "bytes": 299573,
+      "sha256": "d92aa83ecf6089468e857495e714d19d888401a4ef141f29a844bff0001d8457"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-crouchin.json",
+      "bytes": 286313,
+      "sha256": "1be2f2abd98ab5f63f7280583c60d0d93fba96d386a35a154eb2fa282de5ddbc"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-crouchout.json",
+      "bytes": 434579,
+      "sha256": "ca157ad3dde484db22373002b792eb6cb2d833e2e32b42427d6e0bb4f7a02062"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-equip.json",
+      "bytes": 1208619,
+      "sha256": "b5fab99afef63be306618ce9dc33b586b52e5ba56502585b16c6ad4f6ccbcf53"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-equipfast.json",
+      "bytes": 762903,
+      "sha256": "1d13520434cd50d5ca59b65815d340d00c780a4e327484db66786a9d361218c3"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-fire.json",
+      "bytes": 626476,
+      "sha256": "e72857560a31e028116f0c1a2042845461880aab9c7cb4f3370bc78947b42d28"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-idleadd.json",
+      "bytes": 2447668,
+      "sha256": "1735a4213df0a6d08bb0a41c800da8b0b803ef1f4a39e8c4c91bf9c4617cb94f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-idlepose.json",
+      "bytes": 50547,
+      "sha256": "b5d0824d2595fe55289be260c79ad383c8d4bfe3c97a90a7f24d71330057a6fb"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-inspect.json",
+      "bytes": 4023388,
+      "sha256": "73cbdef305d131f0a5e306a48b1a30402fbe9d8216cc8a6c51138a4932bf3bd1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-jumpadd.json",
+      "bytes": 1130302,
+      "sha256": "6f9deb460b15c3ec0d8e0223e5010635bd82c15792280e0a256feb1f4189dc40"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-jumplandadd.json",
+      "bytes": 391950,
+      "sha256": "94522c1d9b3116b7d99e14db5333334031e0801b8040eb304da90b3b89443609"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-neutral-delta.json",
+      "bytes": 20671,
+      "sha256": "4d9e472f0e9590e19aa77768e58fcdf6c35b923846d146b71ca969af03852363"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-reload.json",
+      "bytes": 2540584,
+      "sha256": "57b130cd41fd8be6b75d15ee26fb8e5ee97529298527852ce5f4d868315de24f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-runadd.json",
+      "bytes": 299811,
+      "sha256": "51916f6c5878325155ef98efdf5b2c812f5018bd49d0b60355d1955beb1d47fb"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-judge-walkadd.json",
+      "bytes": 425213,
+      "sha256": "e65fb4453e0769925e1d2a23cdd7debc0c16318f49daf93d07cae7bc103bce08"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-attack-alt.json",
+      "bytes": 1695650,
+      "sha256": "52b2f645cd80f0882c13c4d2988990ef3d076a30ddcc32438f951df7fb36091b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-attack1.json",
+      "bytes": 1729000,
+      "sha256": "8b6c6371260dec1abb6cd436b68562c0c5791cd85db3d8728c3bcaf34b6ca13d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-attack2.json",
+      "bytes": 1727810,
+      "sha256": "52c93ab0de80a684431b2e6db56df683ed3c971e42776b50900c791291f720e0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-attack3.json",
+      "bytes": 1729894,
+      "sha256": "d76786006c18c406f693c02ad5eb2bb81c368431895f22fc00f8fdba372e05d9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-crouchin.json",
+      "bytes": 282094,
+      "sha256": "93e818bf88d62a4c8df61dc233345db362396617f0df44624bdb6f384da4fdcc"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-crouchout.json",
+      "bytes": 437865,
+      "sha256": "d1bab969e6035ed32ae42caa6f94f5e145878f19e5271fc42a5b450570dd1e68"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-equip.json",
+      "bytes": 1607179,
+      "sha256": "c659659d3827feee6acff515f68f1aec85e2b634dd6698a65e900d90cb497739"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-fire.json",
+      "bytes": 1729000,
+      "sha256": "8b6c6371260dec1abb6cd436b68562c0c5791cd85db3d8728c3bcaf34b6ca13d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-idlepose.json",
+      "bytes": 50059,
+      "sha256": "52fbb2b84a28d4cad8f7a0148d9b0c6309e5e66e45b3855c89e096963dacfee2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-jumpadd.json",
+      "bytes": 1071616,
+      "sha256": "e581bbd95ec9e9d58eb0401524c0575f7f965a0fa73d2d91d45292b5dc22fa76"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-jumplandadd.json",
+      "bytes": 342461,
+      "sha256": "81cc11c44310983978527fc7d4d5e6fdc827642627c1c394d12c0e37705b56ae"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-runadd.json",
+      "bytes": 294862,
+      "sha256": "c8a6f72717d35b30fc65b7fd5ec0567afb1318b083c551d2cae5d158353d4fcb"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-secondary.json",
+      "bytes": 1695650,
+      "sha256": "52b2f645cd80f0882c13c4d2988990ef3d076a30ddcc32438f951df7fb36091b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack-alt.json",
+      "bytes": 1946965,
+      "sha256": "d7d91b9e664a6a31ff317289257f46bbdc3a464253705b8d0c0e5044fac470f6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack1-modes.json",
+      "bytes": 1722394,
+      "sha256": "6fac542960a4896790e44cbe9e30097a2b455197a5e69774b5739b6c7b21d703"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack1.json",
+      "bytes": 1724113,
+      "sha256": "877eb13fed84f4ee3ec91f0c5c4777484d9a793ef0c08ef0671ba4d58689f126"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack2-modes.json",
+      "bytes": 1725852,
+      "sha256": "2bf58bd8c0036b573202843702fc0e520b1a650f63de222f3f977b03f074210e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack2.json",
+      "bytes": 3435286,
+      "sha256": "306ef2f66ce993aa4a77676a2a2a2b0410deb9e9d778dcf4df1605478646afd1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack3-modes.json",
+      "bytes": 1725745,
+      "sha256": "d4517a17ad23c4a6d628d24bb28a889a54a3859ca3f2c64f3f2bdd5aaf495807"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack3.json",
+      "bytes": 1727518,
+      "sha256": "d027f83c9b7741b5818f453a20a1de60fe2fdd36e528164e6e27108f6a4c75f1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack4-modes.json",
+      "bytes": 1722394,
+      "sha256": "b9c97e3c69cd1ab4040c407cc4f548949e937cc1612a3e242dce75683c30bba6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-attack4.json",
+      "bytes": 1724273,
+      "sha256": "6f389f5a5120366ceedd88d12837d30f37a4029cdea29c48226c2cf8f7fce427"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-crouchin.json",
+      "bytes": 283245,
+      "sha256": "4578b2c4e26e3b9d50f173b102bd6d7cfc5023ecbd4addd745da317918886148"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-crouchout.json",
+      "bytes": 438882,
+      "sha256": "69f0f0aa7f908c2032a6e07fbf91bc40686b527e4003f61cd454a77a9e67cfb1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-equip-modes.json",
+      "bytes": 1501514,
+      "sha256": "cfef5c407a533c826b0978f2bc475a4410c8bed19631345671b4457dc5568dc0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-equip.json",
+      "bytes": 1501924,
+      "sha256": "ee5d9695828be31e2371c0ffe645fa58a70bc4358a131a3f104e80f2abe0d85a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-idlepose-modes.json",
+      "bytes": 35195,
+      "sha256": "0434e7b497d47c4b65424c214cb220cc1b8cf1a6b40ffebffebf3681d1d03911"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-idlepose.json",
+      "bytes": 35221,
+      "sha256": "fbc80dce5fab2aad33ca69a9a7c4551fdd42c69a628ab66aff336059103dbf1b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-inspect-modes.json",
+      "bytes": 2869289,
+      "sha256": "b0b60a0b490a96c6516cb99fb31aca4dc473f3bcb4d44a465924d7cb8ed79567"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-inspect.json",
+      "bytes": 2872047,
+      "sha256": "d896fd341ff726dce3f0e4883b828c669f5bc21eccf7346c3eb25b68909bf11f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-jumpadd.json",
+      "bytes": 1073190,
+      "sha256": "18b19138ec6c7d3bfb9d07432d96b90a873a806cc8c0fd95ab46d23395ac38f8"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-jumplandadd.json",
+      "bytes": 343475,
+      "sha256": "bd782032eb6777431bf4116c7d24f43988855f7a3f096bff0f41849c9f414df1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-runadd.json",
+      "bytes": 296368,
+      "sha256": "172e8780da881826e4cedccb37061f2f81eb83e502b7750092f6b5f4be94a316"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-tactical-walkadd.json",
+      "bytes": 635791,
+      "sha256": "8465f6797146e8caf2228c464ed27ef47dac8905bae5b19cf8a5f96c1b0e337e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-knife-walkadd.json",
+      "bytes": 629416,
+      "sha256": "b49f791ca9630380bee3bfe1e1d72a69a9c89311e52c0ba0e458e7aa2d80868f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-aim2e.json",
+      "bytes": 52015,
+      "sha256": "a530528e7f3518f92e2c0a92a75db607bb9fb7479137721c7750d36de21d48ae"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-aim2n.json",
+      "bytes": 52285,
+      "sha256": "b71484d282de528f5097ee7bb06ed43baf9fd276ee3ccc6f28a23b3f319922c9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-aim2s.json",
+      "bytes": 52507,
+      "sha256": "d9d0e0ffce172ca0dbc920c0ed45281977d7bc4547ea6b8ce62e9ce215e67f3b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-aim2w.json",
+      "bytes": 52009,
+      "sha256": "d8267a1025ad3f1e6c69f5797ef4f35ce258a29b11418a72636fa75b4c4f4e5b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-equip.json",
+      "bytes": 1949446,
+      "sha256": "1c866ae7c4c66933de23d3c92ee23e9b688eaa6f245509409261dfada6e65035"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-equipfast.json",
+      "bytes": 1117499,
+      "sha256": "537152e11514fb182d473ec9db92f86916965d55c3724c0877b7202ff4cf4b4d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-fire.json",
+      "bytes": 633580,
+      "sha256": "06d5f68b7fd4a238fcbc6e69a8c2c193cf98cb9eaadd9675f09577589317e56b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-firezoomed.json",
+      "bytes": 785262,
+      "sha256": "251080d27d9062ea4c6e453b5b1e35027200c9f7619fb5d7abd1e3bf584aefd6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-idleadd.json",
+      "bytes": 2452716,
+      "sha256": "1305734eecd22efd84f9eb13550540c5d2133e945e3b26d0487da8a5c765342c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-idlepose.json",
+      "bytes": 50568,
+      "sha256": "95e69b7ebb30e96c76ae51077c9bd8f25dbdefcaa6579f71aab254c23513d0c4"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-inspect.json",
+      "bytes": 3876785,
+      "sha256": "1509431886618bda53c8dd76b5695021442895e06648a004778210a71ff65183"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-jumpadd.json",
+      "bytes": 1127862,
+      "sha256": "73d54d0cf4f8270587e53335b6a7abe3553049856fcfe832012a1992977a4a80"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-jumplandadd.json",
+      "bytes": 467116,
+      "sha256": "bb53a987aa1b15c5be647e32d84aa3013b1265b60674b828d5993ef822e3bf05"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-neutral-delta.json",
+      "bytes": 20927,
+      "sha256": "bad277d48f798fd6cc8b1e5d1d73c45fade5ccb1b3bac0276d336247afef702d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-reload.json",
+      "bytes": 2095236,
+      "sha256": "79cc388de406e509f41b5641a769f2e2f0975c4c7d0046b08a9b531a3f22da31"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-runadd.json",
+      "bytes": 328737,
+      "sha256": "d1518e4bb1190e7d8989e70ad45989d30cc64b2af224dceac59298432c634994"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-marshal-walkadd.json",
+      "bytes": 426037,
+      "sha256": "09f2e70391d539f7866863a0a91f6e43e3eaabf9d4bf9f7a4851afd148a46b37"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-adsidleadd.json",
+      "bytes": 2432989,
+      "sha256": "6d5922c374a2295b4271dca023f1ef97e9f4f23b6625e588e9945527254a47a3"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-adsidlepose.json",
+      "bytes": 50367,
+      "sha256": "72d5d409a085ef13a166325ec2a7f1cd0f21d9af5bb4409e1fd16a81aab5d5cc"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-aime.json",
+      "bytes": 52004,
+      "sha256": "e8d714a52e826fa3dd652bef1002737d9eaf773a0fec0dfd8a0b3b92ed08f0f6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-aimn.json",
+      "bytes": 52277,
+      "sha256": "80179c4f5d2599c88a1488794c1775270065def885fa8020de33a177633a804a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-aims.json",
+      "bytes": 52106,
+      "sha256": "b37c58a2dde710c8d38dadb2ea5a033e432764a4f1491e85cd7d3b9b75060883"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-aimw.json",
+      "bytes": 52121,
+      "sha256": "631ea72ac7c1d33904fa39eba847b9bd07eefdaf7447ce4f21b2030b6f5a8075"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-altaime.json",
+      "bytes": 52403,
+      "sha256": "c218f3182bcdaca8e32d4f3aa733418dd06d5b2c1f3a10a540f6df5b4a7d6c16"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-altaimn.json",
+      "bytes": 50438,
+      "sha256": "021a694f36a6a98e722981bd1ec3e23a9ffd475cf9a10406c818e1955041eeba"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-altaimw.json",
+      "bytes": 52184,
+      "sha256": "034d85045875829bc308eebf5e3a2758cb0c639c9d006dd3de0a8aa309b387b9"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-equip.json",
+      "bytes": 2538627,
+      "sha256": "744b42c7025335991c04ac7366e5daaa5080d52847d81fccdf0f659c418c4b05"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-equipfast.json",
+      "bytes": 1356989,
+      "sha256": "ed62d2c7a70431fcb3fb7a0207979c2ada372bbd9bb8307c9127c8948979804f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-fire.json",
+      "bytes": 485003,
+      "sha256": "286c8d0a39e3225de3b5a6182ab682a9a2df704d3e80fff7059d6720e1c884be"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-idleadd.json",
+      "bytes": 2434935,
+      "sha256": "987e2de217118a1209400b7a0a18dbe62f759c879753ee58d5351876326ec36d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-idlepose.json",
+      "bytes": 50463,
+      "sha256": "99d3b730a8b89fc6bf3ca3e392105901a642bf45fb110c1dceb265cb8ffb735f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-inspect.json",
+      "bytes": 6683721,
+      "sha256": "d8257a93b21ae2c75a9c858e2dbfb0f25c8915ed76e8fae1db3fcf3e932e3851"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-jumpadd.json",
+      "bytes": 2671550,
+      "sha256": "e2f92143a3f66592f36b4b85447452a4368f1fe45492f97511af90a8bc0c5b3d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-jumplandadd.json",
+      "bytes": 390629,
+      "sha256": "55ff507f9a71b2d2891d8a67052ff58010581f604214b477b70da7f87bf48d0a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-neutral-delta.json",
+      "bytes": 20667,
+      "sha256": "f038750f49f4d26e61f7a4d8e9367d1d1b739a87a0c0d86e8e07414efbb61e7a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-reload.json",
+      "bytes": 5364359,
+      "sha256": "c111f5dc5390ac565d68046c960fb79f15dae9ccf59cd872375b0d59af5a21fe"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-runadd.json",
+      "bytes": 331486,
+      "sha256": "3bd9cc33312ea9a5eda6cebc665b9a3a795c60a44f43312852f52a7d1423a0aa"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-walkadd.json",
+      "bytes": 642177,
+      "sha256": "cf6eb8774707038094709c63b4e4e6057194fa32e5b28eb041b2b954d2ce8374"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-odin-zoomin.json",
+      "bytes": 420122,
+      "sha256": "817206d2a541668da625ed09611548fb12fd0c31c68dc82c7ebfbc6a74f704d1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aim2e.json",
+      "bytes": 37027,
+      "sha256": "a00fd0a68b5174f5af9bb558fe2863a3cb7542587dae58056b54de6c8835c98b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aim2n.json",
+      "bytes": 35625,
+      "sha256": "25b447d5498f8d97266cf9d5309d17eb363a953559c3aa2847d95613422322b7"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aim2s.json",
+      "bytes": 35633,
+      "sha256": "f5028f22e1fa336ac38f43660c1ef3f54bc133c802dd5d479818d7cff05bf0fc"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aim2w.json",
+      "bytes": 36945,
+      "sha256": "ea9e45d68508153873aea208808f9b637c10468db56693f525986156dddb9518"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aime.json",
+      "bytes": 36981,
+      "sha256": "7d68366db460aed81b5f74b94468f604b3dcbce9c336e64ce63416404f975680"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aimn.json",
+      "bytes": 36973,
+      "sha256": "64eb4ddea1146ebe020b4e919e613a3e6ca0c3f504ac32b18eb0e58042f04e4d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aims.json",
+      "bytes": 37053,
+      "sha256": "b22bd5d41845c088a368878ff2921db5042432b6f11a1d5bf311d6382e36b788"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-aimw.json",
+      "bytes": 37117,
+      "sha256": "470130bddc4872d297206192f0661c2e811a812dd0ea6e982a36a708f4bdaa3e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-altidlepose.json",
+      "bytes": 35679,
+      "sha256": "5462fb5b3665aad7643cf790344ba40fc8ab08a5fc43befe4cafe36845203f40"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-equip.json",
+      "bytes": 2093735,
+      "sha256": "62f394fa0f2d417099ba218129fae253b60803b6600a3f75928ee6e767e5c364"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-equipfast.json",
+      "bytes": 1206156,
+      "sha256": "c4790f4ffdc7abdf7174b631a0fe0189cd320d41f72257accd6859f787ef753a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-fire.json",
+      "bytes": 1658831,
+      "sha256": "162f869a3eedbe04e4be109d40dcb9d10b2d6d6c494c4521e8d5c4a8a3779c8f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-idle.json",
+      "bytes": 50244,
+      "sha256": "88e9d03ade6c01ff4644afac3d40bdf4cef44a3f02d87371c4fea3d334eeece6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-idleadd.json",
+      "bytes": 1236109,
+      "sha256": "6a21cf50810a35ca04235ee06bf907c9e240b9c46438b705d4c9ca959f9e6519"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-idlepose.json",
+      "bytes": 35679,
+      "sha256": "376048063fb135747504c9745b2842f046c60eec2c2254e3ab8e371bc9b48689"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-inspect.json",
+      "bytes": 3875439,
+      "sha256": "85424e1b6e830f234223d43514221b67cd8b5fc899a38bebca80d27f15feb0b5"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-jumpadd.json",
+      "bytes": 1138360,
+      "sha256": "fee33061ad6ef26ae78c62cf5a94091979e7a991955aea1e915a4c7c3e4ed670"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-jumplandadd.json",
+      "bytes": 392585,
+      "sha256": "c6fffeced7290406649715e1ba99a728a9d035deefa6f38ecc31dbd94de8a7f1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-neutral-delta.json",
+      "bytes": 20804,
+      "sha256": "082bbb0adde495d7d09d25b83c2e5387cf052bd6dfcc444cecf450d20321a52c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-reload.json",
+      "bytes": 4021271,
+      "sha256": "6704247b2904b55f729cf91f8d8f766b58eacc5965b9db4cd4d07ae1248f3c26"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-runadd.json",
+      "bytes": 330874,
+      "sha256": "190c36ab081550432fb7ba7b2e4cd4157c466cf798c32ade6dc4dbeb6098cdea"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-operator-walkadd.json",
+      "bytes": 423789,
+      "sha256": "4bdb7ea739316f640248dd3a881b2764246596c6cac464e968a6cbc429a5242d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aim2e.json",
+      "bytes": 36878,
+      "sha256": "194b27bcbbcbc93280a624b3516a02b66678f98950408557e6924a76f7ebf981"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aim2s.json",
+      "bytes": 37192,
+      "sha256": "2571a920a2742d6f0948ecaf127b810e72dc3a8576f22ab9b4ecd9eebb4722f0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aim2w.json",
+      "bytes": 36948,
+      "sha256": "50ad454f4631defb6dba5b9dde1a937a935d7a804d814d7f368f969fe03db62a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aime.json",
+      "bytes": 37186,
+      "sha256": "607d38d350b265432682ff6b489b4695ef30bb5840b479b269f62d5864a3dfe2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aimn.json",
+      "bytes": 37030,
+      "sha256": "07791f183df60ca5186c3ead41bd89fb5b79a9275df0fbda050358faf09bce12"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aims.json",
+      "bytes": 36930,
+      "sha256": "4d8031a577d22f4e842bc016a3e53f87661b8cd356ed3e761099a7825ad21d03"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-aimw.json",
+      "bytes": 37042,
+      "sha256": "d1a8bac752ccd21fdb210e4ad59535e545572ee699e0b6dc5066193d4e4d6b4c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-equip-fast.json",
+      "bytes": 985267,
+      "sha256": "93b388b1f1a3b6abe9962cfdf89e661bc81226d14df2ca13c7254ad3fb1f9c01"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-equip.json",
+      "bytes": 1488169,
+      "sha256": "072353c6b9deb0d6a97d237198b4abd6af50a38bdb75a4a429a03d6667b0e13e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-family-idle-add.json",
+      "bytes": 1417398,
+      "sha256": "61639305e60d3bd358ed7c68956c3d26ca1bafea2ae98248aad1d86b31aef6b0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-family-idle.json",
+      "bytes": 35566,
+      "sha256": "2978b7b5ce755213476de42d53cc9e69203819cb926906eb7db3dc17d77dbc5d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-family-jump.json",
+      "bytes": 1134971,
+      "sha256": "b91f70f30e5c55beab0ad9e986f0a5a25f2af9bf6306baefa194c831c3476d50"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-family-land.json",
+      "bytes": 377632,
+      "sha256": "79b55f3a0138ec09445578e7362213b1ea6aa38bd6c018364817640dae3b0daa"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-family-run.json",
+      "bytes": 299573,
+      "sha256": "d92aa83ecf6089468e857495e714d19d888401a4ef141f29a844bff0001d8457"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-fire.json",
+      "bytes": 314630,
+      "sha256": "b90e20a77370e56d0a89510ab69f90bf951fa76922f34e519fafd4e7ae1796f5"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-idle-add.json",
+      "bytes": 1233915,
+      "sha256": "1f79e3e4a5f9bff2e546018810cbba3ab4854d38ceba1264e9906962aeeaa334"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-idle.json",
+      "bytes": 35670,
+      "sha256": "aadf7bd17aed16676485ed4534cfb172760cce288877a7ff375699dacd2d2c69"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-inspect.json",
+      "bytes": 3731533,
+      "sha256": "583d4e0ffb5d659df4c9f39b7f3a484b296d733461520abfd6a5550e2bb9e1b6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-neutral-delta.json",
+      "bytes": 20686,
+      "sha256": "e1d23f8a31dfd10141b72821102638c3f7b4ecf34b03372a477ff89eb2b39ea1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-phantom-reload.json",
+      "bytes": 2632958,
+      "sha256": "32a6bd90f63db68397c547f8c20ccb7ea354935f34d9018f3dddb9f27fa71186"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-equip-fast.json",
+      "bytes": 686813,
+      "sha256": "ed43975c0a533b785cc405b618e1dbb254f0ccd6c34bb33a1899b686635d6582"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-equip.json",
+      "bytes": 1205736,
+      "sha256": "fa7772c2410db19d0d6a0bfee5fb629c54221beb9977fa738a8f98f77ce677e2"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-fire.json",
+      "bytes": 374588,
+      "sha256": "fcb8d685a3329adc87774bb568e9626c437a0f7b25e1886c1faa8be3c647f57c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-idle-add.json",
+      "bytes": 2551526,
+      "sha256": "10ea2d9bed184ad64ad84800b49cb9b9cc96af00446473dcb75d382c3632c100"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-idle.json",
+      "bytes": 80061,
+      "sha256": "0229c0963789283c4e4b164dfabd13da605b5f70dace5924a64c6bd1c8560898"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-inspect.json",
+      "bytes": 2925765,
+      "sha256": "b4b9aaf6cf166a0c0930a2ecd8ff180f75e939a4583740ba60a120b5a5b3c816"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-jump.json",
+      "bytes": 1133454,
+      "sha256": "84ccea1b4d534ebbf4e0e7e33d8b1ae91e3ae56de027fc00b287acf8c956053b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-land.json",
+      "bytes": 391560,
+      "sha256": "00f39a824efb3341c4492008f088e4109214fe8945ecb3eb744d868a40fc83a6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-neutral-delta.json",
+      "bytes": 20713,
+      "sha256": "e7061bb55e80a32819f77752987121936a7dc787b14a205fde98858bbc009d3d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-reload.json",
+      "bytes": 2332382,
+      "sha256": "23f25beb27a114ec351c2cb529db95a6abb29059bef20e45fc641207c82783d6"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-run.json",
+      "bytes": 300303,
+      "sha256": "89739cfa117db7b44c974605ce89135f58f475f5f5117fdbfe8d13af37134784"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-sheriff-walk.json",
+      "bytes": 641088,
+      "sha256": "1537b07cba96db9a3c84a085fb6f6473b9ad4e00d7739dd249b91170a35e9e89"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-equip.json",
+      "bytes": 1340059,
+      "sha256": "4331bcdaa0e259308f96007cbf98f320bfa3f3a8dfb947f6d7cc592de1017198"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-equipfast.json",
+      "bytes": 761920,
+      "sha256": "2c834ad7cad1e471f144897007b0a3e2f625e99bdf7e2a1aea2243215917e1f0"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-fire.json",
+      "bytes": 560207,
+      "sha256": "1f59d6f41f0e21db3f0332ff45faa51e28135b0ddc25234b80630e28e09b6de1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-idleadd.json",
+      "bytes": 1288479,
+      "sha256": "c0ce648f9afee5c9450f996986c1d55bbf133f54cdb1f6690f713354394ff39c"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-idlepose.json",
+      "bytes": 35641,
+      "sha256": "4ab209e97db32c2f5e23f1de218e11909c305af9d7040df8cf14795ff8f1aa81"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-inspect.json",
+      "bytes": 4018844,
+      "sha256": "0812cd28a2e9e7fdead79ec53e5f6b0e7593273c01fedabcb459da65d1c59557"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-jumpadd.json",
+      "bytes": 1132678,
+      "sha256": "9a182f6a427a69b1a0436fcaaa1deb0a06b107fb6bee9f0178b9d1b6693004bd"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-jumplandadd.json",
+      "bytes": 391631,
+      "sha256": "e62f37dd7f93a3a6abf588ea3f89a392317b444a495f108275b3d3be1e8b4b7a"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-neutral-delta.json",
+      "bytes": 20743,
+      "sha256": "2e7779a41fc33ea2014bd1bf00a13a775291b39b6dae62255872b987473a990e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-reload.json",
+      "bytes": 2390612,
+      "sha256": "cdf9f986a7e36be0f8707c6cd6b286dcecece98f2b3ff69a0cc0e8a6083932f1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-runadd.json",
+      "bytes": 300509,
+      "sha256": "c37eec2984267a320ab6194bcda52fb007a9e2dc0025df0be76139aa5fd8c744"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-shorty-walkadd.json",
+      "bytes": 424622,
+      "sha256": "19b0c8222251aceade3ebd20907a6338d6251dea0835e8f5340b3f307378caca"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-equip.json",
+      "bytes": 1489628,
+      "sha256": "44327c498cb01123e59e252f3ffaf7d804898501ad14badff1b66e2613818c21"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-equipfast.json",
+      "bytes": 761556,
+      "sha256": "65a9178870c347f48ba8a6e3bde61d5b83636a682600b108a785f8937dc7b5ca"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-fire.json",
+      "bytes": 330713,
+      "sha256": "4bbe808b7a485f566db1d49e6b3df8fe8e526d88b08d6a0a025d28d33f88dd6f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-idlepose.json",
+      "bytes": 35662,
+      "sha256": "6793e3255029f777d0a4e836481eb683bcf515a7bc8ae869f5c8ef1f53dd4ec1"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-inspect.json",
+      "bytes": 3727164,
+      "sha256": "213d07f371a726561696d80bdb2b898835250dc6dca473dcbf807b03e4262413"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-jumpadd.json",
+      "bytes": 1134971,
+      "sha256": "b91f70f30e5c55beab0ad9e986f0a5a25f2af9bf6306baefa194c831c3476d50"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-jumplandadd.json",
+      "bytes": 377632,
+      "sha256": "79b55f3a0138ec09445578e7362213b1ea6aa38bd6c018364817640dae3b0daa"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-neutral-delta.json",
+      "bytes": 20847,
+      "sha256": "01de77ed70923a9e62ad679be6891b82b4a4fada8305d51eb199434e33a2f1ee"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-reload.json",
+      "bytes": 2242120,
+      "sha256": "19fe10350f93bd08acad77bb593ccaaa66b2c9c0228758bbe2be4079b3988513"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-spectre-runadd.json",
+      "bytes": 299573,
+      "sha256": "d92aa83ecf6089468e857495e714d19d888401a4ef141f29a844bff0001d8457"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-equip.json",
+      "bytes": 1234497,
+      "sha256": "f7156695d035055d6d757433ee3d7726828a34f60a14200802b9d89f5d1d0e7e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-equipfast.json",
+      "bytes": 757627,
+      "sha256": "e062e2b5ed8930be4290c7e0087ebba9112fe18588c38c9190be657413c56819"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-fire.json",
+      "bytes": 143569,
+      "sha256": "223f966800695524269e1105064dd540ce8fc62d0c341d999ec4bd262738e7f8"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-idlepose.json",
+      "bytes": 35539,
+      "sha256": "09b84febf729205e99246d7e7f6c2417a9f88d959b91bf9781dcee6f87008b79"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-inspect.json",
+      "bytes": 4017972,
+      "sha256": "888ba52a657345e058a938de0b584c8bffae7a1c28f8ed22cb33910b47beee35"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-jumpadd.json",
+      "bytes": 1134971,
+      "sha256": "b91f70f30e5c55beab0ad9e986f0a5a25f2af9bf6306baefa194c831c3476d50"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-jumplandadd.json",
+      "bytes": 377632,
+      "sha256": "79b55f3a0138ec09445578e7362213b1ea6aa38bd6c018364817640dae3b0daa"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-neutral-delta.json",
+      "bytes": 20847,
+      "sha256": "01de77ed70923a9e62ad679be6891b82b4a4fada8305d51eb199434e33a2f1ee"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-reload.json",
+      "bytes": 2238650,
+      "sha256": "534da1b0084c3b75e1e0234bc75a03e811a0d0f9bc21292aa9e0ed8de84b741d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-stinger-runadd.json",
+      "bytes": 299573,
+      "sha256": "d92aa83ecf6089468e857495e714d19d888401a4ef141f29a844bff0001d8457"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-altaime.json",
+      "bytes": 36760,
+      "sha256": "b967f001c656b39513f97238e649fd32687310301cac2ec997a52ab00eb7db9b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-altaimn.json",
+      "bytes": 36753,
+      "sha256": "eff219f5d7f235b13a851293e02820dbd6771738c35e1e28b3e9e598cf18f5a8"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-altaims.json",
+      "bytes": 36665,
+      "sha256": "f502b036dcf56b3bb2b5486087b650fa5a6ade05a08a37be93953ea8dbad1772"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-altaimw.json",
+      "bytes": 36401,
+      "sha256": "eb2d7b9be05ed3c055c0b5341c29389e47a71b8ab3ed6429cc9d7579cf42909f"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-altidleadd.json",
+      "bytes": 1214847,
+      "sha256": "6e2bbefd74d5def4247d908d0cf6c2b8cc08de5398ad5fa6575e2156da6057a4"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-altidlepose.json",
+      "bytes": 35171,
+      "sha256": "27b3f67ff95fb3a4f578ac027a34abc8772e7462cff06f850e22207542d5959e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-crouchin.json",
+      "bytes": 286026,
+      "sha256": "35962d8977f7252af2b2d77f33366a51ea00e3683151aace119cd66bb04473f7"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-crouchout.json",
+      "bytes": 375642,
+      "sha256": "ccba3945290f690ecf1c1714d01bfaf59e4e6d82bbde92e4e6771a1ad721e4fd"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-equip.json",
+      "bytes": 1485871,
+      "sha256": "f3002c32eecfde20f2e94d3957b6dadeecda0963ed50a3e077a29b4358fb4344"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-fire.json",
+      "bytes": 314464,
+      "sha256": "57713298527124245623f0c909203e2c82b4bcc983df9b0dd428c5d4e058fe91"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-idlepose.json",
+      "bytes": 35174,
+      "sha256": "1dafb4d15b21e770934ac4fc4e1bc759dfe7c5bdab0868dd1f8fa8b40a364c7d"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-jumpadd.json",
+      "bytes": 1138096,
+      "sha256": "aa4bdbdbc3d3f896b6dc37d859586ea8b920c7022d50fc9c38c6cf970dd29073"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-jumplandadd.json",
+      "bytes": 391698,
+      "sha256": "7e50b23e4de22fd2b366ed0c993b9e415b8ef734603e0649f78795070963901e"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-neutraldelta.json",
+      "bytes": 34720,
+      "sha256": "0ae2eae26a2bf3e9466db613b09996567c1de4036e4ab2b06e8da032480aa0d3"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-reload.json",
+      "bytes": 2621740,
+      "sha256": "6ef571ddd2e053295f17309239cb588d2ff488ec4d1092cdad0c3bba1a6f8e6b"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-runadd.json",
+      "bytes": 301188,
+      "sha256": "79414ba229bb9ee4c589c16b367d0855685784a50d9987b6788b1151313dfd65"
+    },
+    {
+      "path": "public/assets/packs/animations/jett-vandal-walkadd.json",
+      "bytes": 439426,
+      "sha256": "dc409a642ea96c0c41a61662f6ffffabc426dbaff96629a49e0131465f20704f"
+    },
+    {
+      "path": "public/assets/packs/animations/judge-equip.json",
+      "bytes": 210470,
+      "sha256": "660f2cc77402153b0255df62899dba4fc07140ca2b7f05ff337086ec983e59c5"
+    },
+    {
+      "path": "public/assets/packs/animations/judge-equipfast.json",
+      "bytes": 133042,
+      "sha256": "d2525e8e542562917e9aa5144cee5fe494405a8fd642de161448bf4bf62c24d4"
+    },
+    {
+      "path": "public/assets/packs/animations/judge-fire.json",
+      "bytes": 107469,
+      "sha256": "819bbe0d2eca880eea9a01155804945ca7224b4dffe9dc392945dd28201a53bc"
+    },
+    {
+      "path": "public/assets/packs/animations/judge-idlepose.json",
+      "bytes": 9302,
+      "sha256": "a1f7020aeeb2d70dbec960f897a0bbc802617121ca25cc7af7bd3f05200576f4"
+    },
+    {
+      "path": "public/assets/packs/animations/judge-native-index.json",
+      "bytes": 16371,
+      "sha256": "1e7e0f552ecd97ccd1afcf82a8a04fbf94ccb6bca6eeb34ec6c000e2d793aef8"
+    },
+    {
+      "path": "public/assets/packs/animations/judge-reload.json",
+      "bytes": 441158,
+      "sha256": "3c484a5a8ef8b71bd4b4760345f26494066fe611d801aee01b7a1a974cd0992e"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-equip.json",
+      "bytes": 258184,
+      "sha256": "be00ac8fa9a387679bee86b53d506fe123c2c9f23a4dca5f0ac07795dc7ae9e6"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-fire.json",
+      "bytes": 82262,
+      "sha256": "5493c0f0e7138a5fca066c86723990884abf5b66c26c719838018d21f706a99f"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-firezoomed.json",
+      "bytes": 42621,
+      "sha256": "588a88c6ae7b86366503fbc164f05867a673f46f2302e20bfefa918ff85eab77"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-idlepose.json",
+      "bytes": 7163,
+      "sha256": "7cdc73b5db409b1f2650586402c4c2fee8809bccee3e330c44b510b0cbbeca9b"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-inspect.json",
+      "bytes": 513928,
+      "sha256": "3cdd7c8c90e9645a1db35ce7f53134ec5979637387f6f319d677b02277abbc3f"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-native-index.json",
+      "bytes": 21754,
+      "sha256": "0418dfb8df9181c38bd78bae561d037e641e548fcc07e7b8010c5048bfd157ce"
+    },
+    {
+      "path": "public/assets/packs/animations/marshal-reload.json",
+      "bytes": 278543,
+      "sha256": "f27bb96302d2df421411d3ea3d5767433e21fbac44d545cde8fa69757b4aac7a"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-crouchin.json",
+      "bytes": 12578,
+      "sha256": "a51a64844641d8fc6e1ac3a1fc4243803af91eb156c52f9a16dc3c7a61e59a20"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-crouchout.json",
+      "bytes": 12580,
+      "sha256": "e27c4550affb2f4b3f60de6857ce67cc64a5fd1abaf78a69407ef836797017c6"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-equip.json",
+      "bytes": 385281,
+      "sha256": "c9a94e5bf2cab566db5ca318a31377139c2e87a924e26959a006fa08ba38e9b9"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-equipfast.json",
+      "bytes": 205563,
+      "sha256": "280d81100a6ca53ab3268297f33684939491d756b07c2d20eaea43b61fb4917c"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-fire-source-belt.json",
+      "bytes": 71241,
+      "sha256": "ac923032bc3515874ab0ae5dee6609ee61a63fb72e73a72cce5bbbef7fc4312a"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-fire-source-delta.json",
+      "bytes": 71102,
+      "sha256": "79e335f50630903e7679abaa0a8fcc8d1a1d3667319f1366ed87279c34b22d95"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-fire.json",
+      "bytes": 74353,
+      "sha256": "b90c3f4e0df5f7d970a23e808d746fed87adfceea1b97d20db07c8ee710b9c08"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-idleadd.json",
+      "bytes": 187656,
+      "sha256": "3d268e6232fb8d91cd52e0f66359dcc776f5dca55194a1e615f776ce0c5c2522"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-idlepose.json",
+      "bytes": 5838,
+      "sha256": "10c95d39541da149a6e007cef9f76810d265ecdb19a438019ffcffeba311ace6"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-inspect.json",
+      "bytes": 946130,
+      "sha256": "1588e7e70bcc8c3084ab709bf53e08c0c7d9aa7e447213947d9274576738d253"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-jumpadd.json",
+      "bytes": 19318,
+      "sha256": "9918770f72f6c1aaad145b28b1226875aa44753dc8f017164395fff88fb71bad"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-jumplandadd.json",
+      "bytes": 19320,
+      "sha256": "c932a499365f101da089a3a6876077c886e9b5e455aba1710808f9e174e4fc52"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-native-index.json",
+      "bytes": 26307,
+      "sha256": "9160e019a964c4d61f3e2505042f01161096148cb6aec5f479fa9154db94d919"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-reload.json",
+      "bytes": 812750,
+      "sha256": "ae9091615961a49fcbb34aba0a6752db8f159e56fd2b4063bf69f278fb4101d7"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-runadd.json",
+      "bytes": 48475,
+      "sha256": "de9bef18adf2ea71a2229f29c461c3457ef10f209c0471a280712d81d0f2a2a2"
+    },
+    {
+      "path": "public/assets/packs/animations/odin-walkadd.json",
+      "bytes": 93352,
+      "sha256": "ec41c9d5f676e56edcce95cb118550a7988da6641203b9663a9a4463f3875a04"
+    },
+    {
+      "path": "public/assets/packs/animations/operator-equip.json",
+      "bytes": 260847,
+      "sha256": "39266bcb6349913a6378794a113ca90b436e274effe3b5fb23ea219f71e30fad"
+    },
+    {
+      "path": "public/assets/packs/animations/operator-fire.json",
+      "bytes": 201795,
+      "sha256": "4030476b68c5a494bdccb29224b5bd70f2b6bb9add2334266d8fd31f59117442"
+    },
+    {
+      "path": "public/assets/packs/animations/operator-firezoomed.json",
+      "bytes": 128411,
+      "sha256": "a0e5e9c58be28985a5321889b599095965b761ce821b4fd84a1d84e9cc71712a"
+    },
+    {
+      "path": "public/assets/packs/animations/operator-native-index.json",
+      "bytes": 22631,
+      "sha256": "408f5d6033d764072cf932ecdb22bec962e5c6b99ee8a3a2eb8025246039c97e"
+    },
+    {
+      "path": "public/assets/packs/animations/operator-reload.json",
+      "bytes": 498064,
+      "sha256": "22482ccaef0279e8616bdfb3cbdbd619af8d908a89912ec1709d796f96364c1e"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-alt-crouch-upper.json",
+      "bytes": 33482,
+      "sha256": "478ad683d47b3c782e0a161b6c15987932e43d02db956d3a2955fd2010687b19"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-alt-upper.json",
+      "bytes": 33516,
+      "sha256": "9de99753a973518403a796cbf17d2cb7a10f76a50b6bf40e773858fc9ccd0031"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-crouch-upper.json",
+      "bytes": 33484,
+      "sha256": "56ebfe6ce4f8607413860998d3263822445c4684723cab9d1e2dd0cea6095309"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-equip.json",
+      "bytes": 772482,
+      "sha256": "49a2336efdb2ec87e7b8bd3c5cfce6ec9d9b9896ce37cc2d60efde47f5ae262f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-fire-subtract.json",
+      "bytes": 33464,
+      "sha256": "26635c2f857889fcc5068a6629428614bd71efcdd9e77cbd882c2f8c2a058683"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-fire.json",
+      "bytes": 451796,
+      "sha256": "6a5a533365cea9175b41380abed29a4182b41a23b79b70a0b0769ba9b2807773"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-reload.json",
+      "bytes": 1693392,
+      "sha256": "4d3ead1d10163271c60473ea79cc8842e49d6950e106912a9f1f4fe93e43cde1"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ares-upper.json",
+      "bytes": 33440,
+      "sha256": "893a5c3a7a5f4813b6386fdab58ae1d83f728e00781bcb47a4da2b0690a22b6b"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bucky-crouch-upper.json",
+      "bytes": 33472,
+      "sha256": "129aadae675f797f7a7100b8efcca52315a1c3a9d9ab42bb91418b3d1167b9a9"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bucky-equip.json",
+      "bytes": 521777,
+      "sha256": "7938f30341fcfffd7e526bca2996018396d8a0f36f5a9864580053f92f593e68"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bucky-fire.json",
+      "bytes": 593253,
+      "sha256": "6d959012fb8cd1aae722596e6b146f6ca1c216d1cdc80ac0ae17f35310e27d37"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bucky-reload.json",
+      "bytes": 870533,
+      "sha256": "ee20c19cec94602197446655637d48fff36e0cb3fc7a6921b5dc6c9dec208b97"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bucky-upper.json",
+      "bytes": 33456,
+      "sha256": "a0f707a2a0764e1729bce1d345851b8e2e5f3f4708ce4c2240b9ca10ee3cc623"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-alt-crouch-upper.json",
+      "bytes": 47536,
+      "sha256": "c48c30fc7cc91ea987eff112439e53d103ce6067ebc155ee1e88e6965f4ec872"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-alt-upper.json",
+      "bytes": 47526,
+      "sha256": "b43859428a76e54b8045ba4bf5f7862f3d517b842eb4b029fab23675ed6f1eea"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-crouch-upper.json",
+      "bytes": 47527,
+      "sha256": "42c72b29b288b0d5de7b48b61b66eab518f5d4491b7571f848d517709cbd78d5"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-equip.json",
+      "bytes": 507986,
+      "sha256": "0c2a257f027113130fd670b3fe0136b0f4dcc3d2da156582f6aba0191c3f03f3"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-fire.json",
+      "bytes": 451322,
+      "sha256": "3441aef9403d01426a89528a073394b3a591a6a4b1661e1afa9b19b92a7d9709"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-reload.json",
+      "bytes": 1208462,
+      "sha256": "c1965678502dd14e32111a84566979743593775ed862394a451f959f77378ef8"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-bulldog-upper.json",
+      "bytes": 47553,
+      "sha256": "ab7a5fb349f4ad0f3d33d420800a7ac703317e7a28cea32f8f10b98d9204f99a"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-classic-crouch-upper.json",
+      "bytes": 33528,
+      "sha256": "c7e3961bf1a5211cbdef26ddac0af9fb150cd4ce7fab2a3d103d7ab8bedfde1f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-classic-equip.json",
+      "bytes": 438516,
+      "sha256": "dc0c87fb159a82e2abf4ed22d1144e51d68ebf4d26d4fe62832588a2ad75b3c7"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-classic-fire.json",
+      "bytes": 436754,
+      "sha256": "11f9ef1be83faa2b43b4c807cec89d20eb87db189e9b41ccd926e2b328720226"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-classic-reload.json",
+      "bytes": 856432,
+      "sha256": "d7e39194447a3c880818a80c3cc33b38f7ad33688eab2ec6f4a814e2ff36b564"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-classic-upper.json",
+      "bytes": 33530,
+      "sha256": "32a245388956cd840cc399da1292765832d97b561f38a11b4bdda45e8b5bffe6"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-crouch-lower.json",
+      "bytes": 33212,
+      "sha256": "3759222ddc955399f1256c1b721ca4a6ad4bb91242149efebafb4ddaa671c257"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-crouch-walk-e.json",
+      "bytes": 406654,
+      "sha256": "5fbbff5eef49f39e04281dfd651e50410d106f9dd6b651691e1b3b24212f597f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-crouch-walk-n.json",
+      "bytes": 406544,
+      "sha256": "3cff68749d63630555b3c7aac518afc85241e744951156bf26860e4e57b9d32b"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-crouch-walk-s.json",
+      "bytes": 406685,
+      "sha256": "859ba489e2bc489a77013dd96dc668f073d9f0df90f767d4d297f7004f97a215"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-crouch-walk-w.json",
+      "bytes": 406554,
+      "sha256": "94611819de3af6c2de772a185a8020ef2f37038a777d7a30e7aac35d7358dada"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-death-body.json",
+      "bytes": 522112,
+      "sha256": "060755deb0bc774a4f36a87e9349a771be80a36c231cad6ed55238964f22786f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-death-head.json",
+      "bytes": 577776,
+      "sha256": "11d609067d4b4e376ffa7e6aad33fc27ac7dbe13bdd438b11b70c345a552cb1c"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-frenzy-crouch-upper.json",
+      "bytes": 33508,
+      "sha256": "c60c1db5bd21ca72ad8b30ec3a93ee998665365984fb7a1244fb04d5ba8f73fe"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-frenzy-equip.json",
+      "bytes": 577766,
+      "sha256": "3c491fbaa94460964ed9f50291bdbf345bd7accbacd1ea1343c042eee582fb85"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-frenzy-fire-subtract.json",
+      "bytes": 33499,
+      "sha256": "bd3a9f1f9d830a30fabd0cc825c641a2ba298e3be16ba8674fcbbda0475ef562"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-frenzy-fire.json",
+      "bytes": 454172,
+      "sha256": "cde0c8279574308cdaa93b3cefef1c25a6fd30fd283be1d31f64598dd392b9d6"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-frenzy-reload.json",
+      "bytes": 718315,
+      "sha256": "b6ecbee31003371b014f377ec0d332f6c9ab304d66c36d4f674ed8d272e6bff4"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-frenzy-upper.json",
+      "bytes": 33494,
+      "sha256": "fc923ce584bba8d67b196b013438e8de5b606489d43f713a2146819a3d6b0ff6"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ghost-crouch-upper.json",
+      "bytes": 33512,
+      "sha256": "05c5d8ecceffefc3dd508a4e24f9dfaa8c93623bc72c9d695811c63bbe9b00c6"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ghost-equip.json",
+      "bytes": 438558,
+      "sha256": "594291d9be4287ef4f75bcb56e91486594b62bce1999d09aebfe8a375bec6a2f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ghost-fire.json",
+      "bytes": 450159,
+      "sha256": "86412371d94c89cbb55a8d2897515a39de00d7187968048bdfb5de703f4f47a5"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ghost-reload.json",
+      "bytes": 674949,
+      "sha256": "a56b74297c6268f4f928a874a1d34f68c2be2520a4ba1b0c0b25263e5ebaa680"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-ghost-upper.json",
+      "bytes": 33516,
+      "sha256": "3bb80819c240ebbf5c68531a79d7df81f4289eddf11b58b1bb6e37db33ba72da"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-alt-crouch-upper.json",
+      "bytes": 33480,
+      "sha256": "0059329f251bb7dfd7fbb1b861300e4878ce3eba0687fe1480c6fc3c3e928e88"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-alt-upper.json",
+      "bytes": 33522,
+      "sha256": "405ca1f192693b66aa3c678aba215c3157d504b2d64dbe5bc129659922cafe83"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-crouch-upper.json",
+      "bytes": 33512,
+      "sha256": "48408063dcee9aeffbcb639c0b7c154950fc71a9e192ae0d0a0694dfc83237a1"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-equip.json",
+      "bytes": 661154,
+      "sha256": "0e10c67b80b665801ac2040275c29763a5c41ee8ebbe1a494bc895f286a3bb3a"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-fire.json",
+      "bytes": 450094,
+      "sha256": "16d2aa1021a0e84143a74bdc24bb792bd0b9a796c5760a0754faafc0eeddae74"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-reload.json",
+      "bytes": 1206332,
+      "sha256": "71ea723ac9e44843590ac955d0090774f552d17a3b218d566f14b1ff51796aad"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-guardian-upper.json",
+      "bytes": 33552,
+      "sha256": "7bd6f219d08848f1dfbbfe5fe4497965ca210de5baf052d3aeed07a7fd9828bc"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-hit-body.json",
+      "bytes": 289768,
+      "sha256": "611d41ee87b160b01704dc88ea8822b0c04674c2988946980d0b614fbfa04da5"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-hit-head.json",
+      "bytes": 289970,
+      "sha256": "469ce6144c2f795cc470e6a440596b3f8e87d0eda2d4c731898902a2220a8b41"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-idle-lower.json",
+      "bytes": 33182,
+      "sha256": "08ce578c79740297996c481d8c815bf7c82e10e1e2253f8ce7f87f841ab63eaa"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-judge-crouch-upper.json",
+      "bytes": 47398,
+      "sha256": "44c438c5b252031818d3639fe4293c4404f678fee0ec2e1469b3d4a22bd73ac9"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-judge-equip.json",
+      "bytes": 648379,
+      "sha256": "1720a7db901f04428d280d1988380f2176f1f0efa28d44b5590e803edd9b682f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-judge-fire.json",
+      "bytes": 450470,
+      "sha256": "2a5d4c631c03cd880e69b70e5cf6aeebc29fd931d26b847ae6e2a08c37b8d770"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-judge-reload.json",
+      "bytes": 1275348,
+      "sha256": "87f0e8f7e0dfb641931a14633f0e0fc8fefce9ce3871800ce8059b2641bfb1bf"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-judge-upper.json",
+      "bytes": 47526,
+      "sha256": "86315fd7c5535b4df01b0e4804062df33ac766378c069ef8b9d30d6c0f7ac9aa"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-jump-lower.json",
+      "bytes": 1360571,
+      "sha256": "68dbc7c7472d45e51d24b7546d1e722320ec93de748592b7e201f6795c4c57e1"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-knife-crouch-upper.json",
+      "bytes": 33455,
+      "sha256": "d37c44c144f0c6fc334591332f5dad490713056d94de32c4a5a796c35819f94a"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-knife-equip.json",
+      "bytes": 590807,
+      "sha256": "23bfe35ff24668754bc1254f373169b95d11833b13b9d5a723e94bfe390fb0e7"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-knife-fire.json",
+      "bytes": 590406,
+      "sha256": "a93caf25e7d7b6861dc14399a591e234e53e59d58bd39caeb182ade5f1054797"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-knife-secondary.json",
+      "bytes": 1632361,
+      "sha256": "e1b1d378a2085a90f48691baa68ca7c6f7a0e6b6dbf55c21a0713714c78eac23"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-knife-upper.json",
+      "bytes": 33476,
+      "sha256": "e3ad50f8d014878cad9217dff8f6b8e7d9715389b7e17671bf042767892e4939"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-alt-crouch-upper.json",
+      "bytes": 33540,
+      "sha256": "e322a04a38260c84044c8a246bc97c35a58032ee96908dfae110e0617b399d01"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-alt-upper.json",
+      "bytes": 33499,
+      "sha256": "ae4ff6f178c533b32ddbeec1b977bbea44fc6a95a4e693d1cf894f63af1558d9"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-crouch-upper.json",
+      "bytes": 33480,
+      "sha256": "64817d5016327a2bc4118fc6992377a606ae563ebafd7e3fe7c479feba33947e"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-equip.json",
+      "bytes": 717158,
+      "sha256": "f85756527e8cfed0287561b53e523b0528ddfd979e2752e9ee62e0ee2da0eccd"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-fire-zoomed.json",
+      "bytes": 450393,
+      "sha256": "af836f040ed639984a34a76ac5c4df4a56488c32e4e822eca05f11bb2953a4c0"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-fire.json",
+      "bytes": 307396,
+      "sha256": "7a14fe1def397b4f3715d5f68f222c2fc94fd753ffaa74ebc9c5b9ee0097a3d3"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-reload.json",
+      "bytes": 926385,
+      "sha256": "d14e34b475cd535fed756a7ecf99a84ea4be0d02f7d1ab3d343d9001a134d589"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-marshal-upper.json",
+      "bytes": 33480,
+      "sha256": "bb14448491d2f29fd0998eb788fc821cd421119e8811d3352289e67685703076"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-alt-crouch-upper.json",
+      "bytes": 33388,
+      "sha256": "56b2bb5cb9110c7248763f6968998348ca08da6f0d0534954b5edecdde3990ce"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-alt-upper.json",
+      "bytes": 33368,
+      "sha256": "68883a9725d193868f7db05635c66d95b64ac22448ba09f8c5ab4ea35fd1536f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-crouch-upper.json",
+      "bytes": 33412,
+      "sha256": "2f997110c53c31c6a3db1560ced8d2cb832dace7cdf175d396ea5860a00cf2fc"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-equip.json",
+      "bytes": 926019,
+      "sha256": "5a315107c7e1fe2416b25cff17d9488e6c39c91117c1863fd43d71d25c4b4af8"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-fire-subtract.json",
+      "bytes": 33429,
+      "sha256": "ab9dffcc44f8ba164902d7496f99953703169e2479b36dda4251db557b1b1207"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-fire.json",
+      "bytes": 453622,
+      "sha256": "7dd5493c3620e020459bcde760d38954fc186c2e25e7b52a5c908f9d121d661f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-reload.json",
+      "bytes": 2248928,
+      "sha256": "454b85dcab7255bd2d8582bec881a5ca4297b7885dd04af4cf431f58d974da56"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-odin-upper.json",
+      "bytes": 33412,
+      "sha256": "af40819f409e0b541b0f1ef0481d4fe468b8f1f0e32df9bb511aa096e3e464c2"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-alt-crouch-upper.json",
+      "bytes": 33480,
+      "sha256": "cb55f6f3047510c21edd45d9da677f2b2e3c4350132a3dae8d4dc5acec9bca14"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-alt-upper.json",
+      "bytes": 33494,
+      "sha256": "05a5c6c8313da6e4e8ed48d17035276bbe997a2025ff5c168a648675579a6965"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-crouch-upper.json",
+      "bytes": 33492,
+      "sha256": "4a64519f96b8b7968079c041b479a72d0ea06710916389cfabf6cd417725970b"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-equip.json",
+      "bytes": 745381,
+      "sha256": "2529f4d3208f9020886d2c41b40caf44d8a02bfd21ff6249570e429002bd7091"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-fire-zoomed.json",
+      "bytes": 991618,
+      "sha256": "995361b7cd55348fa82f6bf09fa82a262644c339dc568dbac3ce67874e517106"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-fire.json",
+      "bytes": 992202,
+      "sha256": "f76cfcf1115a2c76af659ef80fb3b0ecd628ea2f427a6e600b69a82ccb837e1d"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-reload.json",
+      "bytes": 1990554,
+      "sha256": "ac03477c66d30668cd7ffe4d0cfc670646fad636044ec9f39a4ae276ab28b273"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-operator-upper.json",
+      "bytes": 33546,
+      "sha256": "9721798facf0b078c26defa4278b228abebaefe36a43263aec40fa8c9c633049"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-phantom-crouch-upper.json",
+      "bytes": 33500,
+      "sha256": "be1ce67844c39078be8b7ed99f00e443d85f837a77a7f3f8ab3d3f204e524637"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-phantom-equip.json",
+      "bytes": 703683,
+      "sha256": "d96d2a277b7bf1677782ad407a0f9d4cad7aeff1f589bdd30405f2242dc37bcb"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-phantom-fire.json",
+      "bytes": 454692,
+      "sha256": "16406b7ae57571af3f29de30ee887166dd684a730e29b8f2eeba541335c38723"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-phantom-reload.json",
+      "bytes": 1278395,
+      "sha256": "3b181d6c8fe08eddab91b5591930c509eec08fdb14dcd8cc507ba3df83aa7262"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-phantom-upper.json",
+      "bytes": 33486,
+      "sha256": "be036c0096256d993891a92cf95ed17049089f7834b3dae4a945588d75a1979e"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-run-e.json",
+      "bytes": 517348,
+      "sha256": "a7a0fdd61210e309a005c8cef277841dc91c7a225f1c0fe29115f5af9dbb747e"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-run-n.json",
+      "bytes": 517350,
+      "sha256": "5fe7d837cd52771b80b572d10babea53f342e44c9f0186e1d04ec3bb9d856f3f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-run-s.json",
+      "bytes": 517214,
+      "sha256": "fbcccde8b3ab25599533427e63b62f5a88151de4897112409ceaa276b3c3117e"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-run-w.json",
+      "bytes": 517137,
+      "sha256": "28bddbc4cc316e3ae6daf868334785b21d41d757cb08bbd24b2bd209bc082094"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-sheriff-crouch-upper.json",
+      "bytes": 47467,
+      "sha256": "fa6d5732c4acb5b1ba8991616fc856b444f4a60bf6d3ba8af8b38c25eec5d573"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-sheriff-equip.json",
+      "bytes": 647066,
+      "sha256": "91941cc8f7ec7a68ca5aca5935a01f12f9d1a576ca36a98fd2700b3910fba4a4"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-sheriff-fire.json",
+      "bytes": 453068,
+      "sha256": "3a1ea751870495b22638a9cffc0efbd9bb32947ec1fc9d4746e6b34dff705c8c"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-sheriff-reload.json",
+      "bytes": 1108973,
+      "sha256": "1f65699582f5b6044dd5d8439eaaec61ae9957c335ebe0504d2413ad42437260"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-sheriff-upper.json",
+      "bytes": 33484,
+      "sha256": "51099456f708065eb7190e63ceb2f3c3824f1b23d8d87144ae52e2862949300a"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-shorty-crouch-upper.json",
+      "bytes": 33462,
+      "sha256": "13e0feba70e7efc6bf283bfbe6b2b1f79543820d8c7da3feb68eedb8bb824224"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-shorty-equip.json",
+      "bytes": 439053,
+      "sha256": "ec35b3ab5702e32b881377e3b033ff77c99a24f7cb66a6a0349a7c5401f98ccb"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-shorty-fire.json",
+      "bytes": 456744,
+      "sha256": "d3d37ed415b1776289e571bcc2b3553eea5acfaceb6086b41e8b990610867d41"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-shorty-reload.json",
+      "bytes": 842789,
+      "sha256": "29c8de7cc3865c03c9028aa1d16c997fe8c63fdbb0eee343dabc2e905e89904d"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-shorty-upper.json",
+      "bytes": 33502,
+      "sha256": "28c70416ab0d3b65a76376e69096e1100ce7ebd9a235c94abd986a42fb6fd0a3"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-alt-crouch-upper.json",
+      "bytes": 33456,
+      "sha256": "ddd1203512f654945cb8f45188e3ef58d71da4d267415b28c5e0079778de2523"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-alt-upper.json",
+      "bytes": 33476,
+      "sha256": "5284ff90f08c59c6cf92f9915bb354ebccadbe814c400a09cc0e178428a5c013"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-crouch-upper.json",
+      "bytes": 33496,
+      "sha256": "14c391fe29926eb380421b0a6680ed97d5d77fe3b1c14d9f3790b5da3729265f"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-equip.json",
+      "bytes": 437969,
+      "sha256": "8df5080cc8c231b533f79a5c0f05ede2e40072fb5b032181cc2861abc2f703d6"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-fire-subtract.json",
+      "bytes": 33505,
+      "sha256": "f701a9921f81c8944789c731851aee9169cf5573ef6f7b80848fea80c7ed2783"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-fire.json",
+      "bytes": 456331,
+      "sha256": "95ba426aa7ba418954a12f6e3c181d7b5ee59f745e977b7cbdf43219baca3ecf"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-reload.json",
+      "bytes": 995838,
+      "sha256": "c2b8284713160d684e9857d869a01bf3763e594853195e0ed37301961faef979"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-spectre-upper.json",
+      "bytes": 33510,
+      "sha256": "34f6fd9bbb02cadde5ed0d1dd6adbaa1c7e50b40943089a68e67148e98d0b007"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-alt-crouch-upper.json",
+      "bytes": 33466,
+      "sha256": "d9c98a77ab59f6dd7fcbadd8bf1f110ef03d2582f3370537b41e5dfe844c599b"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-alt-upper.json",
+      "bytes": 33510,
+      "sha256": "680c138469d26f2a9a600bccce064f637c9edc55dc03b4f9ffba6eb06786ce66"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-crouch-upper.json",
+      "bytes": 33522,
+      "sha256": "36091d5c4f4e8c8f29433222d5e772ebb1fbaf2049cd7f406610df5d36aceeba"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-equip.json",
+      "bytes": 590280,
+      "sha256": "0bab85450cf3e48dd46987d6ad43809aa15f6163d04bdf9160541e12fa8e2a8a"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-fire-subtract.json",
+      "bytes": 33536,
+      "sha256": "9e316977960347851c35fc12343c34c217847d1cd0b75033347bf3a4db16f31c"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-fire.json",
+      "bytes": 451921,
+      "sha256": "8b3511d9888c79af8041a1b46afa6c502e1b978f4472dde7aebc81d2aaee3f5b"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-reload.json",
+      "bytes": 1036710,
+      "sha256": "44d44e519c298e7b74d7912c922c52f3de0d78356af5c6a1cb4ce29543f9cac0"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-stinger-upper.json",
+      "bytes": 33528,
+      "sha256": "2629771339f9073fd854f4ccf9d2ade09c3948ec8dfe9078d6a3d3d69b6e0d54"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-vandal-crouch-upper.json",
+      "bytes": 33542,
+      "sha256": "77a737ae5c48d1b46b84a1e045c53a7b0b19daf579eee8ee47c053975f32e24e"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-vandal-equip.json",
+      "bytes": 633583,
+      "sha256": "0f60aca16839f932b0ff89dd453723bea7d6430d7ee1194c78ff88eb4ad7e795"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-vandal-fire.json",
+      "bytes": 458574,
+      "sha256": "d27beeacb4a64aa935aecb1b351be8917ac008952cb5065cd1c540610c000029"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-vandal-reload.json",
+      "bytes": 1135368,
+      "sha256": "7d0fcd5e93fd30a0c0283ecbb357376efc38208959c04a306f96054262489500"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-vandal-upper.json",
+      "bytes": 47499,
+      "sha256": "9bed64defd32fc24019fcaea3abb11ec3fe69ad221ff29d7e345a4b13cecc828"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-walk-e.json",
+      "bytes": 378836,
+      "sha256": "66f454a4a9de627825045b4573fc72657473f6317833b4182a1cc56cfb34a3b7"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-walk-n.json",
+      "bytes": 378904,
+      "sha256": "045664c0d6b087bff5814e1d419115421327b1ce34037280b1e1ecd9565c7ebb"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-walk-s.json",
+      "bytes": 378810,
+      "sha256": "1767cccfcd5dd6d79a37af3b2eac6d2b357adfc0fbba89db080967e531b34a6b"
+    },
+    {
+      "path": "public/assets/packs/animations/opponent-walk-w.json",
+      "bytes": 378716,
+      "sha256": "8954f4a40e4a1a76be80c0b2d279c2c526223aaf5e8d65d2b2589a792739ac46"
+    },
+    {
+      "path": "public/assets/packs/animations/phantom-equip.json",
+      "bytes": 198195,
+      "sha256": "c170a9c4426fd257e8691ff9e46a5a01cb6f4fc8e4c700f836f23369be20d81d"
+    },
+    {
+      "path": "public/assets/packs/animations/phantom-fire.json",
+      "bytes": 40664,
+      "sha256": "3b1f448602d666fb78d3b05c19177dd2ee0569f9b238353f64a3c48d9167acac"
+    },
+    {
+      "path": "public/assets/packs/animations/phantom-native-index.json",
+      "bytes": 15802,
+      "sha256": "a085c2c2b030a2cbb649f3f905b70e19d56bc6eb53e5572fda5cf18ca5a2d0f5"
+    },
+    {
+      "path": "public/assets/packs/animations/phantom-neutral-delta.json",
+      "bytes": 3327,
+      "sha256": "6258c2a736478f67f1fb6acb86aea6a56efff0362617c09c0e87d7bc74daf509"
+    },
+    {
+      "path": "public/assets/packs/animations/phantom-reload.json",
+      "bytes": 349520,
+      "sha256": "b05d3731f9df2e5a906ee1dc84c981be03f53e8790bd157dc08b1a3b221c56e9"
+    },
+    {
+      "path": "public/assets/packs/animations/sheriff-equip.json",
+      "bytes": 209757,
+      "sha256": "dec7f87fe7f172bf88134e5d62625ed24adeed01ba969b47f9321a2270448535"
+    },
+    {
+      "path": "public/assets/packs/animations/sheriff-fire.json",
+      "bytes": 63023,
+      "sha256": "0012146ebdedf219df0460587ac6620cd2859d9b2aa3333eddddb5f94d24676f"
+    },
+    {
+      "path": "public/assets/packs/animations/sheriff-native-index.json",
+      "bytes": 11490,
+      "sha256": "f8942bc1faff1a8ec7d261af3202d5e3bbb8fa600165845cda57a1e7a7dcf5b7"
+    },
+    {
+      "path": "public/assets/packs/animations/sheriff-reload.json",
+      "bytes": 404579,
+      "sha256": "69886f812e27b46fd7b6e2fc124fdf5f7f26982c61574274b1e29aefb86e9115"
+    },
+    {
+      "path": "public/assets/packs/animations/shorty-equip.json",
+      "bytes": 127187,
+      "sha256": "1771a0aa2efb7fd077d9b8b5308c9daa8126cddd7e4d860ca466bb314a379cc6"
+    },
+    {
+      "path": "public/assets/packs/animations/shorty-equipfast.json",
+      "bytes": 23562,
+      "sha256": "398fb1d051866efda62827cc4074841bfc0ff47536680cb55ef9b7b410d359ad"
+    },
+    {
+      "path": "public/assets/packs/animations/shorty-fire.json",
+      "bytes": 51536,
+      "sha256": "89bc39d0404446ceee52785bc023ca7c97462c29bc05457cfa8afff5e6c739c9"
+    },
+    {
+      "path": "public/assets/packs/animations/shorty-native-index.json",
+      "bytes": 12545,
+      "sha256": "1a8f5cd9cdad41ad57d90a341d6419b5bf20ed74049738c5c09301ab24d02476"
+    },
+    {
+      "path": "public/assets/packs/animations/shorty-reload.json",
+      "bytes": 213387,
+      "sha256": "a51f585cc21d04a7a4161c25e00cf649321e19ad8144d590d8632b89757692a4"
+    },
+    {
+      "path": "public/assets/packs/animations/spectre-equip.json",
+      "bytes": 212826,
+      "sha256": "dedfd91dadfb00da583b661b5a35026b3b38a364a4f7c56102e2bbb6092c516c"
+    },
+    {
+      "path": "public/assets/packs/animations/spectre-equipfast.json",
+      "bytes": 49921,
+      "sha256": "4c85078ba98e4094174df63a560cc85f1cbc6b20d3fc408f607b6c9d00d4587d"
+    },
+    {
+      "path": "public/assets/packs/animations/spectre-fire.json",
+      "bytes": 45945,
+      "sha256": "5e63aee63026ae9ddac606f8081267345e2e6289cc2f35761df8e6daa27cbc9f"
+    },
+    {
+      "path": "public/assets/packs/animations/spectre-idle-ground.json",
+      "bytes": 5545,
+      "sha256": "5b8654a776332af31415883dcff39c461805d64a18d3f5e93bdb353cdf36cdef"
+    },
+    {
+      "path": "public/assets/packs/animations/spectre-native-index.json",
+      "bytes": 11853,
+      "sha256": "c5e4fc893fc96458e2c3c0a17eb956bc84cdef642a619faf5ce243adc02698fa"
+    },
+    {
+      "path": "public/assets/packs/animations/spectre-reload.json",
+      "bytes": 320904,
+      "sha256": "c985044c8ee1e44ffad25dcca5502a79e61373367303b3740263d5d2e08022e1"
+    },
+    {
+      "path": "public/assets/packs/animations/stinger-equip.json",
+      "bytes": 166475,
+      "sha256": "c9e3ad26545711e96cc62b9f1119b729002a43392d9f576682dc911e90f6ccb3"
+    },
+    {
+      "path": "public/assets/packs/animations/stinger-equipfast.json",
+      "bytes": 102465,
+      "sha256": "ffe63ed7d2f6974284eecc225840334dcdc34fb92fdf00c2e921cffde1a129de"
+    },
+    {
+      "path": "public/assets/packs/animations/stinger-fire.json",
+      "bytes": 19213,
+      "sha256": "235e67793812c3feb7bf8eb40214ffabd0b62910cc7007f6566b005357ca4436"
+    },
+    {
+      "path": "public/assets/packs/animations/stinger-native-index.json",
+      "bytes": 13709,
+      "sha256": "fafedb1ee3cfdd19d620b7133f3612040dda7780729c39a190ec8022899333da"
+    },
+    {
+      "path": "public/assets/packs/animations/stinger-reload.json",
+      "bytes": 301353,
+      "sha256": "27b4942523e17ad5467e30552c3e80e0687bc3f50e21a6b027d3718fe55f0402"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-bucky-equip.json",
+      "bytes": 58954,
+      "sha256": "1553ed22cc254df0904d83dc1fc5b4cbe0245f6abe90a1e8a94b2e70d3e37c9a"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-bucky-fire.json",
+      "bytes": 65184,
+      "sha256": "48b5c5b175c769ea682d5fa9d63e3899a0ffb7e9bc6523695201254641a9da42"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-bucky-reload.json",
+      "bytes": 98019,
+      "sha256": "1f5ba284bcc32ea224e8f13a6891ffec7f5754dcaa055946915bb174c1582a71"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-bulldog-equip.json",
+      "bytes": 68205,
+      "sha256": "9fdd83fe90909ec94dd0c624c339971cf1c9f74e7df96be5e6f0fd0b4c52cad2"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-bulldog-reload.json",
+      "bytes": 160673,
+      "sha256": "5de50b7ea3aa2efc77309bd8c2178df4bbc9f7456ca8d9c5053abcc72f33cd76"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-classic-reload.json",
+      "bytes": 94799,
+      "sha256": "7458a0a9cb810601793221b3f2fe0e8a13a3d20f4d62d39afeff77b731726bfc"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-frenzy-reload.json",
+      "bytes": 64730,
+      "sha256": "5827ef14a9b430c38459288ac7ee6cfc53260391fd00e7fb66bdb79c74033c37"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-ghost-equip.json",
+      "bytes": 44467,
+      "sha256": "605aedbcc06a0015f1646952c4b91a9f79e3cf85a39919931e82240aa39b68f0"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-ghost-fire.json",
+      "bytes": 44536,
+      "sha256": "504f17ccac137af0c65212155ce8add432fc03937c5a8d0375732ed30a88f03a"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-ghost-reload.json",
+      "bytes": 68030,
+      "sha256": "55141fe99b9fc42cfebae82ecf5dab198d211dddcebf2109f975bc2dc8af00b7"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-judge-fireadd.json",
+      "bytes": 81245,
+      "sha256": "ef491e697dc0e628c2945c357cba69aeb8d6c86ddcca36ab15a624a2f3161897"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-judge-reload.json",
+      "bytes": 234241,
+      "sha256": "9f7a22c2e4591f47f4fd02c78f63a9fff03a916e4d24f9f65d1a7d0dba19c2ef"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-marshal-equip.json",
+      "bytes": 101075,
+      "sha256": "83cc60741817fa5b93be64b334f9d73e016af04f8707875ee587f6fcfa5acfaf"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-marshal-fire.json",
+      "bytes": 42479,
+      "sha256": "1cf8e20164ad523f18ba2333c9836d46c5491b0c18e75189ec395ec0ec966b5f"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-marshal-firezoomed.json",
+      "bytes": 62227,
+      "sha256": "0d06822e7fdd937c5c9d37ffdb985fb3b92e2afe5eec34dfd679996fdfd749ad"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-marshal-reload.json",
+      "bytes": 130372,
+      "sha256": "93be8697b79592a98053429a460fd602cb4f57e7835064ad0bbd165c2b566865"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-operator-equip.json",
+      "bytes": 98877,
+      "sha256": "3b709b24dfd79a9ba914173aa90dcaf5a6ca74dfde0da06b6ee8dd0703f13fb4"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-operator-fire.json",
+      "bytes": 128403,
+      "sha256": "2f55a1a3d41ec8522895a7700682e356f3dd1f976968cb2361714148566c3dba"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-operator-reload.json",
+      "bytes": 262729,
+      "sha256": "47397158454b0fe7a9fa7ccb2e2defcc690486d60a2134cee6f7e4be3b1ba447"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-phantom-reload.json",
+      "bytes": 179478,
+      "sha256": "0b11613496716f8051d567782a2f9b8a47fe402816d699beb902bce301268682"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-sheriff-reload.json",
+      "bytes": 203422,
+      "sha256": "f3573339aa8c9478d2156d1c5a1470beea4d7314c7ef63f313a7f0e9c4c11683"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-stinger-equip.json",
+      "bytes": 84706,
+      "sha256": "a3dfd2293a025e6f872d8ac631502545121ba75c4cfa4d6c4791f9c42c608f99"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-stinger-fire.json",
+      "bytes": 62832,
+      "sha256": "57a88b0f6d927a9d6ac1c0eb10f0f168a1b374ea553861d04593de67ba8af2e1"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-stinger-reload.json",
+      "bytes": 147685,
+      "sha256": "85dd711b1f9b956d1dd911ef30235331e10468945d8d93475b6fcb83560c05ab"
+    },
+    {
+      "path": "public/assets/packs/animations/tp-vandal-reload.json",
+      "bytes": 137707,
+      "sha256": "a58bf875bff4279a7ce3a3c47392d3033ffbecfd44b6cce69bf1bcb314f11d51"
+    },
+    {
+      "path": "public/assets/packs/animations/vandal-equip.json",
+      "bytes": 171176,
+      "sha256": "75b8e5ad6bd33648af0462a8fcae36ac37003720301e694d70a290e06c9090c7"
+    },
+    {
+      "path": "public/assets/packs/animations/vandal-fire.json",
+      "bytes": 34913,
+      "sha256": "cb8e0ba0cbf1695590d030665540dad24937a2c8604795769f21a58046ff8585"
+    },
+    {
+      "path": "public/assets/packs/animations/vandal-reload.json",
+      "bytes": 300589,
+      "sha256": "0401d88edfb217a59d8890289ed404c68c46fa120134c115d9db96963726dc5c"
+    },
+    {
+      "path": "public/assets/packs/ares.glb",
+      "bytes": 3967288,
+      "sha256": "c9071f74a92e25382b44d3766be1e8ef8cc97c847a0f391f91d912675c79beab"
+    },
+    {
+      "path": "public/assets/packs/ascent-b.glb",
+      "bytes": 61938920,
+      "sha256": "8100e2bb8633bba671aa3186d485e4af623a4d2510cf3497e633f7db103cb554"
+    },
+    {
+      "path": "public/assets/packs/ascent-b.glb.inspect.json",
+      "bytes": 280275,
+      "sha256": "b181ee2fd0ca65e1e39d858ff204191303dd6ae0f6b7c67db3628319441c4788"
+    },
+    {
+      "path": "public/assets/packs/bucky.glb",
+      "bytes": 4680192,
+      "sha256": "7bc77dd7b049e013fc64dcef87f59c499a553cb3f66f4af61f0247e0a6aa5283"
+    },
+    {
+      "path": "public/assets/packs/bulldog.glb",
+      "bytes": 2204500,
+      "sha256": "0184dc086b59fbc66e27668587f570934969a3c4e0b6676af64ce1e6dd3f54c6"
+    },
+    {
+      "path": "public/assets/packs/classic.glb",
+      "bytes": 3898544,
+      "sha256": "1da4aa977dc0877f5141f70929cf342ec9aad72615744a559e0828be8440bb34"
+    },
+    {
+      "path": "public/assets/packs/frenzy.glb",
+      "bytes": 4188580,
+      "sha256": "4dc382f224727df3b53f7a5bd456bd8cf300712f732effb00826c044df0cc70c"
+    },
+    {
+      "path": "public/assets/packs/ghost.glb",
+      "bytes": 10004032,
+      "sha256": "64fb47f0720364c9576a0ce7227c71ff30f9955a7729dd4dbc3caf5b4c06247a"
+    },
+    {
+      "path": "public/assets/packs/ghost.glb.inspect.json",
+      "bytes": 5812,
+      "sha256": "23c1f8fafb2cc0eb2e0388a4cb3f79b8fb730591d2b34be35802d3ba2006dcfe"
+    },
+    {
+      "path": "public/assets/packs/guardian.glb",
+      "bytes": 3958856,
+      "sha256": "4d972b65fc8886696acbfaab94a0776b31d3216d59ed8301b2cd361224924183"
+    },
+    {
+      "path": "public/assets/packs/jett-arms.glb",
+      "bytes": 4653288,
+      "sha256": "3e7c828abbac6d2de20dcd58b218c4790701113d4eb3a00e64168060403b8067"
+    },
+    {
+      "path": "public/assets/packs/jett-arms.glb.inspect.json",
+      "bytes": 4632,
+      "sha256": "d3db5b9583fc1c1153551542e51329e8484f87a3cd7987a4e2838e835a376ae8"
+    },
+    {
+      "path": "public/assets/packs/jett.glb",
+      "bytes": 6782284,
+      "sha256": "49b9536b135950ec819176bf689758b75527a76bf03e13003beab18ee8df1ee0"
+    },
+    {
+      "path": "public/assets/packs/jett.glb.inspect.json",
+      "bytes": 5670,
+      "sha256": "d877ad6303985cce197cb9d492fd995439eeb25b0936b10de42ed4eb73181084"
+    },
+    {
+      "path": "public/assets/packs/judge.glb",
+      "bytes": 3905364,
+      "sha256": "41382810c6138123b0cb075096eee090bdc68f17126d54a63c990e28442b8073"
+    },
+    {
+      "path": "public/assets/packs/knife.glb",
+      "bytes": 2434692,
+      "sha256": "3081bf0a08a188d55559c7e37ef7104236b6bc7835ae3789c228268b522f91a1"
+    },
+    {
+      "path": "public/assets/packs/knife.glb.inspect.json",
+      "bytes": 1853,
+      "sha256": "fced63e3030d49c4e90b386315a8c9e1f1ffd653dfbe5bb033c4107acbe78bc4"
+    },
+    {
+      "path": "public/assets/packs/marshal.glb",
+      "bytes": 6299916,
+      "sha256": "4f15f4d1b12e74f745c2fa5ad45bc1347a7bd5c95ec6915f7870e5631b1c0282"
+    },
+    {
+      "path": "public/assets/packs/odin.glb",
+      "bytes": 4497216,
+      "sha256": "cdbd32bd580684d7f4fe8f9d9ed70711fc4c7762cea010e379a0efc86b6c3ad5"
+    },
+    {
+      "path": "public/assets/packs/operator.glb",
+      "bytes": 5223912,
+      "sha256": "c5f1516e985f72c0976bffb97e27cd620989480f44dbc58900a518f011c445e8"
+    },
+    {
+      "path": "public/assets/packs/opponent-jett.glb",
+      "bytes": 7754092,
+      "sha256": "65dbbb10ca35df9e9dd970be1e65f17d5de6067cac133e67be4ccf2acedb4ff6"
+    },
+    {
+      "path": "public/assets/packs/phantom.glb",
+      "bytes": 4209576,
+      "sha256": "49588228c28fb81721241282925071b21ea415aaddb17794d331dbcc79309ae6"
+    },
+    {
+      "path": "public/assets/packs/sheriff.glb",
+      "bytes": 4050540,
+      "sha256": "e21f16aa90511070fd877344db816d8b6268beb02b43297be13e5a53223e965b"
+    },
+    {
+      "path": "public/assets/packs/shorty.glb",
+      "bytes": 3682284,
+      "sha256": "bc10f606183cd6e69073925e4e3a717485db6802755f7a252079dc84d64b7b65"
+    },
+    {
+      "path": "public/assets/packs/spectre.glb",
+      "bytes": 4514932,
+      "sha256": "12eff71e7f32b1fbaf02b87f671865cc066237e9c6a40010bce60854674df359"
+    },
+    {
+      "path": "public/assets/packs/stinger.glb",
+      "bytes": 3659780,
+      "sha256": "3d363bfa8bfb7fd01ca2dbaa49950bf53e21fdf5c3d9b8db6828da2473b4092c"
+    },
+    {
+      "path": "public/assets/packs/vandal.glb",
+      "bytes": 10715844,
+      "sha256": "6e4b6af07ddfbefa46e1005212da5aa8341f8006bfd1266e8b37a616d68dccd3"
+    },
+    {
+      "path": "public/assets/packs/vandal.glb.inspect.json",
+      "bytes": 2329,
+      "sha256": "a0bae62316b8d678512f8b025d20d4ad95fdef792b1c21edb01c6f98f8b5c736"
+    },
+    {
+      "path": "public/assets/vandal/AK_S0_AO.png",
+      "bytes": 886466,
+      "sha256": "28b23cc1ccb816baaa997791036a15f4ac1274c23683fc148f2b35e01637b6be"
+    },
+    {
+      "path": "public/assets/vandal/AK_S0_DF.png",
+      "bytes": 1204343,
+      "sha256": "02c3465d7c5fa5153ab849c697c08cbda28f6dc20244b37996d0b46e70d8407d"
+    },
+    {
+      "path": "public/assets/vandal/AK_S0_M.png",
+      "bytes": 417708,
+      "sha256": "a7368cd06d80878d6924595a28824ee7aca2ff98143649ebf8f0077786fbdb0d"
+    },
+    {
+      "path": "public/assets/vandal/AK_S0_NM.png",
+      "bytes": 3815959,
+      "sha256": "7bc449eb6a66ff75c89dcf342984da0f32517e5acc30a0d716bff3114cd0751d"
+    },
+    {
+      "path": "public/assets/vandal/AK_S0_R.png",
+      "bytes": 721631,
+      "sha256": "05075dc32dbdf2541fc64876fc063a53d89ce6aea7dff1b16c5d169a51cc1bed"
+    },
+    {
+      "path": "public/assets/vandal/AK_S0_S.png",
+      "bytes": 566889,
+      "sha256": "dc17fde21e7f8083dd7ddb39182274e63174b93f31cbce6e9fe4054d3051fcea"
+    },
+    {
+      "path": "public/assets/vandal/animations/GN_Core_AK_S0_Equip.json",
+      "bytes": 131266,
+      "sha256": "b0098081b0f78650043634d1179ddda4ce4e636263b061172801a49d31aa0b5e"
+    },
+    {
+      "path": "public/assets/vandal/animations/GN_Core_AK_S0_Fire.json",
+      "bytes": 32855,
+      "sha256": "5cf3d369813844eea289bab449755d70a309f83cc6da349031894a2e3af88d4f"
+    },
+    {
+      "path": "public/assets/vandal/animations/GN_Core_AK_S0_Reload.json",
+      "bytes": 239127,
+      "sha256": "de7e1da4f7ae1cc36f559d3d3dfbaa82318a413a2e3724a4c57f82ee828ae1e2"
+    },
+    {
+      "path": "public/assets/vandal/vandal.fbx",
+      "bytes": 427148,
+      "sha256": "e370433a8ef2c81c517dd5545e32138b574a163fee0919d078720c4668287217"
+    },
+    {
+      "path": "public/browser-hitbox/ares.json",
+      "bytes": 6646648,
+      "sha256": "2922daa2b83f8ed8aa0d83924bf85261349afa2d118f734724ce20fd247fe7d3"
+    },
+    {
+      "path": "public/browser-hitbox/bucky.json",
+      "bytes": 4740394,
+      "sha256": "2f5d662778f93e63b72b3b0a4d9223b9769d51ff8df304a9a4a5bbe1644d8ab4"
+    },
+    {
+      "path": "public/browser-hitbox/bulldog.json",
+      "bytes": 6269393,
+      "sha256": "155e580b2c9a5d4faa7b8175993b6565e8084f26613874b06cfd6deb53a6c78e"
+    },
+    {
+      "path": "public/browser-hitbox/classic.json",
+      "bytes": 4207015,
+      "sha256": "24e48b522efd025c4865ad856bdf09ec801fcb568767a74ede627c1d96adec37"
+    },
+    {
+      "path": "public/browser-hitbox/frenzy.json",
+      "bytes": 4136754,
+      "sha256": "0116ddddf058287e945fb05272d8ddcad889b2c1c21472e2fbd93c4ef8a7117d"
+    },
+    {
+      "path": "public/browser-hitbox/guardian.json",
+      "bytes": 6384580,
+      "sha256": "0045579265896e5323bf8de5e04c361c3bbe4a14e8b1dced1a642451d13bc597"
+    },
+    {
+      "path": "public/browser-hitbox/hitbox-combat-skeleton-data.mjs",
+      "bytes": 5284707,
+      "sha256": "6d970a90c17e5036cdb6c9ece98a64216c7ad55d7fe2368015efd6dd65bd91e9"
+    },
+    {
+      "path": "public/browser-hitbox/hitbox-motion-data.mjs",
+      "bytes": 3535391,
+      "sha256": "c7cf02e7184371875c92fd177072cf6568394349afeea12d63f18eb8cc0ba25d"
+    },
+    {
+      "path": "public/browser-hitbox/hitbox-skeleton-data.mjs",
+      "bytes": 2465423,
+      "sha256": "39c24ef70db34fcec812b57bc898699a2b7ce5f9d97c06e7bebec112b6310a0b"
+    },
+    {
+      "path": "public/browser-hitbox/judge.json",
+      "bytes": 4551703,
+      "sha256": "af18311ab95c8502d0010de7695d76a683b2d72bd097f7f6a7f81659a787fd0e"
+    },
+    {
+      "path": "public/browser-hitbox/marshal.json",
+      "bytes": 6414422,
+      "sha256": "440e8b952206e962f9a9c2ebf1e5f4c8a76e5d28fc3ea37f3a4252498b5ca542"
+    },
+    {
+      "path": "public/browser-hitbox/odin.json",
+      "bytes": 7350179,
+      "sha256": "fa9663b840dbcdf0ff3ed9905db4197eaa3595853b21808b7d7666b3a81b3134"
+    },
+    {
+      "path": "public/browser-hitbox/operator.json",
+      "bytes": 7487757,
+      "sha256": "27a52badfa838907173031d238d98b5670098e8f60a5d4479cd28762c55a0754"
+    },
+    {
+      "path": "public/browser-hitbox/phantom.json",
+      "bytes": 4716973,
+      "sha256": "b47c40d736683d7dddcc983a6ba04e0fc98edd3956df81227542e4a4edacbb17"
+    },
+    {
+      "path": "public/browser-hitbox/sheriff.json",
+      "bytes": 4628243,
+      "sha256": "5962a502045c75749949f7a15f7ca06f5efd390c3b259b7fc456ad1d100c09a3"
+    },
+    {
+      "path": "public/browser-hitbox/shorty.json",
+      "bytes": 4270695,
+      "sha256": "3a2240fb91a15a676e05ae2a86667d48f7719d5c321c3191d7e61f2a28893ce8"
+    },
+    {
+      "path": "public/browser-hitbox/spectre.json",
+      "bytes": 6213757,
+      "sha256": "d2b549d4ba6e22a93d185133ef6a849bb25dfa135d084633c7716f8b415f9af9"
+    },
+    {
+      "path": "public/browser-hitbox/stinger.json",
+      "bytes": 11061582,
+      "sha256": "ff295255f30a8cbdfedb09317257e01450a3ff857a3ea37062f26ddd093cb359"
+    },
+    {
+      "path": "public/combat-feedback.mjs",
+      "bytes": 2073,
+      "sha256": "eaf4a6c3f3cff4371c57a967db2bb0b8752add842d3fa5e87f203876561bba82"
+    },
+    {
+      "path": "public/duel-arena.mjs",
+      "bytes": 14913,
+      "sha256": "da868b554ca16e402bd1f9239df60e539b84be3d6e69f7a387b147245bdb11cb"
+    },
+    {
+      "path": "public/first-person-arms.mjs",
+      "bytes": 42411,
+      "sha256": "050f9378a8af2f0dff03c2284baf5009d1ebe555055b5211ce57d6f53e6f3d49"
+    },
+    {
+      "path": "public/game-audio.mjs",
+      "bytes": 10718,
+      "sha256": "ec2e96ea572718a1a8306868df7367e02b4b068bd7cd16a9cbb43d247476b2d7"
+    },
+    {
+      "path": "public/ghost-lab.html",
+      "bytes": 1578,
+      "sha256": "163d697498f758bbcdece01f69b5bcaa2b72e748837a6dcf82221e4e1decc4eb"
+    },
+    {
+      "path": "public/ghost-lab.mjs",
+      "bytes": 3770,
+      "sha256": "0cb4f257246b4cebfab60b8a06e9bd986e1cae08d7e59acc63b1015a9d932fd7"
+    },
+    {
+      "path": "public/hitbox-data-loader.mjs",
+      "bytes": 5125,
+      "sha256": "103d8650a0b55c941b6712266c7b7da6db51d82fc401e9fd96f0c30e24d0617e"
+    },
+    {
+      "path": "public/imported-assets.mjs",
+      "bytes": 14501,
+      "sha256": "d062699ef06762e15ef7b2a3ee9dce31ed49c9f0ba9ecfdbdb1d028bccfa02d3"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 4637,
+      "sha256": "f5414e8d441f832c2a236ad43aa08e3ff7bdf5357972b8f4136c84df26c9a52b"
+    },
+    {
+      "path": "public/knife-lab.html",
+      "bytes": 1817,
+      "sha256": "abbbe226a935b7dd649298161b986f345494a10ba1f30f5ab94b254fae2b47fc"
+    },
+    {
+      "path": "public/knife-lab.mjs",
+      "bytes": 7799,
+      "sha256": "76ccb38116f505ff19d4b20edf99deb8039cdc063a4f5594548f85f7b21232ac"
+    },
+    {
+      "path": "public/look-input.mjs",
+      "bytes": 4539,
+      "sha256": "b523d7ca78cdecc07dee9f59f390defdfabcddcac4cd7507347632d1b02a9d80"
+    },
+    {
+      "path": "public/map-scene.mjs",
+      "bytes": 2012,
+      "sha256": "eeeeaee1c7aa22f41d50ae8c279df57c5e2f1c95e2d962b7515c93e81f854f09"
+    },
+    {
+      "path": "public/muzzle-effects.mjs",
+      "bytes": 5046,
+      "sha256": "96049898ac62eca7152c366f0031e155234d37590a59ef441d9eb54f5c706813"
+    },
+    {
+      "path": "public/opponent-before.mjs",
+      "bytes": 1644652,
+      "sha256": "1009cfe0e273589b0071ff15c9fb70129000fdd3b352b224eb35d2afc2731c1e"
+    },
+    {
+      "path": "public/opponent-combat.mjs",
+      "bytes": 18402,
+      "sha256": "c8d4560419c4926022ee248a1e89b47207cc9770ee457ffdfe5e0eb0e4a656b5"
+    },
+    {
+      "path": "public/opponent-grip-before.mjs",
+      "bytes": 26528,
+      "sha256": "3ca76d36c9e1e926e805121610c1f23abe685536c2da5d685b721f8adc90df9a"
+    },
+    {
+      "path": "public/opponent-lifecycle.mjs",
+      "bytes": 4896,
+      "sha256": "db1fe39f54944f1173ffdb81163ebcb347305b907cf020370b1bef299c92128b"
+    },
+    {
+      "path": "public/opponent-mechanics.mjs",
+      "bytes": 4409,
+      "sha256": "314e2e421be4031061561ddb09203c889cd90ab53d21086f2c9daeaaa261567e"
+    },
+    {
+      "path": "public/opponent.mjs",
+      "bytes": 154847,
+      "sha256": "cffc3e2f58bb0fc776738aa0465d022bca2ed4e8864e39e9580e051c9870f8f4"
+    },
+    {
+      "path": "public/psa-animation.mjs",
+      "bytes": 3308,
+      "sha256": "76ac9b6cbc34bbc26f8db4b7ceb07ab46e8c7f1dac1f875ff4e099bf44a71d9a"
+    },
+    {
+      "path": "public/reload-contact.mjs",
+      "bytes": 9785,
+      "sha256": "63e9a2d00e6192c7c3bed7e1fcf110ebbb114bdb84a89904d491047931f11e73"
+    },
+    {
+      "path": "public/scene.mjs",
+      "bytes": 20109,
+      "sha256": "014525408c4464eb4ed9919ca751c2bbb25a4642219f6c3ead30b613b4e7498c"
+    },
+    {
+      "path": "public/session-resume.mjs",
+      "bytes": 791,
+      "sha256": "5bdca83321f2e0ea2a242ab9e316f372e4a3fef676bc980e2f13775437ea924c"
+    },
+    {
+      "path": "public/shot-effects.mjs",
+      "bytes": 16533,
+      "sha256": "3c989bccc6fa1f8d445794a7d0d22922e72989101106514463fba5bb930bfd88"
+    },
+    {
+      "path": "public/source-weapon-grip.mjs",
+      "bytes": 6482,
+      "sha256": "682f07f3e1763b3466d5cb82c58d925f339ded15369981431c4e97f85e647333"
+    },
+    {
+      "path": "public/style.css",
+      "bytes": 9440,
+      "sha256": "2c53ec9492b7684a38958ff54af8875a3cd6c28492c169c3b4a6e190244eed67"
+    },
+    {
+      "path": "public/tp-lab.html",
+      "bytes": 2333,
+      "sha256": "9634ca689f22e56dd9f9b0ed94fb1bc86588299115a70ef201f0c925968408b9"
+    },
+    {
+      "path": "public/tp-lab.mjs",
+      "bytes": 5212,
+      "sha256": "ea06e32374f1ddd824a47f1c4da816855494d5ba980dbe31724354df53d8b690"
+    },
+    {
+      "path": "public/vandal.mjs",
+      "bytes": 11631,
+      "sha256": "8a97406b919e80d2ce3f335d141efcc1a31f887479729297939c86e9e5e0e055"
+    },
+    {
+      "path": "public/weapon-audio-timing.mjs",
+      "bytes": 13265,
+      "sha256": "9325edf87e7beb0cd3becc83dc19cab72e680390a318d0e23d8b9826bf47a3c4"
+    },
+    {
+      "path": "public/weapon-feel.mjs",
+      "bytes": 18568,
+      "sha256": "0d4032256b3e2b0a45cc18fac8c5286a1ebc299f193254c6f2b13f1409b04350"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1092,
+      "sha256": "6951410d3cbfc172986b87745283b03e0e9f10957ba6b15c2f6b7679ca7832d2"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 521,
+      "sha256": "4a64edc4637bea88645d9368e24d94377cba9bd4cfbffdfbe046f10af469deab"
+    },
+    {
+      "path": "server-data/combat.json",
+      "bytes": 33030588,
+      "sha256": "0398ba57993462bdfa0972c5d3463c7928fd352803d262058e47f1f5d2a1fb6a"
+    },
+    {
+      "path": "server-data/manifest.json",
+      "bytes": 971,
+      "sha256": "8a4deaf1c75c68d548db0f8ce74e8050d25cbb2e159358a68826b2eb4dc6efc1"
+    },
+    {
+      "path": "server-data/motion.json",
+      "bytes": 30627073,
+      "sha256": "2825ed5b08c9d5de4f40ad9d6a0c8eb69978e23efa05bffb97dae72d85a4093c"
+    },
+    {
+      "path": "server-data/skeleton.json",
+      "bytes": 17729422,
+      "sha256": "94121f6999439843a4d680c26bff9f87280850356e0e5c7f9599d6d74a4846b7"
+    },
+    {
+      "path": "server-hitbox-data.mjs",
+      "bytes": 522,
+      "sha256": "f981e53f89190e5e721a0a527ff01fb43d5d6d08946e3aa0d13ec8a5d6921470"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 31973,
+      "sha256": "aba76955d93174d79b83ade27025c9d046a85c5528ac8a94850887a9c671784a"
+    },
+    {
+      "path": "shared.mjs",
+      "bytes": 5804,
+      "sha256": "fe2d94e7b1ba3b951f4afd1096402b318331195c78a0476dc83b748eb865f085"
+    },
+    {
+      "path": "weapons.mjs",
+      "bytes": 16753,
+      "sha256": "b0e31872bf5bd8b9346e5bf8d9eee0452e4fa7b433c4d1057a962d3d02ba25a3"
+    }
+  ]
+}

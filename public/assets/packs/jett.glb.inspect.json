@@ -1,0 +1,233 @@
+{
+  "source": "C:\\Users\\sunny\\Documents\\MSIT Northwestern\\projects\\project-0006-Aim-Duel\\01-\u9700\u6c42\u4e0e\u539f\u59cb\u8d44\u6599\\asset-pack\\Agents/Jett/jettSimple.blend",
+  "objects": [
+    {
+      "name": "TP_Wushu_S0_Skelmesh.001",
+      "type": "MESH",
+      "dimensions": [
+        0.45311200618743896,
+        0.8701934814453125,
+        2.142465353012085
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 14659,
+      "bones": []
+    },
+    {
+      "name": "TP_Wushu_S0_Skelmesh.ao",
+      "type": "ARMATURE",
+      "dimensions": [
+        0.5623514652252197,
+        0.8905031681060791,
+        2.165487766265869
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 0,
+      "bones": [
+        "Skeleton",
+        "Root",
+        "Splitter",
+        "Spine1",
+        "Spine2",
+        "Spine3",
+        "Spine4",
+        "Neck",
+        "Head",
+        "L_EyeLids",
+        "R_EyeLids",
+        "Mouth_Top",
+        "Jaw",
+        "Mouth_Bot",
+        "MouthCorner",
+        "R_Brows",
+        "L_Brows",
+        "Ponytail1",
+        "R_Eyeball",
+        "L_Eyeball",
+        "R_Hair5",
+        "R_Hair6",
+        "R_Hair7",
+        "R_Hair1",
+        "R_Hair2",
+        "R_Hair3",
+        "R_Hair4",
+        "L_Hair1",
+        "L_Hair2",
+        "L_Hair3",
+        "L_Hair4",
+        "L_Hair5",
+        "L_Hair6",
+        "Collar",
+        "L_Clavicle",
+        "L_Shoulder",
+        "L_Elbow",
+        "L_Hand",
+        "L_Thumb1",
+        "L_Thumb2",
+        "L_Thumb3",
+        "L_WeaponPoint",
+        "L_Index1",
+        "L_Index2",
+        "L_Index3",
+        "L_Middle1",
+        "L_Middle2",
+        "L_Middle3",
+        "L_Pinky1",
+        "L_Pinky2",
+        "L_Pinky3",
+        "L_Ring1",
+        "L_Ring2",
+        "L_Ring3",
+        "L_Elbow_Ndl",
+        "L_Elbow_Twst2",
+        "L_Elbow_Twst3",
+        "L_Shoulder_Twst1",
+        "L_Shoulder_Twst3",
+        "L_ShoulderPad",
+        "R_Clavicle",
+        "R_Shoulder",
+        "R_Elbow",
+        "R_Hand",
+        "R_Thumb1",
+        "R_Thumb2",
+        "R_Thumb3",
+        "R_WeaponPoint",
+        "R_Index1",
+        "R_Index2",
+        "R_Index3",
+        "R_Middle1",
+        "R_Middle2",
+        "R_Middle3",
+        "R_Pinky1",
+        "R_Pinky2",
+        "R_Pinky3",
+        "R_Ring1",
+        "R_Ring2",
+        "R_Ring3",
+        "R_Elbow_Ndl",
+        "R_Elbow_Twst2",
+        "R_Elbow_Twst3",
+        "R_Shoulder_Twst1",
+        "R_Shoulder_Twst3",
+        "R_ShoulderPad",
+        "Pelvis",
+        "R_Foot_IKpv_IUE",
+        "L_Foot_IKpv_IUE",
+        "L_Hip",
+        "L_Knee",
+        "L_Knee_Ndl",
+        "L_Foot",
+        "L_Toe",
+        "L_Hip_Twst1",
+        "L_Hip_Twst3",
+        "R_Hip",
+        "R_Knee",
+        "R_Knee_Ndl",
+        "R_Foot",
+        "R_Toe",
+        "R_Hip_Twst1",
+        "R_Hip_Twst3",
+        "M_Belt_01",
+        "R_Belt",
+        "R_Belt_02",
+        "R_Belt_04",
+        "R_Sash_Base",
+        "R_Sash_01",
+        "MasterWeaponAim",
+        "MasterWeapon",
+        "L_WeaponMaster",
+        "R_WeaponMaster",
+        "R_Weapon_HandTarget",
+        "L_Weapon_HandTarget",
+        "L_Weapon_HandOffset",
+        "L_Hand_IKpv_IUE",
+        "R_Hand_IKpv_IUE",
+        "IK_RootTarget",
+        "L_IK_FootTarget",
+        "R_IK_FootTarget"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "packed": false,
+      "path": ""
+    },
+    {
+      "name": "TP_Core_Eye_DF.png.001",
+      "size": [
+        512,
+        256
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\_Core\\3P\\Materials\\TP_Core_Eye_DF.png"
+    },
+    {
+      "name": "TP_Wushu_S0_DF.png.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\Jett\\S0\\3P\\Materials\\TP_Wushu_S0_DF.png"
+    },
+    {
+      "name": "TP_Wushu_S0_Hair_DF.png.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\Jett\\S0\\3P\\Materials\\TP_Wushu_S0_Hair_DF.png"
+    },
+    {
+      "name": "TP_Wushu_S0_Hair_MRAE.png.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\Jett\\S0\\3P\\Materials\\TP_Wushu_S0_Hair_MRAE.png"
+    },
+    {
+      "name": "TP_Wushu_S0_Hair_NM.png.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\Jett\\S0\\3P\\Materials\\TP_Wushu_S0_Hair_NM.png"
+    },
+    {
+      "name": "TP_Wushu_S0_MRAE.png.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\Jett\\S0\\3P\\Materials\\TP_Wushu_S0_MRAE.png"
+    },
+    {
+      "name": "TP_Wushu_S0_NM.png.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\..\\..\\..\\..\\Zayd\\Documents\\umodel\\output\\Game\\Characters\\Jett\\S0\\3P\\Materials\\TP_Wushu_S0_NM.png"
+    }
+  ]
+}

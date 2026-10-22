@@ -1,0 +1,265 @@
+{
+  "source": "C:\\Users\\sunny\\Documents\\MSIT Northwestern\\projects\\project-0006-Aim-Duel\\01-\u9700\u6c42\u4e0e\u539f\u59cb\u8d44\u6599\\asset-pack\\Weapons/Ghost.blend",
+  "objects": [
+    {
+      "name": "BasePistol Silencer S0",
+      "type": "ARMATURE",
+      "dimensions": [
+        0.2800469398498535,
+        0.062226854264736176,
+        0.15475942194461823
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 0,
+      "bones": [
+        "Skeleton",
+        "Root",
+        "Muzzle",
+        "Magazine_Main",
+        "Bullet",
+        "Hammer",
+        "Ejection",
+        "Slide_Release",
+        "Slide",
+        "Trigger",
+        "Gun_Buddy",
+        "Left_Hand_Target"
+      ]
+    },
+    {
+      "name": "GN_BasePistol_Magazine_S0_Staticmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        0.06869783252477646,
+        0.02632821910083294,
+        0.1740594506263733
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 227,
+      "bones": []
+    },
+    {
+      "name": "GN_Luger_Magazine_S0_Staticmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        0.06060687080025673,
+        0.02683529444038868,
+        0.19265499711036682
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 281,
+      "bones": []
+    },
+    {
+      "name": "GN_Luger_S0_Skelmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        0.39928215742111206,
+        0.04616902023553848,
+        0.20887798070907593
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 3654,
+      "bones": []
+    },
+    {
+      "name": "GN_Silencer_S0_Skelmesh.ao",
+      "type": "ARMATURE",
+      "dimensions": [
+        0.2547858953475952,
+        0.029999995604157448,
+        0.0299999937415123
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 0,
+      "bones": [
+        "Skeleton",
+        "Root",
+        "Muzzle"
+      ]
+    },
+    {
+      "name": "GN_Silencer_S0_Skelmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        0.25480547547340393,
+        0.04438410699367523,
+        0.04021121561527252
+      ],
+      "location": [
+        0.33028170466423035,
+        -1.3414537036737784e-08,
+        0.0710241049528122
+      ],
+      "vertices": 783,
+      "bones": []
+    },
+    {
+      "name": "LugerS0",
+      "type": "ARMATURE",
+      "dimensions": [
+        0.44129690527915955,
+        0.09059743583202362,
+        0.19127696752548218
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 0,
+      "bones": [
+        "Skeleton",
+        "Root",
+        "Bullet",
+        "Gun_Buddy",
+        "Muzzle",
+        "Ejection",
+        "Magazine_Main",
+        "Slide",
+        "Trigger",
+        "Left_Hand_Target",
+        "Barrel"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Basepistol_S0_AEM.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Basepistol_S0_AEM.tga"
+    },
+    {
+      "name": "Basepistol_S0_DF.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Basepistol_S0_DF.tga"
+    },
+    {
+      "name": "Basepistol_S0_MRS.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Basepistol_S0_MRS.tga"
+    },
+    {
+      "name": "Basepistol_S0_NM.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Basepistol_S0_NM.tga"
+    },
+    {
+      "name": "Luger_S0_AEM.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Luger\\Luger S0\\Textures PSK\\Luger_S0_AEM.tga"
+    },
+    {
+      "name": "Luger_S0_DF.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Luger\\Luger S0\\Textures PSK\\Luger_S0_DF.tga"
+    },
+    {
+      "name": "Luger_S0_MRS.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Luger\\Luger S0\\Textures PSK\\Luger_S0_MRS.tga"
+    },
+    {
+      "name": "Luger_S0_NM.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Luger\\Luger S0\\Textures PSK\\Luger_S0_NM.tga"
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "packed": false,
+      "path": ""
+    },
+    {
+      "name": "Silencer_S0_AEM.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Silencer_S0_AEM.tga"
+    },
+    {
+      "name": "Silencer_S0_DF.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Silencer_S0_DF.tga"
+    },
+    {
+      "name": "Silencer_S0_MRS.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Silencer_S0_MRS.tga"
+    },
+    {
+      "name": "Silencer_S0_NM.tga",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "path": "//SilencedPistols\\BasePistol Silencer S0\\Textures PSK\\Silencer_S0_NM.tga"
+    }
+  ]
+}

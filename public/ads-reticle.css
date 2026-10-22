@@ -1,0 +1,2 @@
+.vandalAdsReticle{position:absolute;left:50%;top:50%;width:19.6vh;height:14.7vh;transform:translate(-50%,-50%);opacity:0;pointer-events:none;z-index:2;filter:drop-shadow(0 0 2px #ffbd3240)}
+.vandalAdsReticle svg{display:block;width:100%;height:100%}

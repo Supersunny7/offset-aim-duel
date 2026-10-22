@@ -1,0 +1,19 @@
+# Free trial configuration. CPU capacity still requires a hosted two-player check.
+services:
+  - type: web
+    name: offset-aim-duel
+    runtime: node
+    region: ohio
+    plan: free
+    numInstances: 1
+    buildCommand: npm ci --omit=dev --ignore-scripts
+    startCommand: node server.mjs
+    healthCheckPath: /health
+    autoDeployTrigger: "off"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=256

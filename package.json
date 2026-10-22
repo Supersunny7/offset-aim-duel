@@ -1,0 +1,17 @@
+{
+  "name": "aim-duel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test --test-concurrency=2 tests/*.test.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0",
+    "ws": "8.22.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

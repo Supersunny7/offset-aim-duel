@@ -1,0 +1,931 @@
+{
+  "sourceArchive": "Rocklan's Valorant Sound Effects Pack.zip",
+  "assets": [
+    {
+      "id": "vandal-fire",
+      "url": "/assets/audio/vandal-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/vandalTap.mp3",
+      "bytes": 19480,
+      "sha256": "98b0f6566871c62ead43cbf7b1d14e49cca82ecb7604f3b2c2a16ae3069edbcd",
+      "decodeVerified": true,
+      "duration": 1.354853,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "vandal-reload",
+      "url": "/assets/audio/vandal-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/vandalReload.mp3",
+      "bytes": 51999,
+      "sha256": "9658997fd60309ab70b4e9e11499b62e1a415aa523d0f89f3cdbdb592931cda4",
+      "decodeVerified": true,
+      "duration": 2.168163,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "ghost-fire",
+      "url": "/assets/audio/ghost-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/ghostTap.mp3",
+      "bytes": 12883,
+      "sha256": "0bce170a99411ed403a8c35db3acdfb2ff75688325578b622fcab8b0f9ffdf7c",
+      "decodeVerified": true,
+      "duration": 0.874649,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "ghost-reload",
+      "url": "/assets/audio/ghost-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/ghostReload.mp3",
+      "bytes": 41458,
+      "sha256": "49d14ad2e439cf418bb9d3b2f70157dae5b0dd17f2afc2cb562b5d56875f4a09",
+      "decodeVerified": true,
+      "duration": 1.750204,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "knife-equip",
+      "url": "/assets/audio/knife-equip.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Melee/knifePullOut.mp3",
+      "bytes": 5292,
+      "sha256": "be068e441fcb6be362d1d26b0afcee5262db2d10033237d342b3ebb29e6c10d5",
+      "decodeVerified": true,
+      "duration": 0.203469,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "knife-light",
+      "url": "/assets/audio/knife-light.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Melee/knifeSwing.mp3",
+      "bytes": 4514,
+      "sha256": "7ecc9c0c4d3c56533b9d2411b158df1b351814390670450c08a83ef21ae3f4e5",
+      "decodeVerified": true,
+      "duration": 0.150476,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "knife-heavy",
+      "url": "/assets/audio/knife-heavy.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Melee/knifeStab.mp3",
+      "bytes": 5661,
+      "sha256": "bc7a18f6ba87a86ea434d7c88275e3e53493bc09a62bdb09e2083264c890e241",
+      "decodeVerified": true,
+      "duration": 0.20542,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "headshot",
+      "url": "/assets/audio/headshot.mp3",
+      "sourceEntry": "Sound Effects Pack/Kill Sounds/headshotSound.mp3",
+      "bytes": 28311,
+      "sha256": "fb66fb7f9e5938bc49dff7a1f7949b67b7ea49e9ca002b238ce8353a3c536ba6",
+      "decodeVerified": true,
+      "duration": 0.577333,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "48000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "kill-1",
+      "url": "/assets/audio/kill-1.mp3",
+      "sourceEntry": "Sound Effects Pack/Kill Sounds/1stKill.mp3",
+      "bytes": 18186,
+      "sha256": "2218545d78ef2dd2741bc9ebdc5e861588dce58d3b8b90563ed2ca3c2a7f25fb",
+      "decodeVerified": true,
+      "duration": 0.821587,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "kill-2",
+      "url": "/assets/audio/kill-2.mp3",
+      "sourceEntry": "Sound Effects Pack/Kill Sounds/2ndKill.mp3",
+      "bytes": 19335,
+      "sha256": "e6ea3b2d5dbbc4f8e3a93ef1a68ebc5aace8ba94b9cf20288db86b78d93515b3",
+      "decodeVerified": true,
+      "duration": 0.840476,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "kill-3",
+      "url": "/assets/audio/kill-3.mp3",
+      "sourceEntry": "Sound Effects Pack/Kill Sounds/3rdKill.mp3",
+      "bytes": 18187,
+      "sha256": "4a3c4c6e60b859250b8a3a28a8c7b6eaee7bb341c1b85fccaf45785576388eec",
+      "decodeVerified": true,
+      "duration": 0.821587,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "kill-4",
+      "url": "/assets/audio/kill-4.mp3",
+      "sourceEntry": "Sound Effects Pack/Kill Sounds/4thKill.mp3",
+      "bytes": 19074,
+      "sha256": "518934eb8269a8a300421bc6fc40ec413338343d87dc7408371d1e5dca2a99bb",
+      "decodeVerified": true,
+      "duration": 0.849909,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "body-hit",
+      "url": "/assets/audio/body-hit.wav",
+      "origin": "provided recording, first-group mild harmonic suppression, shared gun-impact trial",
+      "sourceEntry": null,
+      "bytes": 28844,
+      "sha256": "564f58c2a36fe10e989bdaa9342b0d9d51e0f1d6dd38a95867f0c3964f739ba9",
+      "decodeVerified": true,
+      "duration": 0.15,
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "peak": 0.3464828491210938,
+      "rms": 0.056410095984492224,
+      "sourceVideo": "VALORANT   2026-10-11 18-00-09.mp4",
+      "sourceStart": 10.59,
+      "sourceEnd": 10.74,
+      "processingSource": "processing-v3/01-mild.wav",
+      "sourceProcessing": "STFT harmonic suppression mild, RMS-matched preview",
+      "runtimeGain": 0.65,
+      "headFade": 0.002,
+      "tailFade": 0.012,
+      "limitations": "Mixed gun/impact audio. Body and shield share this trial; not separately isolated original cues."
+    },
+    {
+      "id": "shield-hit",
+      "url": "/assets/audio/shield-hit.wav",
+      "origin": "provided recording, first-group mild harmonic suppression, shared gun-impact trial",
+      "sourceEntry": null,
+      "bytes": 28844,
+      "sha256": "564f58c2a36fe10e989bdaa9342b0d9d51e0f1d6dd38a95867f0c3964f739ba9",
+      "decodeVerified": true,
+      "duration": 0.15,
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "peak": 0.3464828491210938,
+      "rms": 0.056410095984492224,
+      "sourceVideo": "VALORANT   2026-10-11 18-00-09.mp4",
+      "sourceStart": 10.59,
+      "sourceEnd": 10.74,
+      "processingSource": "processing-v3/01-mild.wav",
+      "sourceProcessing": "STFT harmonic suppression mild, RMS-matched preview",
+      "runtimeGain": 0.65,
+      "headFade": 0.002,
+      "tailFade": 0.012,
+      "limitations": "Mixed gun/impact audio. Body and shield share this trial; not separately isolated original cues."
+    },
+    {
+      "id": "knife-wall-reference",
+      "url": "/assets/audio/knife-hit.wav",
+      "origin": "provided wall-contact showcase recording",
+      "sourceVideo": "Knife-Showcase-Video-Project-2.mp4",
+      "sourceStart": 2.73,
+      "sourceEnd": 3.04,
+      "gain": 0.8484593709542305,
+      "headFade": 0.002,
+      "tailFade": 0.008,
+      "bytes": 29804,
+      "sha256": "38ab054c285e250e704f695644ca720a8219d7f68927e956fddcfe87dd993903",
+      "duration": 0.31,
+      "decodeVerified": true,
+      "peak5msWindowOffset": 0.015,
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "48000",
+          "channels": 1
+        }
+      ],
+      "limitations": "Confirmed wall-contact recording with environmental/contact tail; not isolated dry audio. No source separation or pitch changes. Not for firearm or player-hit feedback."
+    },
+    {
+      "id": "hit-reference",
+      "url": "/assets/audio/hit-reference.wav",
+      "origin": "provided knife hit recording (robot contact mixed with knife tail)",
+      "sourceVideo": "Hit-Sounds-2026-10-11-171710.mp4",
+      "sourceStart": 26.78,
+      "sourceEnd": 27.005,
+      "gain": 3.47969286,
+      "headFade": 0.002,
+      "tailFade": 0.006,
+      "bytes": 21644,
+      "sha256": "4e5551ca1e9f1ae56050ebab8461556996ce31a1e976625fa86ce8c4395842e3",
+      "duration": 0.225,
+      "decodeVerified": true,
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "48000",
+          "channels": 1
+        }
+      ],
+      "limitations": "Knife/robot contact/environment mix. Contains knife contact tail; prohibited for firearm body or shield feedback."
+    },
+    {
+      "id": "phantom-fire",
+      "url": "/assets/audio/phantom-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/phantomTap.mp3",
+      "bytes": 13640,
+      "sha256": "64f1ef9e12789b7aa4c0e9422dd7175e3b46aca42f67b66a48be15155cff8d1d",
+      "decodeVerified": true,
+      "duration": 0.875465,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "phantom-reload",
+      "url": "/assets/audio/phantom-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/phantomReload.mp3",
+      "bytes": 64681,
+      "sha256": "0c4c7738ec02846d7a2024b84662a27d5b1e4791ab8b9b175fff7d9b6ae279e6",
+      "decodeVerified": true,
+      "duration": 2.66449,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "sheriff-fire",
+      "url": "/assets/audio/sheriff-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/sheriffTap.mp3",
+      "bytes": 16560,
+      "sha256": "8406dd52bd4934fd0bf4f38b998f8c523bbec7053b6d4b36690a66969a4d3fb4",
+      "decodeVerified": true,
+      "duration": 1.344853,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "sheriff-reload",
+      "url": "/assets/audio/sheriff-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/sheriffReload.mp3",
+      "bytes": 84868,
+      "sha256": "8e03156394af06e989fa37e9db5aefa6f7f8602f717ec90250ed0a2a512c89ab",
+      "decodeVerified": true,
+      "duration": 3.788141,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "classic-fire",
+      "url": "/assets/audio/classic-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/classicTap.mp3",
+      "bytes": 17556,
+      "sha256": "b44c2c7838fc3a1f5f33996c5b1bc07cd1ecef55b756157f750d3eb1c5aaa6be",
+      "decodeVerified": true,
+      "duration": 0.805374,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "classic-reload",
+      "url": "/assets/audio/classic-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/classicReload.mp3",
+      "bytes": 36968,
+      "sha256": "85aa101e3ccda712c05b7399edfc4ae01d789842270959f8aac43e9772ea3a8d",
+      "decodeVerified": true,
+      "duration": 1.541224,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "shorty-fire",
+      "url": "/assets/audio/shorty-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Shotguns/shortyTap.mp3",
+      "bytes": 23608,
+      "sha256": "bb23244d752474fd4138a411d83fec42b9982156ec40c12bd42e1abd85004b7d",
+      "decodeVerified": true,
+      "duration": 1.955896,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "shorty-reload",
+      "url": "/assets/audio/shorty-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Shotguns/shortyReload.mp3",
+      "bytes": 45361,
+      "sha256": "fda519cc7b2e609dda10789dbb03ea38d075a40fa8d0c8bb40324e0007e4a848",
+      "decodeVerified": true,
+      "duration": 2.168163,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "frenzy-fire",
+      "url": "/assets/audio/frenzy-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/frenzyTap.mp3",
+      "bytes": 10195,
+      "sha256": "e51105697ed10db5983c21460b0a614b03567249ebf978be1963884ba3d25902",
+      "decodeVerified": true,
+      "duration": 0.619615,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "frenzy-reload",
+      "url": "/assets/audio/frenzy-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Pistols/frenzyReload.mp3",
+      "bytes": 62852,
+      "sha256": "38ced630067495cb5da7d21d5fbd97acd9c6c81facc60f6620902a60fe074da3",
+      "decodeVerified": true,
+      "duration": 2.702426,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "stinger-fire",
+      "url": "/assets/audio/stinger-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/SMGs/stingerTap.mp3",
+      "bytes": 3367,
+      "sha256": "2e207334192bf305cc0cacb83845240cc69689dc6f72157ba0df6fca91e0c0ef",
+      "decodeVerified": true,
+      "duration": 0.043855,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "stinger-reload",
+      "url": "/assets/audio/stinger-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/SMGs/stingerReload.mp3",
+      "bytes": 47821,
+      "sha256": "9f13d07faf825442daa984e1147f659c094cd9b847af1fda05ed32ba7eb172dd",
+      "decodeVerified": true,
+      "duration": 2.089796,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "spectre-fire",
+      "url": "/assets/audio/spectre-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/SMGs/spectreTap.mp3",
+      "bytes": 3575,
+      "sha256": "04662c568d6e0554c2ea317208ab76ec2ebc1f858d08650d5c2a5cada32bd09f",
+      "decodeVerified": true,
+      "duration": 0.084376,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "spectre-reload",
+      "url": "/assets/audio/spectre-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/SMGs/spectreReload.mp3",
+      "bytes": 53717,
+      "sha256": "481b0a2851177542987964aac93c95991dd3b2ef86051a852dce83962a7181f2",
+      "decodeVerified": true,
+      "duration": 2.272653,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "bucky-fire",
+      "url": "/assets/audio/bucky-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Shotguns/buckyTap.mp3",
+      "bytes": 31820,
+      "sha256": "478262d4bb4947a534c1f4c8d62e5f353a75e527aa0f83246d8e3111de9657fb",
+      "decodeVerified": true,
+      "duration": 2.448367,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "bucky-reload",
+      "url": "/assets/audio/bucky-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Shotguns/buckyReload.mp3",
+      "bytes": 81904,
+      "sha256": "df97ca0537ec9080c810a579b557eb94db518a67bff21203b3ae42d92068efa7",
+      "decodeVerified": true,
+      "duration": 4.179592,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "judge-fire",
+      "url": "/assets/audio/judge-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Shotguns/judgeTap.mp3",
+      "bytes": 23603,
+      "sha256": "28391d29d55215a29b11163b42e89c168a5fa8491bc93c35e50f282c795de428",
+      "decodeVerified": true,
+      "duration": 1.625147,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "judge-reload",
+      "url": "/assets/audio/judge-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Shotguns/judgeReload.mp3",
+      "bytes": 47558,
+      "sha256": "5183f35f5608c872b41322474a857da4f9844c299c8aa39a362c08e32a6fba82",
+      "decodeVerified": true,
+      "duration": 2.142041,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "bulldog-fire",
+      "url": "/assets/audio/bulldog-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/bulldogTap.mp3",
+      "bytes": 14629,
+      "sha256": "14c1cc46e06d5204efbd4ef86c3146505b7234c04a9254b18c83598b0075dfd5",
+      "decodeVerified": true,
+      "duration": 0.973515,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "bulldog-reload",
+      "url": "/assets/audio/bulldog-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/bulldogReload.mp3",
+      "bytes": 48808,
+      "sha256": "ac9c307f704be25eddd21cc575c070716d11e7f92e6b0664a4be81509698cea7",
+      "decodeVerified": true,
+      "duration": 2.377143,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "guardian-fire",
+      "url": "/assets/audio/guardian-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/guardianTap.mp3",
+      "bytes": 26118,
+      "sha256": "3b8b43d57969ecff7c73c3d6939f41de5a8716715ef2e342126789cd224c999c",
+      "decodeVerified": true,
+      "duration": 1.071066,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "guardian-reload",
+      "url": "/assets/audio/guardian-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Rifles/guardianReload.mp3",
+      "bytes": 71771,
+      "sha256": "560f37bb6a5f41500023a7eb086c26a5fcf4ed11f368eea179adceb7550c876e",
+      "decodeVerified": true,
+      "duration": 2.925714,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "marshal-fire",
+      "url": "/assets/audio/marshal-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Snipers/marshalTap.mp3",
+      "bytes": 68648,
+      "sha256": "7b760616ede91e667440722fab5e6e6e1b7413379fe85c1539d6164488b29029",
+      "decodeVerified": true,
+      "duration": 4.798231,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "marshal-reload",
+      "url": "/assets/audio/marshal-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Snipers/marshalReload.mp3",
+      "bytes": 88915,
+      "sha256": "ff99549da47b8966fc5d98c72dcf3696e85d8e02e40ec8db1f466c940f090f08",
+      "decodeVerified": true,
+      "duration": 3.84,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "operator-fire",
+      "url": "/assets/audio/operator-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Snipers/operatorTap.mp3",
+      "bytes": 48735,
+      "sha256": "0f78570d34c6de03108ce5c3474e0f94a745f63476d8ad65dd47ee61118f34ef",
+      "decodeVerified": true,
+      "duration": 3.383379,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "operator-reload",
+      "url": "/assets/audio/operator-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/Snipers/operatorReload.mp3",
+      "bytes": 77139,
+      "sha256": "5c3eb4fca3dd7aaa8e28f647d9fb618d3c3e56df837f9a42dbaacbe1d2181c37",
+      "decodeVerified": true,
+      "duration": 3.474286,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "ares-fire",
+      "url": "/assets/audio/ares-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/LMGs/aresTap.mp3",
+      "bytes": 26522,
+      "sha256": "fd8d3fdcab5ce55939725f9f4240444c030bb88dab97b234807d836a3ec6ab98",
+      "decodeVerified": true,
+      "duration": 1.830816,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "ares-reload",
+      "url": "/assets/audio/ares-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/LMGs/aresReload.mp3",
+      "bytes": 70779,
+      "sha256": "7fbda7054a3ea9fb91f4f325125a2e2570a39c4e840bf009274b496995ac45e8",
+      "decodeVerified": true,
+      "duration": 3.004082,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "odin-fire",
+      "url": "/assets/audio/odin-fire.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/LMGs/odinTap.mp3",
+      "bytes": 4932,
+      "sha256": "4a7336aa30cd9fbe6b7d60e725a1b53dbb7cb72fa7e2b22fa3f67af660d67a14",
+      "decodeVerified": true,
+      "duration": 0.114399,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "odin-reload",
+      "url": "/assets/audio/odin-reload.mp3",
+      "sourceEntry": "Sound Effects Pack/Weapons/LMGs/odinReload.mp3",
+      "bytes": 175259,
+      "sha256": "7b010711fb3aa35d5b6442ffc7d4e173018651b55191d3fc77b447e19bd9ce1e",
+      "decodeVerified": true,
+      "duration": 8.803265,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    }
+  ],
+  "events": {
+    "vandal.fire": [
+      "vandal-fire"
+    ],
+    "vandal.reload": [
+      "vandal-reload"
+    ],
+    "ghost.fire": [
+      "ghost-fire"
+    ],
+    "ghost.reload": [
+      "ghost-reload"
+    ],
+    "knife.equip": [
+      "knife-equip"
+    ],
+    "knife.light": [
+      "knife-light"
+    ],
+    "knife.heavy": [
+      "knife-heavy"
+    ],
+    "headshot": [
+      "headshot"
+    ],
+    "kill": [
+      "kill-1",
+      "kill-2",
+      "kill-3",
+      "kill-4"
+    ],
+    "body-hit": [
+      "body-hit"
+    ],
+    "shield-hit": [
+      "shield-hit"
+    ],
+    "knife-hit": [
+      "hit-reference"
+    ],
+    "knife-wall": [
+      "knife-wall-reference"
+    ],
+    "phantom.fire": [
+      "phantom-fire"
+    ],
+    "phantom.reload": [
+      "phantom-reload"
+    ],
+    "sheriff.fire": [
+      "sheriff-fire"
+    ],
+    "sheriff.reload": [
+      "sheriff-reload"
+    ],
+    "classic.fire": [
+      "classic-fire"
+    ],
+    "classic.reload": [
+      "classic-reload"
+    ],
+    "shorty.fire": [
+      "shorty-fire"
+    ],
+    "shorty.reload": [
+      "shorty-reload"
+    ],
+    "frenzy.fire": [
+      "frenzy-fire"
+    ],
+    "frenzy.reload": [
+      "frenzy-reload"
+    ],
+    "stinger.fire": [
+      "stinger-fire"
+    ],
+    "stinger.reload": [
+      "stinger-reload"
+    ],
+    "spectre.fire": [
+      "spectre-fire"
+    ],
+    "spectre.reload": [
+      "spectre-reload"
+    ],
+    "bucky.fire": [
+      "bucky-fire"
+    ],
+    "bucky.reload": [
+      "bucky-reload"
+    ],
+    "judge.fire": [
+      "judge-fire"
+    ],
+    "judge.reload": [
+      "judge-reload"
+    ],
+    "bulldog.fire": [
+      "bulldog-fire"
+    ],
+    "bulldog.reload": [
+      "bulldog-reload"
+    ],
+    "guardian.fire": [
+      "guardian-fire"
+    ],
+    "guardian.reload": [
+      "guardian-reload"
+    ],
+    "marshal.fire": [
+      "marshal-fire"
+    ],
+    "marshal.reload": [
+      "marshal-reload"
+    ],
+    "operator.fire": [
+      "operator-fire"
+    ],
+    "operator.reload": [
+      "operator-reload"
+    ],
+    "ares.fire": [
+      "ares-fire"
+    ],
+    "ares.reload": [
+      "ares-reload"
+    ],
+    "odin.fire": [
+      "odin-fire"
+    ],
+    "odin.reload": [
+      "odin-reload"
+    ]
+  },
+  "unavailable": [
+    "vandal.equip",
+    "ghost.equip",
+    "hurt",
+    "footstep"
+  ],
+  "authoredImpactNote": "Firearm body/shield confirmations use authored short impact WAVs, not original Valorant recordings. The provided recording contains overlapping firearm shots; knife recording is reserved for knife-hit only.",
+  "fallbackEvents": {
+    "body-hit": [
+      "body-hit"
+    ],
+    "shield-hit": [
+      "shield-hit"
+    ],
+    "knife-hit": []
+  },
+  "knifeWallNote": "Server-confirmed wall contact only. Provided showcase wall-contact clip; mixed ambience may remain. Legacy knife-hit.wav URL now contains wall-only recording, never player-hit fallback."
+}

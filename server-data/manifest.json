@@ -1,0 +1,30 @@
+{
+  "motion": {
+    "source": "hitbox-motion-data.mjs",
+    "sourceSha256": "b485b6d9a0a27ba4ff0d00387daca43862ffe90b656d640c7ac0c11ff45bf461",
+    "bytes": 30627073,
+    "sha256": "2825ed5b08c9d5de4f40ad9d6a0c8eb69978e23efa05bffb97dae72d85a4093c",
+    "exports": [
+      "HITBOX_MOTION",
+      "AIM_ANCESTORS"
+    ]
+  },
+  "skeleton": {
+    "source": "hitbox-skeleton-data.mjs",
+    "sourceSha256": "46255e62390d7486f1a76c1747373d00a465988c648de1b77eff6e45d6f5fca5",
+    "bytes": 17729422,
+    "sha256": "94121f6999439843a4d680c26bff9f87280850356e0e5c7f9599d6d74a4846b7",
+    "exports": [
+      "HITBOX_SKELETON"
+    ]
+  },
+  "combat": {
+    "source": "hitbox-combat-skeleton-data.mjs",
+    "sourceSha256": "13038dcd02bbe4ab932dc2d4ee4ed5f126d08d2afba08c8daf5e0f47b1f4e102",
+    "bytes": 33030588,
+    "sha256": "0398ba57993462bdfa0972c5d3463c7928fd352803d262058e47f1f5d2a1fb6a",
+    "exports": [
+      "HITBOX_COMBAT_SKELETON"
+    ]
+  }
+}

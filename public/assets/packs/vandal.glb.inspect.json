@@ -1,0 +1,114 @@
+{
+  "source": "C:\\Users\\sunny\\Documents\\MSIT Northwestern\\projects\\project-0006-Aim-Duel\\01-\u9700\u6c42\u4e0e\u539f\u59cb\u8d44\u6599\\asset-pack\\Weapons/Vandal.blend",
+  "objects": [
+    {
+      "name": "AK S0",
+      "type": "ARMATURE",
+      "dimensions": [
+        1.514379858970642,
+        0.1646599918603897,
+        0.3415800929069519
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 0,
+      "bones": [
+        "Skeleton",
+        "Root",
+        "Muzzle",
+        "Ejection",
+        "Bullet",
+        "Reflex",
+        "Magazine_Main",
+        "Charging_Handle",
+        "Ejection_Button",
+        "Trigger",
+        "Gun_Buddy",
+        "Magazine_Extra",
+        "Left_Hand_Target"
+      ]
+    },
+    {
+      "name": "GN_AK_Magazine_S0_Staticmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        0.2347123920917511,
+        0.039164550602436066,
+        0.3096712529659271
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 747,
+      "bones": []
+    },
+    {
+      "name": "GN_AK_S0_Skelmesh.mo",
+      "type": "MESH",
+      "dimensions": [
+        1.2813830375671387,
+        0.08373956382274628,
+        0.2979693114757538
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 6079,
+      "bones": []
+    }
+  ],
+  "images": [
+    {
+      "name": "AK_S0_AEM.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Ak\\Ak S0\\Texutres PSK\\AK_S0_AEM.tga"
+    },
+    {
+      "name": "AK_S0_DF.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Ak\\Ak S0\\Texutres PSK\\AK_S0_DF.tga"
+    },
+    {
+      "name": "AK_S0_MRS.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Ak\\Ak S0\\Texutres PSK\\AK_S0_MRS.tga"
+    },
+    {
+      "name": "AK_S0_NM.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "path": "//Ak\\Ak S0\\Texutres PSK\\AK_S0_NM.tga"
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "packed": false,
+      "path": ""
+    }
+  ]
+}
