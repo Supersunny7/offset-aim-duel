@@ -10,9 +10,10 @@ export async function createStaticDelivery(root,{deploymentArtifact=process.env.
   // The game replaces every Vandal material in loadVandal; lab/source files stay intact.
   if(process.env.NODE_ENV==='production'&&file==='public/assets/packs/vandal.glb'&&manifest['.static-runtime/vandal.glb'])file='.static-runtime/vandal.glb';
   const path=resolve(root,file),info=await stat(path),entry=manifest[file.replaceAll('\\','/')];
-  // Immutable deployment archives truncate file mtimes to whole seconds.
-  // Local editing retains the stricter millisecond guard and dynamic fallback.
-  const fresh=entry&&entry.size===info.size&&(deploymentArtifact?Math.floor(entry.mtimeMs/1000)===Math.floor(info.mtimeMs/1000):Math.abs(entry.mtimeMs-info.mtimeMs)<1);
+  // Production files and gzip manifest are produced in the same immutable build.
+  // Hosts can rewrite mtimes when packaging it; those are not content versions.
+  // Local editing retains the millisecond guard and dynamic fallback.
+  const fresh=entry&&entry.size===info.size&&(deploymentArtifact||Math.abs(entry.mtimeMs-info.mtimeMs)<1);
   // Weak ETags describe decoded content, consistently across gzip and identity.
   const etag=`W/"${fresh?entry.sha256:`${info.size}-${info.mtimeMs}`}"`;
   const acceptsGzip=(req.headers['accept-encoding']||'').split(',').some(s=>/^gzip(?:\s*;|\s*$)/i.test(s.trim())&&!/;\s*q=0(?:\.0*)?(?:\s*;|\s*$)/i.test(s));
