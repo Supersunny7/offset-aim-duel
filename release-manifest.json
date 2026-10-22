@@ -1,11 +1,11 @@
 {
   "version": "2026-10-21-loading-optimization",
-  "files": 784,
+  "files": 785,
   "entries": [
     {
       "path": ".dockerignore",
-      "bytes": 49,
-      "sha256": "8adacebd701e68bfaef40bc92edef830f47d614a0f5df6e3b0038e219049e60d"
+      "bytes": 65,
+      "sha256": "ca9e71d0953ccc4a5db9a0e1e2f9a23cd2b5a436e6057cda982f6e61488946bc"
     },
     {
       "path": "accuracy.mjs",
@@ -3904,23 +3904,28 @@
     },
     {
       "path": "prepare-static-assets.mjs",
-      "bytes": 2298,
-      "sha256": "bb909b3acf40f9050802da6b711dd0d8574c3622cb2956f4a9b5f97fa4e51354"
+      "bytes": 2864,
+      "sha256": "70b9a4bf35258c8da11a3e3d2f3f3520bcd77163a4ae1db0f6348566e6770e06"
     },
     {
       "path": "static-assets.mjs",
-      "bytes": 2155,
-      "sha256": "eb203db2d1734351a268c6c6c5315d990b250afaf48c7ec1cce56ccb14b3f98f"
+      "bytes": 2402,
+      "sha256": "58cb37b4e43b86ce13db6ddce285b6f058d451981ae30d7663503aa076e746ab"
     },
     {
       "path": ".gitignore",
-      "bytes": 61,
-      "sha256": "aaebc0e6ce97d42425bc31592e922ed66bbf0ae802dfbb881f4b4d8349de7b93"
+      "bytes": 78,
+      "sha256": "0f8156ac134fde46a8c7a8a3b8ab03b83916db82fc856437d8a6e7ec0b3bda14"
     },
     {
       "path": ".gitattributes",
       "bytes": 9,
       "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "runtime-vandal.mjs",
+      "bytes": 2525,
+      "sha256": "76e009431ac4ced252fe827954c4637b1b6cc634de1674773d2c70588d878597"
     }
   ]
 }

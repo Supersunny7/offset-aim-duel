@@ -7,6 +7,8 @@ const compressible=new Set(['.html','.css','.js','.mjs','.json','.glb','.fbx']);
 export async function createStaticDelivery(root){
  let manifest={};try{manifest=JSON.parse(await readFile(resolve(root,'.static-gzip/manifest.json'),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
  return async function deliver(req,res,file,mime){
+  // The game replaces every Vandal material in loadVandal; lab/source files stay intact.
+  if(process.env.NODE_ENV==='production'&&file==='public/assets/packs/vandal.glb'&&manifest['.static-runtime/vandal.glb'])file='.static-runtime/vandal.glb';
   const path=resolve(root,file),info=await stat(path),entry=manifest[file.replaceAll('\\','/')];
   const fresh=entry&&entry.size===info.size&&Math.abs(entry.mtimeMs-info.mtimeMs)<1;
   // Weak ETags describe decoded content, consistently across gzip and identity.
