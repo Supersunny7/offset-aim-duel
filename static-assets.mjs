@@ -7,8 +7,10 @@ const compressible=new Set(['.html','.css','.js','.mjs','.json','.glb','.fbx']);
 export async function createStaticDelivery(root,{deploymentArtifact=process.env.NODE_ENV==='production'}={}){
  let manifest={};try{manifest=JSON.parse(await readFile(resolve(root,'.static-gzip/manifest.json'),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
  return async function deliver(req,res,file,mime){
-  // The game replaces every Vandal material in loadVandal; lab/source files stay intact.
-  if(process.env.NODE_ENV==='production'&&file==='public/assets/packs/vandal.glb'&&manifest['.static-runtime/vandal.glb'])file='.static-runtime/vandal.glb';
+  // Build-derived models keep original geometry, materials and animation.
+  // Vandal alone drops embedded materials replaced by its existing loader.
+  const model=/^public\/assets\/packs\/([a-z-]+\.glb)$/.exec(file),derived=model&&'.static-runtime/'+model[1];
+  if(process.env.NODE_ENV==='production'&&derived&&manifest[derived])file=derived;
   const path=resolve(root,file),info=await stat(path),entry=manifest[file.replaceAll('\\','/')];
   // Production files and gzip manifest are produced in the same immutable build.
   // Hosts can rewrite mtimes when packaging it; those are not content versions.
