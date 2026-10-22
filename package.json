@@ -2,9 +2,13 @@
   "name": "aim-duel",
   "version": "1.0.0",
   "private": true,
+  "description": "Browser-based 1v1 aim-training game with WebSocket multiplayer and a free armory",
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
+    "build": "node prepare-static-assets.mjs",
+    "pretest": "npm run build",
+    "verify:hitboxes": "node tools/verify-server-hitboxes.mjs",
     "test": "node --test --test-concurrency=2 tests/*.test.mjs"
   },
   "dependencies": {

@@ -1,0 +1,12 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {createAdsReticle} from '../public/ads-reticle.mjs';import {createADS,adsFov,ADS_VIEW_PROFILES} from '../public/ads.mjs';
+test('Operator measured aperture stays centered and identical through both zoom levels and clears on exit',()=>{
+ const old=globalThis.document;const element=()=>({style:{setProperty(k,v){this[k]=v;}},dataset:{},children:[],classes:new Set(),setAttribute(){},append(x){this.children.push(x);},get classList(){return {toggle:(k,v)=>v?this.classes.add(k):this.classes.delete(k)};}});globalThis.document={createElement:element};
+ try{const root=element(),reticle=createAdsReticle(root),scope=root.children[1],ads=createADS(),state={weapon:'operator',alive:true,playing:true,phase:'waiting'};ads.update(0,state);ads.toggle(state);ads.update(.25,state);
+  reticle.setAmount(ads.amount,{weapon:'operator',scoped:true,now:0});assert.equal(scope.style['--scope-radius'],'52.05vh');assert.ok(scope.classes.has('operatorScope'));assert.equal(scope.style.opacity,'1');const aperture=scope.style['--scope-radius'],worldFov1=adsFov(74,ads.amount,ads.zoom);
+  ads.toggle(state);ads.update(.16,state);reticle.shot('operator',20);reticle.setAmount(ads.amount,{weapon:'operator',scoped:true,now:45});assert.equal(scope.style['--scope-radius'],aperture);assert.ok(adsFov(74,1,ads.zoom)<worldFov1);assert.equal(reticle.node.style.opacity,'0');assert.equal(reticle.node.style.transform,'translate(-50%,-50%) scale(1)');assert.ok(scope.children[0].innerHTML.includes('mask="url(#scopeBody)"'));
+  ads.toggle(state);ads.update(.217,state);reticle.setAmount(ads.amount,{weapon:'operator',scoped:true,now:400});assert.equal(scope.style.opacity,'0');assert.equal(ads.sensitivityScale,1);assert.equal(adsFov(74,ads.amount,ads.zoom),74);
+  reticle.setAmount(1,{weapon:'marshal',scoped:true,now:500});assert.ok(!scope.classes.has('operatorScope'));assert.ok(scope.classes.has('marshalScope'));assert.equal(scope.style['--scope-radius'],'50.93vh');
+ }finally{globalThis.document=old;}
+});
+test('Operator saved source frame calibrates aperture without claiming two zooms independently measured',()=>{assert.equal(ADS_VIEW_PROFILES.operator.lensMeasured,true);assert.ok(ADS_VIEW_PROFILES.operator.scopeRadiusVh>50&&ADS_VIEW_PROFILES.operator.scopeRadiusVh<53);assert.equal(ADS_VIEW_PROFILES.operator.provisional,true);});

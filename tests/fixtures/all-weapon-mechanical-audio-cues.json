@@ -1,0 +1,1200 @@
+[
+  {
+    "weapon": "classic",
+    "recording": "public\\assets\\audio\\classic-reload.mp3",
+    "sha256": "85aa101e3ccda712c05b7399edfc4ae01d789842270959f8aac43e9772ea3a8d",
+    "decodedDuration": 1.5412291666666667,
+    "equip": {
+      "cue": {
+        "phase": 0.466666667,
+        "offset": 1.455,
+        "duration": 0.086229,
+        "peak": 0.045,
+        "label": "original Slide return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Slide",
+        "landmark": "return",
+        "frame": 28,
+        "fps": 61.0,
+        "seconds": 0.45901639344262296,
+        "duration": 0.9836065573770492,
+        "maxMotionMetric": 0.06632805615663528,
+        "phase": 0.4666666666666667,
+        "sourceEntry": "Animations/Weapon Animations/Classic/GN_Core_BasePistol_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 1.5,
+      "rms": 0.0014740659330500277
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.133858268,
+          "offset": 0.11,
+          "duration": 0.2,
+          "peak": 0.195,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 17,
+          "fps": 60.472442626953125,
+          "seconds": 0.28111978384717906,
+          "duration": 2.1001301499171614,
+          "maxMotionMetric": 0.7294728956819658,
+          "phase": 0.13385826771653542,
+          "sourceEntry": "Animations/Weapon Animations/Classic/GN_Core_BasePistol_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.305,
+        "rms": 0.02690356850521536
+      },
+      {
+        "cue": {
+          "phase": 0.42519685,
+          "offset": 0.625,
+          "duration": 0.2,
+          "peak": 0.185,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 54,
+          "fps": 60.472442626953125,
+          "seconds": 0.8929687251616276,
+          "duration": 2.1001301499171614,
+          "maxMotionMetric": 0.7294728956819658,
+          "phase": 0.42519685039370075,
+          "sourceEntry": "Animations/Weapon Animations/Classic/GN_Core_BasePistol_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.81,
+        "rms": 0.043811372807521634
+      },
+      {
+        "cue": {
+          "phase": 0.708661417,
+          "offset": 0.995,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Slide return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Slide",
+          "landmark": "return",
+          "frame": 90,
+          "fps": 60.472442626953125,
+          "seconds": 1.4882812086027126,
+          "duration": 2.1001301499171614,
+          "maxMotionMetric": 0.0720899924635891,
+          "phase": 0.7086614173228346,
+          "sourceEntry": "Animations/Weapon Animations/Classic/GN_Core_BasePistol_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.04,
+        "rms": 0.011751016376771655
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "shorty",
+    "recording": "public\\assets\\audio\\shorty-reload.mp3",
+    "sha256": "fda519cc7b2e609dda10789dbb03ea38d075a40fa8d0c8bb40324e0007e4a848",
+    "decodedDuration": 2.1681666666666666,
+    "equip": {
+      "cue": {
+        "phase": 0.168539326,
+        "offset": 0.35,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Mag_Rotator last significant motion (different final bind) / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Mag_Rotator",
+        "landmark": "last significant motion (different final bind)",
+        "frame": 15,
+        "fps": 60.674156188964844,
+        "seconds": 0.24722222676296793,
+        "duration": 1.4668518787936096,
+        "maxMotionMetric": 0.20416899419840112,
+        "phase": 0.16853932584269665,
+        "sourceEntry": "Animations/Weapon Animations/Shorty/GN_Core_Slim_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 0.395,
+      "rms": 0.06956639167246352
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.10625,
+          "offset": 0.185,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Mag_Rotator leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Mag_Rotator",
+          "landmark": "leave",
+          "frame": 17,
+          "fps": 60.375,
+          "seconds": 0.2815734989648033,
+          "duration": 2.650103519668737,
+          "maxMotionMetric": 0.15025579251182164,
+          "phase": 0.10625000000000001,
+          "sourceEntry": "Animations/Weapon Animations/Shorty/GN_Core_Slim_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.23,
+        "rms": 0.06854910527580663
+      },
+      {
+        "cue": {
+          "phase": 0.5875,
+          "offset": 1.325,
+          "duration": 0.2,
+          "peak": 0.195,
+          "label": "original Mag_Rotator return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Mag_Rotator",
+          "landmark": "return",
+          "frame": 94,
+          "fps": 60.375,
+          "seconds": 1.556935817805383,
+          "duration": 2.650103519668737,
+          "maxMotionMetric": 0.15025579251182164,
+          "phase": 0.5875,
+          "sourceEntry": "Animations/Weapon Animations/Shorty/GN_Core_Slim_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.52,
+        "rms": 0.05157598771141721
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "frenzy",
+    "recording": "public\\assets\\audio\\frenzy-reload.mp3",
+    "sha256": "38ced630067495cb5da7d21d5fbd97acd9c6c81facc60f6620902a60fe074da3",
+    "decodedDuration": 2.7024375,
+    "equip": {
+      "cue": {
+        "phase": 0.3875,
+        "offset": 2.405,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Charging_Handle return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Charging_Handle",
+        "landmark": "return",
+        "frame": 31,
+        "fps": 60.75,
+        "seconds": 0.5102880658436214,
+        "duration": 1.316872427983539,
+        "maxMotionMetric": 0.05747038125992014,
+        "phase": 0.3875,
+        "sourceEntry": "Animations/Weapon Animations/Frenzy/GN_Core_AutoPistol_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 2.45,
+      "rms": 0.017703956509157213
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.163636364,
+          "offset": 0.49,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 18,
+          "fps": 60.54545211791992,
+          "seconds": 0.2972973092172592,
+          "duration": 1.8168168896610284,
+          "maxMotionMetric": 0.7746759185646291,
+          "phase": 0.16363636363636366,
+          "sourceEntry": "Animations/Weapon Animations/Frenzy/GN_Core_AutoPistol_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.535,
+        "rms": 0.02111169036022558
+      },
+      {
+        "cue": {
+          "phase": 0.563636364,
+          "offset": 1.54,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 62,
+          "fps": 60.54545211791992,
+          "seconds": 1.0240240650816705,
+          "duration": 1.8168168896610284,
+          "maxMotionMetric": 0.7746759185646291,
+          "phase": 0.5636363636363636,
+          "sourceEntry": "Animations/Weapon Animations/Frenzy/GN_Core_AutoPistol_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.585,
+        "rms": 0.03435077958871977
+      },
+      {
+        "cue": {
+          "phase": 0.690909091,
+          "offset": 1.835,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Charging_Handle return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Charging_Handle",
+          "landmark": "return",
+          "frame": 76,
+          "fps": 60.54545211791992,
+          "seconds": 1.2552553055839832,
+          "duration": 1.8168168896610284,
+          "maxMotionMetric": 0.07826739549637168,
+          "phase": 0.6909090909090909,
+          "sourceEntry": "Animations/Weapon Animations/Frenzy/GN_Core_AutoPistol_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.88,
+        "rms": 0.06183018994671526
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "stinger",
+    "recording": "public\\assets\\audio\\stinger-reload.mp3",
+    "sha256": "9f13d07faf825442daa984e1147f659c094cd9b847af1fda05ed32ba7eb172dd",
+    "decodedDuration": 2.0898125,
+    "equip": {
+      "cue": {
+        "phase": 0.243902439,
+        "offset": 0.545,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Stock last significant motion (different final bind) / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Stock",
+        "landmark": "last significant motion (different final bind)",
+        "frame": 20,
+        "fps": 60.73170852661133,
+        "seconds": 0.3293172625175929,
+        "duration": 1.350200776322131,
+        "maxMotionMetric": 0.3141005054629191,
+        "phase": 0.2439024390243902,
+        "sourceEntry": "Animations/Weapon Animations/Stinger/GN_Core_Vector_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 0.59,
+      "rms": 0.030962383265443056
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.16,
+          "offset": 0.24,
+          "duration": 0.2,
+          "peak": 0.145,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 24,
+          "fps": 60.400001525878906,
+          "seconds": 0.39735098333924695,
+          "duration": 2.4834436458702935,
+          "maxMotionMetric": 0.8037737452882724,
+          "phase": 0.16,
+          "sourceEntry": "Animations/Weapon Animations/Stinger/GN_Core_Vector_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.385,
+        "rms": 0.05484654928251421
+      },
+      {
+        "cue": {
+          "phase": 0.393333333,
+          "offset": 0.78,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 59,
+          "fps": 60.400001525878906,
+          "seconds": 0.9768211673756487,
+          "duration": 2.4834436458702935,
+          "maxMotionMetric": 0.8037737452882724,
+          "phase": 0.3933333333333333,
+          "sourceEntry": "Animations/Weapon Animations/Stinger/GN_Core_Vector_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.825,
+        "rms": 0.10078826365395853
+      },
+      {
+        "cue": {
+          "phase": 0.72,
+          "offset": 1.465,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Bolt return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Bolt",
+          "landmark": "return",
+          "frame": 108,
+          "fps": 60.400001525878906,
+          "seconds": 1.7880794250266112,
+          "duration": 2.4834436458702935,
+          "maxMotionMetric": 0.06114824116230011,
+          "phase": 0.72,
+          "sourceEntry": "Animations/Weapon Animations/Stinger/GN_Core_Vector_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.51,
+        "rms": 0.05707261063428842
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "spectre",
+    "recording": "public\\assets\\audio\\spectre-reload.mp3",
+    "sha256": "481b0a2851177542987964aac93c95991dd3b2ef86051a852dce83962a7181f2",
+    "decodedDuration": 2.272666666666667,
+    "equip": {
+      "cue": {
+        "phase": 0.161616162,
+        "offset": 0.21,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Stock last significant motion (different final bind) / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Stock",
+        "landmark": "last significant motion (different final bind)",
+        "frame": 16,
+        "fps": 60.60606002807617,
+        "seconds": 0.2640000025177002,
+        "duration": 1.6335000155782702,
+        "maxMotionMetric": 0.13089363276958488,
+        "phase": 0.1616161616161616,
+        "sourceEntry": "Animations/Weapon Animations/Spectre/GN_Core_MP5_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 0.255,
+      "rms": 0.039709185326747734
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.113333333,
+          "offset": 0.21,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 17,
+          "fps": 60.400001525878906,
+          "seconds": 0.28145694653196657,
+          "duration": 2.4834436458702935,
+          "maxMotionMetric": 2.198547227231663,
+          "phase": 0.11333333333333331,
+          "sourceEntry": "Animations/Weapon Animations/Spectre/GN_Core_MP5_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.255,
+        "rms": 0.039709185326747734
+      },
+      {
+        "cue": {
+          "phase": 0.346666667,
+          "offset": 0.745,
+          "duration": 0.2,
+          "peak": 0.01,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 52,
+          "fps": 60.400001525878906,
+          "seconds": 0.8609271305683684,
+          "duration": 2.4834436458702935,
+          "maxMotionMetric": 2.198547227231663,
+          "phase": 0.3466666666666667,
+          "sourceEntry": "Animations/Weapon Animations/Spectre/GN_Core_MP5_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.755,
+        "rms": 0.02832897495949322
+      },
+      {
+        "cue": {
+          "phase": 0.746666667,
+          "offset": 1.68,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Bolt last significant motion (different final bind) (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Bolt",
+          "landmark": "last significant motion (different final bind)",
+          "frame": 112,
+          "fps": 60.400001525878906,
+          "seconds": 1.8543045889164858,
+          "duration": 2.4834436458702935,
+          "maxMotionMetric": 0.0608987957239151,
+          "phase": 0.7466666666666666,
+          "sourceEntry": "Animations/Weapon Animations/Spectre/GN_Core_MP5_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.725,
+        "rms": 0.060661028498698664
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "bucky",
+    "recording": "public\\assets\\audio\\bucky-reload.mp3",
+    "sha256": "df97ca0537ec9080c810a579b557eb94db518a67bff21203b3ae42d92068efa7",
+    "decodedDuration": 4.179604166666667,
+    "equip": {
+      "cue": {
+        "phase": 0.398863636,
+        "offset": 3.505,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Pump return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Pump",
+        "landmark": "return",
+        "frame": 13,
+        "fps": 24.75,
+        "seconds": 0.5252525252525253,
+        "duration": 1.292929292929293,
+        "maxMotionMetric": 0.12584418058395938,
+        "phase": 0.40625,
+        "sourceEntry": "Animations/Weapon Animations/Bucky/GN_Core_PumpShotgun_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 3.55,
+      "rms": 0.035080384413377276
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.338461538,
+          "offset": 1.54,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original L_Weapon_HandOffset peak (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "L_Weapon_HandOffset",
+          "landmark": "peak",
+          "frame": 44,
+          "fps": 60.4615364074707,
+          "seconds": 0.7277353936801928,
+          "duration": 2.1501272995096605,
+          "maxMotionMetric": 0.7224756067085027,
+          "phase": 0.3384615384615385,
+          "sourceEntry": "Animations/Agent Animations/Shared/First Person/FP_Core_PumpShotgun_S0_Reload.psa",
+          "sourceMissing": "GN has no animated magazine/shell insertion channel; original FP handling peak is estimated cue"
+        },
+        "audioPeakSeconds": 1.585,
+        "rms": 0.024659507542645384
+      },
+      {
+        "cue": {
+          "phase": 0.676923077,
+          "offset": 2.785,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Pump return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Pump",
+          "landmark": "return",
+          "frame": 88,
+          "fps": 60.4615364074707,
+          "seconds": 1.4554707873603856,
+          "duration": 2.1501272995096605,
+          "maxMotionMetric": 0.12864163517952742,
+          "phase": 0.676923076923077,
+          "sourceEntry": "Animations/Weapon Animations/Bucky/GN_Core_PumpShotgun_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 2.83,
+        "rms": 0.024023006007651147
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "judge",
+    "recording": "public\\assets\\audio\\judge-reload.mp3",
+    "sha256": "5183f35f5608c872b41322474a857da4f9844c299c8aa39a362c08e32a6fba82",
+    "decodedDuration": 2.1420416666666666,
+    "equip": {
+      "cue": {
+        "phase": 0.6375,
+        "offset": 1.46,
+        "duration": 0.16,
+        "peak": 0.14,
+        "label": "original L_Weapon_HandOffset settle / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "L_Weapon_HandOffset",
+        "landmark": "settle",
+        "frame": 51,
+        "fps": 60.75,
+        "seconds": 0.8395061728395061,
+        "duration": 1.316872427983539,
+        "maxMotionMetric": 0.5391540856978116,
+        "phase": 0.6375,
+        "sourceEntry": "Animations/Agent Animations/Shared/First Person/FP_Core_AutoShotgun_S0_Equip.psa",
+        "sourceMissing": "GN Equip exists but all mechanical tracks are constant; FP grip settle is engineering sound cue"
+      },
+      "audioPeakSeconds": 1.6,
+      "rms": 0.04138226887150066
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.105882353,
+          "offset": 0.165,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 18,
+          "fps": 60.352943420410156,
+          "seconds": 0.29824560294623115,
+          "duration": 2.816764027825516,
+          "maxMotionMetric": 0.49862654759186154,
+          "phase": 0.10588235294117648,
+          "sourceEntry": "Animations/Weapon Animations/Judge/GN_Core_AutoShotgun_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.21,
+        "rms": 0.051041074655885844
+      },
+      {
+        "cue": {
+          "phase": 0.382352941,
+          "offset": 0.685,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 65,
+          "fps": 60.352943420410156,
+          "seconds": 1.076998010639168,
+          "duration": 2.816764027825516,
+          "maxMotionMetric": 0.49862654759186154,
+          "phase": 0.38235294117647056,
+          "sourceEntry": "Animations/Weapon Animations/Judge/GN_Core_AutoShotgun_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.73,
+        "rms": 0.04785637919826307
+      },
+      {
+        "cue": {
+          "phase": 0.705882353,
+          "offset": 1.46,
+          "duration": 0.2,
+          "peak": 0.14,
+          "label": "original Charging_Handle return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Charging_Handle",
+          "landmark": "return",
+          "frame": 120,
+          "fps": 60.352943420410156,
+          "seconds": 1.988304019641541,
+          "duration": 2.816764027825516,
+          "maxMotionMetric": 0.12650227546692427,
+          "phase": 0.7058823529411765,
+          "sourceEntry": "Animations/Weapon Animations/Judge/GN_Core_AutoShotgun_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.6,
+        "rms": 0.04138226887150066
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "bulldog",
+    "recording": "public\\assets\\audio\\bulldog-reload.mp3",
+    "sha256": "ac9c307f704be25eddd21cc575c070716d11e7f92e6b0664a4be81509698cea7",
+    "decodedDuration": 2.3771458333333335,
+    "equip": {
+      "cue": {
+        "phase": 0.4,
+        "offset": 2.065,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Charging_Handle last significant motion (different final bind) / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Charging_Handle",
+        "landmark": "last significant motion (different final bind)",
+        "frame": 34,
+        "fps": 60.70588302612305,
+        "seconds": 0.5600775131690131,
+        "duration": 1.4001937829225328,
+        "maxMotionMetric": 0.210289025112691,
+        "phase": 0.39999999999999997,
+        "sourceEntry": "Animations/Weapon Animations/Bulldog/GN_Core_Burst_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 2.11,
+      "rms": 0.01797845966379934
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.3,
+          "offset": 0.615,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 54,
+          "fps": 60.33333206176758,
+          "seconds": 0.8950276431727044,
+          "duration": 2.9834254772423483,
+          "maxMotionMetric": 1.2373754611169931,
+          "phase": 0.3,
+          "sourceEntry": "Animations/Weapon Animations/Bulldog/GN_Core_Burst_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.66,
+        "rms": 0.00502081220539418
+      },
+      {
+        "cue": {
+          "phase": 0.511111111,
+          "offset": 1.09,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 92,
+          "fps": 60.33333206176758,
+          "seconds": 1.5248619105905334,
+          "duration": 2.9834254772423483,
+          "maxMotionMetric": 1.2373754611169931,
+          "phase": 0.5111111111111111,
+          "sourceEntry": "Animations/Weapon Animations/Bulldog/GN_Core_Burst_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.135,
+        "rms": 0.050232264112608456
+      },
+      {
+        "cue": {
+          "phase": 0.744444444,
+          "offset": 1.75,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Charging_Handle return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Charging_Handle",
+          "landmark": "return",
+          "frame": 134,
+          "fps": 60.33333206176758,
+          "seconds": 2.2209945219470812,
+          "duration": 2.9834254772423483,
+          "maxMotionMetric": 0.1814543936243847,
+          "phase": 0.7444444444444444,
+          "sourceEntry": "Animations/Weapon Animations/Bulldog/GN_Core_Burst_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.795,
+        "rms": 0.08434007668651965
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "guardian",
+    "recording": "public\\assets\\audio\\guardian-reload.mp3",
+    "sha256": "560f37bb6a5f41500023a7eb086c26a5fcf4ed11f368eea179adceb7550c876e",
+    "decodedDuration": 2.9257291666666667,
+    "equip": {
+      "cue": {
+        "phase": 0.272727273,
+        "offset": 1.82,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Charging_Handle return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Charging_Handle",
+        "landmark": "return",
+        "frame": 30,
+        "fps": 60.54545211791992,
+        "seconds": 0.4954955153620987,
+        "duration": 1.8168168896610284,
+        "maxMotionMetric": 0.14335311949253396,
+        "phase": 0.27272727272727276,
+        "sourceEntry": "Animations/Weapon Animations/Guardian/GN_Core_Dmr_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 1.865,
+      "rms": 0.08511272945350788
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.173684211,
+          "offset": 0.38,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 33,
+          "fps": 60.31578826904297,
+          "seconds": 0.5471204297753864,
+          "duration": 3.1500873229491946,
+          "maxMotionMetric": 0.8328141433171439,
+          "phase": 0.1736842105263158,
+          "sourceEntry": "Animations/Weapon Animations/Guardian/GN_Core_Dmr_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.425,
+        "rms": 0.050131766437600735
+      },
+      {
+        "cue": {
+          "phase": 0.363157895,
+          "offset": 0.985,
+          "duration": 0.2,
+          "peak": 0.15,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 69,
+          "fps": 60.31578826904297,
+          "seconds": 1.1439790804394443,
+          "duration": 3.1500873229491946,
+          "maxMotionMetric": 0.8328141433171439,
+          "phase": 0.36315789473684207,
+          "sourceEntry": "Animations/Weapon Animations/Guardian/GN_Core_Dmr_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.135,
+        "rms": 0.07325939620395994
+      },
+      {
+        "cue": {
+          "phase": 0.715789474,
+          "offset": 1.82,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Charging_Handle return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Charging_Handle",
+          "landmark": "return",
+          "frame": 136,
+          "fps": 60.31578826904297,
+          "seconds": 2.254799346953108,
+          "duration": 3.1500873229491946,
+          "maxMotionMetric": 0.16934497654438085,
+          "phase": 0.7157894736842105,
+          "sourceEntry": "Animations/Weapon Animations/Guardian/GN_Core_Dmr_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.865,
+        "rms": 0.08511272945350788
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "marshal",
+    "recording": "public\\assets\\audio\\marshal-reload.mp3",
+    "sha256": "ff99549da47b8966fc5d98c72dcf3696e85d8e02e40ec8db1f466c940f090f08",
+    "decodedDuration": 3.84,
+    "equip": {
+      "cue": {
+        "phase": 0.276923077,
+        "offset": 2.79,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Bolt return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Bolt",
+        "landmark": "return",
+        "frame": 36,
+        "fps": 60.4615364074707,
+        "seconds": 0.5954198675565213,
+        "duration": 2.1501272995096605,
+        "maxMotionMetric": 0.10233847796916962,
+        "phase": 0.2769230769230769,
+        "sourceEntry": "Animations/Weapon Animations/Marshal/GN_Core_Leversniper_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 2.835,
+      "rms": 0.03897201713830442
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.5,
+          "offset": 2.29,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original L_Weapon_HandOffset peak (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "L_Weapon_HandOffset",
+          "landmark": "peak",
+          "frame": 70,
+          "fps": 60.42857360839844,
+          "seconds": 1.1583923932017373,
+          "duration": 2.3167847864034745,
+          "maxMotionMetric": 0.2663657082653369,
+          "phase": 0.5,
+          "sourceEntry": "Animations/Agent Animations/Shared/First Person/FP_Core_Leversniper_S0_Reload.psa",
+          "sourceMissing": "GN has no animated magazine/shell insertion channel; original FP handling peak is estimated cue"
+        },
+        "audioPeakSeconds": 2.335,
+        "rms": 0.01306645487692371
+      },
+      {
+        "cue": {
+          "phase": 0.642857143,
+          "offset": 2.49,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Bolt return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Bolt",
+          "landmark": "return",
+          "frame": 90,
+          "fps": 60.42857360839844,
+          "seconds": 1.4893616484022334,
+          "duration": 2.3167847864034745,
+          "maxMotionMetric": 0.10459581017494228,
+          "phase": 0.6428571428571428,
+          "sourceEntry": "Animations/Weapon Animations/Marshal/GN_Core_Leversniper_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 2.535,
+        "rms": 0.03712092653193864
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "operator",
+    "recording": "public\\assets\\audio\\operator-reload.mp3",
+    "sha256": "5c3eb4fca3dd7aaa8e28f647d9fb618d3c3e56df837f9a42dbaacbe1d2181c37",
+    "decodedDuration": 3.474291666666667,
+    "equip": {
+      "cue": {
+        "phase": 0.55,
+        "offset": 2.72,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Bolt return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Bolt",
+        "landmark": "return",
+        "frame": 77,
+        "fps": 60.42857360839844,
+        "seconds": 1.274231632521911,
+        "duration": 2.3167847864034745,
+        "maxMotionMetric": 0.28967665343009147,
+        "phase": 0.55,
+        "sourceEntry": "Animations/Weapon Animations/Operator/GN_Core_Boltsniper_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 2.765,
+      "rms": 0.05044084344335034
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.22962963,
+          "offset": 0.805,
+          "duration": 0.2,
+          "peak": 0.17,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 62,
+          "fps": 60.22222137451172,
+          "seconds": 1.0295203096948646,
+          "duration": 4.4833948970582815,
+          "maxMotionMetric": 0.47086044573458563,
+          "phase": 0.22962962962962963,
+          "sourceEntry": "Animations/Weapon Animations/Operator/GN_Core_Boltsniper_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.975,
+        "rms": 0.049590945121676215
+      },
+      {
+        "cue": {
+          "phase": 0.437037037,
+          "offset": 1.405,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 118,
+          "fps": 60.22222137451172,
+          "seconds": 1.959409621677323,
+          "duration": 4.4833948970582815,
+          "maxMotionMetric": 0.47086044573458563,
+          "phase": 0.437037037037037,
+          "sourceEntry": "Animations/Weapon Animations/Operator/GN_Core_Boltsniper_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.45,
+        "rms": 0.030787218244973883
+      },
+      {
+        "cue": {
+          "phase": 0.766666667,
+          "offset": 2.62,
+          "duration": 0.2,
+          "peak": 0.145,
+          "label": "original Bolt return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Bolt",
+          "landmark": "return",
+          "frame": 207,
+          "fps": 60.22222137451172,
+          "seconds": 3.4372694210780157,
+          "duration": 4.4833948970582815,
+          "maxMotionMetric": 0.2943190179108437,
+          "phase": 0.7666666666666666,
+          "sourceEntry": "Animations/Weapon Animations/Operator/GN_Core_Boltsniper_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 2.765,
+        "rms": 0.05044084344335034
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "ares",
+    "recording": "public\\assets\\audio\\ares-reload.mp3",
+    "sha256": "7fbda7054a3ea9fb91f4f325125a2e2570a39c4e840bf009274b496995ac45e8",
+    "decodedDuration": 3.0040833333333334,
+    "equip": {
+      "cue": {
+        "phase": 0.309090909,
+        "offset": 2.385,
+        "duration": 0.16,
+        "peak": 0.045,
+        "label": "original Charging_Handle return / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Charging_Handle",
+        "landmark": "return",
+        "frame": 34,
+        "fps": 60.54545211791992,
+        "seconds": 0.5615615840770452,
+        "duration": 1.8168168896610284,
+        "maxMotionMetric": 0.13124775886535645,
+        "phase": 0.3090909090909091,
+        "sourceEntry": "Animations/Weapon Animations/Ares/GN_Core_LMG_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 2.43,
+      "rms": 0.08100756783694413
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.132,
+          "offset": 0.385,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 33,
+          "fps": 60.2400016784668,
+          "seconds": 0.5478087496766468,
+          "duration": 4.150066285429142,
+          "maxMotionMetric": 0.6686068396425121,
+          "phase": 0.132,
+          "sourceEntry": "Animations/Weapon Animations/Ares/GN_Core_LMG_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.43,
+        "rms": 0.040382620558920244
+      },
+      {
+        "cue": {
+          "phase": 0.344,
+          "offset": 0.935,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 86,
+          "fps": 60.2400016784668,
+          "seconds": 1.427622802187625,
+          "duration": 4.150066285429142,
+          "maxMotionMetric": 0.6686068396425121,
+          "phase": 0.344,
+          "sourceEntry": "Animations/Weapon Animations/Ares/GN_Core_LMG_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.98,
+        "rms": 0.058585853270902585
+      },
+      {
+        "cue": {
+          "phase": 0.704,
+          "offset": 1.93,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Charging_Handle return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Charging_Handle",
+          "landmark": "return",
+          "frame": 176,
+          "fps": 60.2400016784668,
+          "seconds": 2.921646664942116,
+          "duration": 4.150066285429142,
+          "maxMotionMetric": 0.12797338020907367,
+          "phase": 0.704,
+          "sourceEntry": "Animations/Weapon Animations/Ares/GN_Core_LMG_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 1.975,
+        "rms": 0.05965623876793719
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  },
+  {
+    "weapon": "odin",
+    "recording": "public\\assets\\audio\\odin-reload.mp3",
+    "sha256": "7b010711fb3aa35d5b6442ffc7d4e173018651b55191d3fc77b447e19bd9ce1e",
+    "decodedDuration": 8.803270833333332,
+    "equip": {
+      "cue": {
+        "phase": 0.194117647,
+        "offset": 0.955,
+        "duration": 0.16,
+        "peak": 0.02,
+        "label": "original Bullet6 last significant motion (different final bind) / reload recording clack (engineering cue)"
+      },
+      "landmark": {
+        "bone": "Bullet6",
+        "landmark": "last significant motion (different final bind)",
+        "frame": 33,
+        "fps": 60.352943420410156,
+        "seconds": 0.5467836054014238,
+        "duration": 2.816764027825516,
+        "maxMotionMetric": 0.05397399711579394,
+        "phase": 0.19411764705882356,
+        "sourceEntry": "Animations/Weapon Animations/Odin/GN_Core_HMG_S0_Equip.psa"
+      },
+      "audioPeakSeconds": 0.975,
+      "rms": 0.056094240337395476
+    },
+    "reload": [
+      {
+        "cue": {
+          "phase": 0.097222222,
+          "offset": 0.84,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Magazine_Main leave (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "leave",
+          "frame": 35,
+          "fps": 60.16666793823242,
+          "seconds": 0.5817174392294963,
+          "duration": 5.983379374931961,
+          "maxMotionMetric": 0.4288370561082314,
+          "phase": 0.09722222222222222,
+          "sourceEntry": "Animations/Weapon Animations/Odin/GN_Core_HMG_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.885,
+        "rms": 0.0668192236223089
+      },
+      {
+        "cue": {
+          "phase": 0.194444444,
+          "offset": 0.955,
+          "duration": 0.2,
+          "peak": 0.02,
+          "label": "original Magazine_Main return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Magazine_Main",
+          "landmark": "return",
+          "frame": 70,
+          "fps": 60.16666793823242,
+          "seconds": 1.1634348784589925,
+          "duration": 5.983379374931961,
+          "maxMotionMetric": 0.4288370561082314,
+          "phase": 0.19444444444444445,
+          "sourceEntry": "Animations/Weapon Animations/Odin/GN_Core_HMG_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 0.975,
+        "rms": 0.056094240337395476
+      },
+      {
+        "cue": {
+          "phase": 0.666666667,
+          "offset": 3.79,
+          "duration": 0.2,
+          "peak": 0.045,
+          "label": "original Charging_Handle return (engineering synchronization cue)"
+        },
+        "landmark": {
+          "bone": "Charging_Handle",
+          "landmark": "return",
+          "frame": 240,
+          "fps": 60.16666793823242,
+          "seconds": 3.9889195832879745,
+          "duration": 5.983379374931961,
+          "maxMotionMetric": 0.1763051897287383,
+          "phase": 0.6666666666666667,
+          "sourceEntry": "Animations/Weapon Animations/Odin/GN_Core_HMG_S0_Reload.psa"
+        },
+        "audioPeakSeconds": 3.835,
+        "rms": 0.074954503078787
+      }
+    ],
+    "measurement": "5ms mono48k RMS; position distance +0.1m/radian rotation metric; 10percent source excursion return; engineering cues, not Riot notifies"
+  }
+]

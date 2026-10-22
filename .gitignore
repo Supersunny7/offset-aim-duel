@@ -1,8 +1,12 @@
 node_modules/
 .static-gzip/
 .static-runtime/
-tests/
-tools/
+tests/.artifacts/
+tools/*
+!tools/build-server-hitboxes.py
+!tools/verify-server-hitboxes.mjs
 *.log
 .env
 .env.*
+.DS_Store
+Thumbs.db

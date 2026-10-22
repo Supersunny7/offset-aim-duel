@@ -1,0 +1,38 @@
+import {test,after} from 'node:test';
+import assert from 'node:assert/strict';
+import {WebSocket} from 'ws';
+import {server,close} from '../server.mjs';
+await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const url=`ws://127.0.0.1:${server.address().port}`,clients=[];
+after(()=>{for(const c of clients)c.ws.terminate();close();});
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(fn,timeout=4000){const end=Date.now()+timeout;while(Date.now()<end){if(fn())return fn();await sleep(15);}throw Error('Weapon condition timed out');}
+test('server validates equips, preserves magazines, semi-auto edges, reload interruption and knife cooldown',{timeout:20000},async()=>{
+ const ws=new WebSocket(url),c={ws,state:null,events:[]};clients.push(c);
+ ws.on('message',raw=>{const m=JSON.parse(raw);if(m.type==='welcome')c.id=m.id;if(m.type==='state')c.state=m;if(m.type==='shot')c.events.push(m);});
+ await new Promise((r,j)=>{ws.once('open',r);ws.once('error',j);});
+ const send=m=>ws.send(JSON.stringify(m)),input=m=>send({type:'input',yaw:0,pitch:0,...m}),me=()=>c.state?.players.find(p=>p.id===c.id);
+ send({type:'create'});await until(()=>me());
+ input({fire:true});input({fire:false});await until(()=>me().ammo===24);
+ send({type:'equip',weapon:'operator'});await sleep(100);assert.equal(me().weapon,'vandal','unlisted weapons rejected');
+ send({type:'equip',weapon:'ghost'});await until(()=>me().weapon==='ghost');
+ assert.equal(me().ammo,13);assert.equal(me().magazines.vandal,24);
+ input({fire:true});input({fire:false});await sleep(100);assert.equal(me().ammo,13,'equip delay blocks shot');
+ await until(()=>Date.now()>me().equipUntil+50);const before=c.events.length;
+ const held=setInterval(()=>input({fire:true}),40);
+ await sleep(650);clearInterval(held);input({fire:false});await until(()=>me().ammo===12);
+ assert.equal(c.events.length,before+1,'Ghost held trigger fires once');
+ input({reload:true});await until(()=>me().reloadUntil>0);
+ send({type:'equip',weapon:'vandal'});await until(()=>me().weapon==='vandal');assert.equal(me().reloadUntil,0);assert.equal(me().ammo,24);
+ send({type:'equip',weapon:'ghost'});await until(()=>me().weapon==='ghost');assert.equal(me().ammo,12,'cancelled reload did not refill');
+ await until(()=>Date.now()>me().equipUntil+50);input({reload:true});await until(()=>me().reloadUntil>0);await until(()=>me().ammo===13);
+ send({type:'equip',weapon:'knife'});await until(()=>me().weapon==='knife');assert.equal(me().ammo,-1);
+ await until(()=>Date.now()>me().equipUntil+50);input({fire:true});input({fire:false});await until(()=>c.events.at(-1)?.weapon==='knife');
+ const knife=c.events.at(-1),distance=Math.hypot(knife.end.x-knife.origin.x,knife.end.y-knife.origin.y,knife.end.z-knife.origin.z);
+ assert.ok(distance<=2.001);assert.equal(me().ammo,-1);
+ await until(()=>me().shots===c.events.length);
+ const shotCount=c.events.length,deadline=me().nextShotAt;
+ send({type:'equip',weapon:'vandal'});await until(()=>me().weapon==='vandal');assert.equal(me().nextShotAt,deadline,'switch preserves attack cooldown');
+ await until(()=>Date.now()>me().equipUntil+20);input({fire:true});input({fire:false});await sleep(50);
+ if(Date.now()<deadline)assert.equal(c.events.length,shotCount,'cannot evade knife cooldown by switching');
+});

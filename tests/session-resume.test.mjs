@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {saveRoomSession,readRoomSession,clearRoomSession} from '../public/session-resume.mjs';
+const storage=()=>{const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v),removeItem:k=>m.delete(k)}};
+const welcome={code:'ABC123',token:'a'.repeat(48),id:'b'.repeat(16)};
+test('same tab refresh recovers the server-issued identity while separate tabs stay separate',()=>{const a=storage(),b=storage();saveRoomSession(a,welcome,1000);assert.deepEqual(readRoomSession(a,null,1500),{type:'resume',code:welcome.code,token:welcome.token});assert.equal(readRoomSession(b,null,1500),null);assert.equal(readRoomSession(a,'DEF456',1500),null);assert(readRoomSession(a,'abc123',1500));clearRoomSession(a);assert.equal(readRoomSession(a,null,1500),null);});
+test('expired or malformed credentials cannot automatically resume a room',()=>{const a=storage();saveRoomSession(a,welcome,1000);assert.equal(readRoomSession(a,null,7201001),null);saveRoomSession(a,{...welcome,token:'invalid'},1000);assert.equal(readRoomSession(a,null,1200),null);});
+test('unavailable browser storage does not break the game',()=>{const blocked={getItem(){throw Error('blocked')},setItem(){throw Error('blocked')},removeItem(){throw Error('blocked')}};assert.equal(readRoomSession(blocked),null);assert.equal(saveRoomSession(blocked,welcome),false);assert.doesNotThrow(()=>clearRoomSession(blocked));});

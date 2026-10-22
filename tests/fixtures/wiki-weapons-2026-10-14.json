@@ -1,0 +1,79 @@
+{
+  "sheriff": {
+    "url": "https://valorant.fandom.com/wiki/Sheriff",
+    "capacity": 6,
+    "reserve": 24,
+    "rps": 4.0,
+    "reload": 2250.0,
+    "equip": 1000.0,
+    "runSpeed": 5.4,
+    "equipFast": 600.0,
+    "equipInstant": 200.0,
+    "damage": [
+      159,
+      55,
+      46,
+      145,
+      50,
+      42
+    ],
+    "falloff": 30
+  },
+  "phantom": {
+    "url": "https://valorant.fandom.com/wiki/Phantom",
+    "capacity": 30,
+    "reserve": 60,
+    "rps": 11.0,
+    "reload": 2500.0,
+    "equip": 1000.0,
+    "runSpeed": 5.4,
+    "equipFast": 600.0,
+    "equipInstant": 200.0,
+    "damage": [
+      156,
+      39,
+      33,
+      140,
+      35,
+      29
+    ],
+    "falloff": 20
+  },
+  "ghost": {
+    "url": "https://valorant.fandom.com/wiki/Ghost",
+    "capacity": 13,
+    "reserve": 39,
+    "rps": 6.75,
+    "reload": 1500.0,
+    "equip": 750.0,
+    "runSpeed": 5.73,
+    "equipFast": 450.0,
+    "equipInstant": 150.0,
+    "damage": [
+      105,
+      30,
+      25,
+      87,
+      25,
+      21
+    ],
+    "falloff": 30
+  },
+  "vandal": {
+    "url": "https://valorant.fandom.com/wiki/Vandal",
+    "capacity": 25,
+    "reserve": 50,
+    "rps": 9.75,
+    "reload": 2500.0,
+    "equip": 1000.0,
+    "runSpeed": 5.4,
+    "equipFast": 600.0,
+    "equipInstant": 200.0,
+    "damage": [
+      160,
+      40,
+      34
+    ],
+    "falloff": null
+  }
+}
