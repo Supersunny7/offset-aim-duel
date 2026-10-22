@@ -106,10 +106,11 @@ export function buildWeapon(camera,{loaders={}}={}) {
     loadingDiagnostics:{states,errors,timings:{},placeholderMeshes:0},additionalArms:{},assetsReady:false});
   const recentAssets=new Map(),protectedAssets=new Set(['vandal','ghost','knife','phantom','sheriff']);
   gun.userData.loadingDiagnostics.cacheLimit=4;gun.userData.loadingDiagnostics.evictions=0;
+  gun.userData.retainAllWeapons=()=>{gun.userData.loadingDiagnostics.cacheLimit=Object.keys(states).length;};
   function pruneAssets(){
     const live=Object.keys(gun.userData.assets).filter(id=>!protectedAssets.has(id));
     for(const id of [...recentAssets.keys()]){
-      if(live.length<=4)break;if(id===gun.userData.weapon||gun.userData.pinnedWeapons?.includes(id)||protectedAssets.has(id)||tasks[id])continue;
+      if(live.length<=gun.userData.loadingDiagnostics.cacheLimit)break;if(id===gun.userData.weapon||gun.userData.pinnedWeapons?.includes(id)||protectedAssets.has(id)||tasks[id])continue;
       const arms=gun.userData.additionalArms[id];if(arms?.diagnostics.weapon===id)continue;
       if(arms?.releaseWeapon?.(id)===false)continue;
       disposeImportedWeapon(gun.userData.assets[id]);delete gun.userData.assets[id];delete gun.userData.additionalArms[id];states[id]='unrequested';recentAssets.delete(id);live.splice(live.indexOf(id),1);gun.userData.loadingDiagnostics.evictions++;

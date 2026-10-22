@@ -127,6 +127,12 @@ async function createController(camera){
   })().finally(()=>delete tasks[weapon]);return tasks[weapon];
  }
  const controller={mount,model,diagnostics,ensureWeapon,setActionListener(fn){listener=fn;},getNativeAdsOffset(){return new T.Vector3();},
+  prepareWeapon(weapon){
+   if(!sets[weapon])throw Error("Weapon clips are not loaded: "+weapon);
+   const savedListener=listener;listener=null;
+   try{controller.update(0,{visible:true,weapon,equipElapsed:Infinity});}
+   finally{controller.update(0,{visible:false});restore();current=null;diagnostics.weapon=null;listener=savedListener;}
+  },
   releaseWeapon(weapon){
    // Evict only inactive newly imported sets. Do not reset the shared rig or
    // the selected source pose while another model is loading asynchronously.

@@ -231,11 +231,12 @@ async function loadOpponent(group){
     group.userData.diagnostics.clips=[...new Set([...group.userData.diagnostics.clips,...entries.map(([name])=>name)])];
   }
   const recentWeapons=new Map(),protectedWeapons=new Set(['vandal','ghost','knife','phantom','sheriff']);let preferredWeapon='vandal';
+  group.userData.retainAllWeapons=()=>{group.userData.retainWeaponCache=true;};
   function touchWeapon(id){
     if(protectedWeapons.has(id))return;recentWeapons.delete(id);recentWeapons.set(id,true);
     const live=Object.keys(state.weaponModels).filter(id=>!protectedWeapons.has(id));
     for(const key of [...recentWeapons.keys()]){
-      if(live.length<=4)break;if(key===preferredWeapon||key===state.weapon||pendingWeapons.has(key))continue;
+      if(group.userData.retainWeaponCache||live.length<=4)break;if(key===preferredWeapon||key===state.weapon||pendingWeapons.has(key))continue;
       disposeImportedWeapon(state.weaponModels[key]);state.weaponHolders[key]?.removeFromParent();delete state.weaponModels[key];delete state.weaponHolders[key];
       for(const name of Object.keys(actions).filter(name=>name.startsWith(key+'-'))){actions[name].stop();mixer.uncacheClip(actions[name].getClip());delete actions[name];}for(const action of [...(firePools[key]||[]),...(firePools[key+'-zoomed']||[])]){action.stop();mixer.uncacheClip(action.getClip());}delete firePools[key];delete firePools[key+'-zoomed'];recentWeapons.delete(key);live.splice(live.indexOf(key),1);
     }

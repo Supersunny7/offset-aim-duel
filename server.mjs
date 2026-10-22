@@ -24,6 +24,7 @@ export const server=http.createServer(async(req,res)=>{
  if(process.env.NODE_ENV==='production'&&/(?:^|\/)[^/]*-lab(?:\.mjs)?$/.test(pathname)){res.writeHead(404);return res.end('Not found');}
  if(pathname==='/health'){res.writeHead(200,{'Content-Type':'application/json'});return res.end(JSON.stringify({ok:true,rooms:rooms.size,accuracyRevision:ACCURACY_CALIBRATION.revision}));}
  const routes={'/movement-net.mjs':'movement-net.mjs','/':'public/index.html','/app.mjs':'public/app.mjs','/scene.mjs':'public/scene.mjs','/style.css':'public/style.css','/shared.mjs':'shared.mjs','/vendor/three.module.js':'node_modules/three/build/three.module.min.js','/vendor/three.core.min.js':'node_modules/three/build/three.core.min.js'};
+ routes['/arena-preparation.mjs']='public/arena-preparation.mjs';
  routes['/session-resume.mjs']='public/session-resume.mjs';
  for(const file of ['equipment-catalog.mjs','loadout.mjs'])routes['/'+file]=file;
  for(const file of ['armory-ui.mjs','armory-ui.css'])routes['/'+file]='public/'+file;
