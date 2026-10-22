@@ -1,6 +1,6 @@
 # Asset provenance
 
-This private development repository combines application code/procedural arena work with user-provided third-party game/reference material. No repository-wide open-source license is assigned to models, textures, converted animations, recordings or sounds.
+This public project repository combines application code/procedural arena work with user-provided third-party game/reference material. No repository-wide open-source license is assigned to models, textures, converted animations, recordings or sounds.
 
 | Material | Recorded source | Use and metadata status |
 | --- | --- | --- |
@@ -13,6 +13,6 @@ This private development repository combines application code/procedural arena w
 | Foundry | Project procedural arena implementation | Generated geometry, cover, materials and labels. |
 | Three.js / ws | Locked npm dependencies | Upstream MIT notices copied under `docs/licenses/`. |
 
-VALORANT names and referenced game content belong to their respective owners. This project is not affiliated with or endorsed by Riot Games. No permission to relicense third-party game assets is asserted. A public-source release needs a separate asset review or a code-only distribution with replacement assets.
+VALORANT names and referenced game content belong to their respective owners. This project is not affiliated with or endorsed by Riot Games. No permission to relicense third-party game assets is asserted. Public availability does not grant reuse rights to third-party assets. Before redistributing or reusing them, verify the original permissions or supply replacement assets.
 
 Original runtime source representations remain versioned; lossless derivatives are generated separately. `server-data/manifest.json` records generated hitbox source hashes. Original local ZIPs and full reference videos remain outside this repository.

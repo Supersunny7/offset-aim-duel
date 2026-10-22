@@ -41,7 +41,7 @@ npm ci --ignore-scripts
 npm start
 ```
 
-Open **http://localhost:5180/**. Create a room in one window and join from another browser profile or private window to simulate two players. Repository access is required to clone this private repository.
+Open **http://localhost:5180/**. Create a room in one window and join from another browser profile or private window to simulate two players. The source is available publicly on GitHub.
 
 ```sh
 npm test                 # Build optimized assets, then run regression tests
@@ -61,4 +61,4 @@ Rooms live in one server process and reset on restart/deployment. This is a prot
 
 Three.js and ws use their upstream MIT licenses. User-supplied third-party models, animation conversions, textures, and sound clips are **not** assigned an open-source license by this repository. See [asset provenance](docs/ASSETS.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-Raw supplied ZIPs, reference videos, credentials, generated caches, and machine-specific QA utilities are excluded. The repository remains private.
+Raw supplied ZIPs, reference videos, credentials, generated caches, and machine-specific QA utilities are excluded. This public repository is provided for learning and project review; third-party assets retain their owners' rights.
