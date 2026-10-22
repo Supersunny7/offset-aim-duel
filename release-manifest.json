@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-21-loading-optimization",
+  "version": "2026-10-21-loading-optimized-final",
   "files": 785,
   "entries": [
     {
@@ -3909,8 +3909,8 @@
     },
     {
       "path": "static-assets.mjs",
-      "bytes": 2402,
-      "sha256": "58cb37b4e43b86ce13db6ddce285b6f058d451981ae30d7663503aa076e746ab"
+      "bytes": 2700,
+      "sha256": "266d7d51b24d5a18bcfdc0f5f7476ede8d4161396402a45859b92e3eb4a9dcec"
     },
     {
       "path": ".gitignore",
