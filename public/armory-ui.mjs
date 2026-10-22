@@ -15,7 +15,9 @@ function button(className,text){const el=node('button',className,text);el.type='
 function stat(label,value){const el=node('div','armoryStat');el.append(node('span','',label),node('strong','',String(value)));return el;}
 
 // The server remains the owner of equipped items. Clicking never marks an item as equipped.
-export function mountArmory(root,{onSelect=()=>{},onHero=()=>{}}={}) {
+export function mountArmory(root,{onSelect=()=>{},onHero=()=>{},onPreview=()=>{}}={}) {
+ let previewTimer=null;
+ const cancelPreview=()=>{clearTimeout(previewTimer);previewTimer=null;};
  let category='all', selectedTab='weapons', inspected='vandal', detailKey='', inspectionPinned=false;
  const shell=node('div','armoryShell');
  const header=node('header','armoryHeader'), heading=node('div');
@@ -53,7 +55,7 @@ export function mountArmory(root,{onSelect=()=>{},onHero=()=>{}}={}) {
   card.append(icon,node('strong','armoryWeaponName',item.label),node('span','armoryCardAction',item.ready?'Equip':'Coming soon'));
   card.setAttribute('aria-label',`${item.label}, ${item.ready?'Equip':'Coming soon, Not selectable yet'}`);
   card.onclick=()=>{inspectionPinned=true;inspected=item.id;refreshDetail();status(`Confirming ${item.label}…`);onSelect(item.id);};
-  const preview=()=>{inspectionPinned=true;inspected=item.id;refreshDetail();};card.onfocus=preview;card.onpointerenter=preview;weaponCards.set(item.id,{card,item});categoryTargets.get(item.category).append(card);
+  const preview=()=>{inspectionPinned=true;inspected=item.id;refreshDetail();cancelPreview();if(item.ready&&!card.disabled)previewTimer=setTimeout(()=>{previewTimer=null;if(!root.hidden)onPreview(item.id);},350);};card.onfocus=preview;card.onpointerenter=preview;card.onblur=cancelPreview;card.onpointerleave=cancelPreview;weaponCards.set(item.id,{card,item});categoryTargets.get(item.category).append(card);
  }
  const detail=node('aside','armoryDetail');detail.setAttribute('aria-label','Weapon stats and appearance');
  const catalog=node('section','armoryCatalog');catalog.append(weaponNote,filter,weaponGrid);

@@ -22,7 +22,12 @@ const motionKinds=['walkadd','runadd','jumpadd','jumplandadd','altwalkadd','altr
 const sheriffViewRotation=new T.Quaternion().setFromEuler(new T.Euler(0,.077,-.18,'YXZ'));
 const sheriffViewTranslation=new T.Vector3(.035,-.012,0);
 export const ADDITIONAL_WEAPONS=Object.freeze(['phantom','sheriff','classic','shorty','frenzy','stinger','spectre','bucky','judge','bulldog','guardian','marshal','operator','ares','odin']);
-export async function loadNativeWeaponIndex(weapon){
+const nativeIndices=new Map();
+export function loadNativeWeaponIndex(weapon){
+ if(nativeIndices.has(weapon))return nativeIndices.get(weapon);
+ const pending=readNativeWeaponIndex(weapon).catch(error=>{nativeIndices.delete(weapon);throw error;});nativeIndices.set(weapon,pending);return pending;
+}
+async function readNativeWeaponIndex(weapon){
  if(!ADDITIONAL_WEAPONS.includes(weapon))throw Error('Unsupported additional weapon');
  const response=await fetch(`/assets/packs/animations/${weapon}-native-index.json`);
  if(!response.ok)throw Error(`${weapon} native index: HTTP ${response.status}`);

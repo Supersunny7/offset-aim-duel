@@ -65,14 +65,14 @@ function attachStingerReferenceOptic(root){
 
 export async function attachAdditionalWeaponMechanics(root,weapon){
  const index=await loadNativeWeaponIndex(weapon),sources={};
- for(const kind of ['fire','equip','reload',...(!['phantom','sheriff'].includes(weapon)?['firezoomed']:[])].filter(k=>index.gn[k])){
+ Object.assign(sources,Object.fromEntries(await Promise.all(['fire','equip','reload',...(!['phantom','sheriff'].includes(weapon)?['firezoomed']:[])].filter(k=>index.gn[k]).map(async kind=>{
   // Original LMG/HMG Fire stores local deltas. The prior absolute export
   // collapsed magazines, handles and belt helpers to the origin on each shot.
   // These two derived files resolve the unchanged PSA keys on the original
   // BLEND bind in its post_quat basis. Every other gun retains its source path.
   const file=kind==='fire'&&weapon==='odin'?'odin-fire-source-belt.json':kind==='fire'&&weapon==='ares'?'ares-fire-source-delta.json':index.gn[kind];
-  const r=await fetch('/assets/packs/animations/'+file);if(!r.ok)throw Error(`${weapon} GN ${kind}: HTTP ${r.status}`);sources[kind]=await r.json();
- }
+  const r=await fetch('/assets/packs/animations/'+file);if(!r.ok)throw Error(`${weapon} GN ${kind}: HTTP ${r.status}`);return [kind,await r.json()];
+ }))));
  const model=root.userData.model||root,clips={},actions={},mixer=new T.AnimationMixer(model),rest=[];
  model.traverse(b=>{if(b.isBone)rest.push({b,p:b.position.clone(),q:b.quaternion.clone(),s:b.scale.clone()});});
  // The pack has eight loose cartridge meshes, only three constrained (with

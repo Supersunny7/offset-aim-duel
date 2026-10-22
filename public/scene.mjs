@@ -103,13 +103,13 @@ export function buildWeapon(camera,{loaders={}}={}) {
   gun.scale.setScalar(.82);gun.position.set(.22,-.23,-.55);gun.userData.basePosition=gun.position.clone();
   const states={arms:'loading',vandal:'loading',ghost:'loading',knife:'loading',...Object.fromEntries(ADDITIONAL_WEAPONS.map(id=>[id,'unrequested']))},errors={},tasks={};
   Object.assign(gun.userData,{weapon:'vandal',assets:{},assetStatus:'loading',handsStatus:'loading',muzzle:flash,
-    loadingDiagnostics:{states,errors,placeholderMeshes:0},additionalArms:{},assetsReady:false});
+    loadingDiagnostics:{states,errors,timings:{},placeholderMeshes:0},additionalArms:{},assetsReady:false});
   const recentAssets=new Map(),protectedAssets=new Set(['vandal','ghost','knife','phantom','sheriff']);
   gun.userData.loadingDiagnostics.cacheLimit=4;gun.userData.loadingDiagnostics.evictions=0;
   function pruneAssets(){
     const live=Object.keys(gun.userData.assets).filter(id=>!protectedAssets.has(id));
     for(const id of [...recentAssets.keys()]){
-      if(live.length<=4)break;if(id===gun.userData.weapon||protectedAssets.has(id)||tasks[id])continue;
+      if(live.length<=4)break;if(id===gun.userData.weapon||gun.userData.pinnedWeapons?.includes(id)||protectedAssets.has(id)||tasks[id])continue;
       const arms=gun.userData.additionalArms[id];if(arms?.diagnostics.weapon===id)continue;
       if(arms?.releaseWeapon?.(id)===false)continue;
       disposeImportedWeapon(gun.userData.assets[id]);delete gun.userData.assets[id];delete gun.userData.additionalArms[id];states[id]='unrequested';recentAssets.delete(id);live.splice(live.indexOf(id),1);gun.userData.loadingDiagnostics.evictions++;
@@ -129,6 +129,7 @@ export function buildWeapon(camera,{loaders={}}={}) {
   const load=key=>{
     if(states[key]==='ready'||tasks[key])return tasks[key]||Promise.resolve();
     states[key]='loading';delete errors[key];sync();
+    const started=performance.now();
     const task=(async()=>{
       try{
         if(key==='arms'){
@@ -138,14 +139,21 @@ export function buildWeapon(camera,{loaders={}}={}) {
         }else{
           let model;
           if(key==='vandal')model=await (loaders.vandal||loadVandal)();
-          else{model=(await (loaders.imported||loadImportedWeapon)(key)).root;if(key==='ghost')await (loaders.ghostMechanics||attachGhostMechanics)(model);
-            if(ADDITIONAL_WEAPONS.includes(key)){await attachAdditionalWeaponMechanics(model,key);const controller=await loadAdditionalFirstPersonArms(camera,key);gun.userData.additionalArms[key]=controller;controller.setActionListener(({kind,weapon,...metadata})=>gun.userData.onWeaponAction?.(kind,weapon,metadata));}}
+          else if(ADDITIONAL_WEAPONS.includes(key)){
+            // Hand clips do not depend on the weapon mesh: overlap both pipelines.
+            const [loaded,hands]=await Promise.allSettled([
+              (async()=>{const {root}=await (loaders.imported||loadImportedWeapon)(key);try{await (loaders.additionalMechanics||attachAdditionalWeaponMechanics)(root,key);return root;}catch(error){disposeImportedWeapon(root);throw error;}})(),
+              (loaders.additionalArms||loadAdditionalFirstPersonArms)(camera,key)
+            ]);
+            if(loaded.status==='rejected'||hands.status==='rejected'){if(loaded.status==='fulfilled')disposeImportedWeapon(loaded.value);throw loaded.status==='rejected'?loaded.reason:hands.reason;}
+            model=loaded.value;const controller=hands.value;gun.userData.additionalArms[key]=controller;controller.setActionListener(({kind,weapon,...metadata})=>gun.userData.onWeaponAction?.(kind,weapon,metadata));
+          }else{model=(await (loaders.imported||loadImportedWeapon)(key)).root;if(key==='ghost')await (loaders.ghostMechanics||attachGhostMechanics)(model);}
           model.visible=false;gun.add(model);gun.userData.assets[key]=model;
           if(key==='vandal'){gun.userData.vandal=model;flash.position.copy(model.userData.socket.position);}
         }
         states[key]='ready';if(key!=='arms')touchAsset(key);
       }catch(error){states[key]='failed';errors[key]=String(error?.message||error);console.error(key+' asset failed',error);}
-      finally{delete tasks[key];sync();}
+      finally{gun.userData.loadingDiagnostics.timings[key]={durationMs:Math.round(performance.now()-started),status:states[key]};delete tasks[key];sync();}
     })();tasks[key]=task;return task;
   };
   gun.userData.isWeaponReady=ready;

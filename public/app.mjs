@@ -156,7 +156,7 @@ function connect(action){autoEntryRequested=true;settingsOpen=false;document.que
   if((lastReload&&!p.reloadUntil)||lastWeapon!==p.weapon||p.hp<=0)gameAudio.stopReload();lastReload=p.reloadUntil||0;if(p.hp<=0||p.reloadUntil)resetAimRecoil();if(lastWeapon!==p.weapon){resetAimRecoil();flash.userData.effects.clear();if(lastWeapon)gameAudio.stop('equip',{weapon:lastWeapon});lastWeapon=p.weapon;}
   if(p.hp<=0&&lastHp>0){gameAudio.stop('equip',{weapon:p.weapon});resetControls();}
   if(p.hp<lastHp){$('damageFlash').style.opacity=1;setTimeout(()=>$('damageFlash').style.opacity=0,150);}lastHp=p.hp;
-  $('hp').textContent=Math.ceil(p.hp);$('armor').textContent=Math.ceil(p.armor||0);$('healthLine').style.width=p.hp+'px';$('ammo').textContent=p.reloadUntil?'RELOAD':p.weapon==='knife'?'MELEE':p.ammo+' / ∞';$('weaponLabel').textContent=WEAPONS[p.weapon||'vandal'].label;gun.userData.selectWeapon?.(p.weapon||'vandal');if(p.weapon===pendingLoadoutWeapon)pendingLoadoutWeapon=null;$('myScore').textContent=p.kills;
+  $('hp').textContent=Math.ceil(p.hp);$('armor').textContent=Math.ceil(p.armor||0);$('healthLine').style.width=p.hp+'px';$('ammo').textContent=p.reloadUntil?'RELOAD':p.weapon==='knife'?'MELEE':p.ammo+' / ∞';$('weaponLabel').textContent=WEAPONS[p.weapon||'vandal'].label;gun.userData.pinnedWeapons=Object.values(p.loadout||{});gun.userData.selectWeapon?.(p.weapon||'vandal');if(p.weapon===pendingLoadoutWeapon)pendingLoadoutWeapon=null;$('myScore').textContent=p.kills;
   const q=m.players.find(q=>q.id!==id)||m.trainingBot;if(q){prepareHitbox(q.weapon);enemyGroup.userData.ensureWeapon?.(q.weapon);}if(q?.id!==enemyTarget?.id){enemyEpoch=null;enemyDisplaySample=null;enemyGroup.userData.combat?.reset();enemyGroup.userData.lifecycle?.reset();}$('theirScore').textContent=q?.kills||0;enemyTarget=q;enemyGroup.visible=!!q;if(q&&(!isBrowserHitboxReady(q.weapon)||enemyGroup.userData.status!=='ready'||enemyGroup.userData.isWeaponReady?.(q.weapon)===false)&&$('overlay').hidden&&!hasEnteredArena&&!shopPreview()&&!armoryResumePending){pauseControls();releaseGamePointer();}refreshPlayButton();
   if(q&&enemyEpoch!==(q.lifeEpoch??q.spawnEpoch)){enemyGroup.position.set(q.x,q.y||0,q.z);enemyEpoch=q.lifeEpoch??q.spawnEpoch;enemyDisplaySample=null;}
   let status=m.phase==='waiting'?(m.trainingBot?`BOT WARMUP · Eliminations ${p.trainingKills||0} · Passive · Respawns in 2s\nRoom ${code} · A friend joining starts 1v1`:`WARMUP · Move / jump / fire\nRoom ${code} · Copy the invite link to bring a friend`):m.phase==='paused'?'Opponent disconnected · Reconnecting (up to 30s)':m.phase==='countdown'?`Get ready · ${Math.max(1,Math.ceil((m.startAt-m.now)/1000))}`:p.hp<=0?`Eliminated · Respawning in ${Math.max(1,Math.ceil((p.respawnAt-m.now)/1000))}s`:'';
@@ -371,7 +371,13 @@ function openArmory(){
  releaseGamePointer();$('closeArmory').focus();
 }
 let loadoutRequestSerial=0,pendingLoadoutRequest=null,pendingLoadoutWeapon=null,lastLoadoutSignature='';
-const armoryUI=mountArmory($('armory'),{onSelect:weapon=>requestLoadout({weapon,equipmentSlot:equipmentById[weapon]?.slot,skin:'default'}),onHero:hero=>requestLoadout({hero})});
+let previewWarmupPending=false;
+function warmArmoryWeapon(weapon){
+ if(previewWarmupPending||!id||!connected||$('armory').hidden)return;
+ previewWarmupPending=true;
+ Promise.all([gun.userData.preloadWeapon?.(weapon),ensureBrowserHitboxData(weapon)]).catch(error=>console.warn('Weapon preview preparation failed',weapon,error)).finally(()=>{previewWarmupPending=false;});
+}
+const armoryUI=mountArmory($('armory'),{onPreview:warmArmoryWeapon,onSelect:weapon=>requestLoadout({weapon,equipmentSlot:equipmentById[weapon]?.slot,skin:'default'}),onHero:hero=>requestLoadout({hero})});
 function requestLoadout(change){
  const p=state?.players.find(p=>p.id===id);
  if(!connected||!p?.hp||!['waiting','active','countdown'].includes(state?.phase)){armoryUI.status('Join a room to change equipment for free while alive.',true);return;}
