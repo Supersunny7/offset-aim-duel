@@ -3,13 +3,10 @@ import {advanceHitboxMotion} from './hitbox-motion.mjs';
 import {recordShotSnapshot,resolveShotHistory,clearShotHistory} from './lag-compensation.mjs';
 import {ASCENT_SPAWNS,MAPS,ascentBlocked,DUEL_MAP} from './map-collision.mjs';
 import http from 'node:http';
-import {stat} from 'node:fs/promises';
-import {createReadStream} from 'node:fs';
-import {pipeline} from 'node:stream/promises';
+import {createStaticDelivery} from './static-assets.mjs';
 import {fileURLToPath} from 'node:url';
 import {resolve,extname,sep} from 'node:path';
 import {randomBytes} from 'node:crypto';
-import {createGzip} from 'node:zlib';
 import {WebSocketServer} from 'ws';
 import {move,direction,trace,SPAWNS,eyeHeight,RATE,blocked} from './shared.mjs';
 import {queueMoves,stepQueuedMove} from './movement-net.mjs';
@@ -18,6 +15,7 @@ import {weaponAttackSpec,weaponReloadDuration} from './weapons.mjs';
 import {WEAPONS,isWeapon,hitDamage,isBackstab,applyDamage,weaponShotInterval} from './weapons.mjs';
 import {ACCURACY_CALIBRATION,commitAccuracyShot,recordAccuracyLanding,sampleSpreadDirection,shotRandom} from './accuracy.mjs';
 const root=fileURLToPath(new URL('.',import.meta.url)),rooms=new Map();
+const deliverStatic=await createStaticDelivery(root);
 let shotSerial=0;
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.mjs':'text/javascript','.js':'text/javascript','.json':'application/json','.png':'image/png','.fbx':'application/octet-stream','.glb':'model/gltf-binary','.mp3':'audio/mpeg','.wav':'audio/wav'};
 export const server=http.createServer(async(req,res)=>{
@@ -90,12 +88,7 @@ export const server=http.createServer(async(req,res)=>{
  if(/^\/assets\/browser-hitbox\/[a-z]+\.json$/.test(pathname)&&isWeapon(pathname.split('/').at(-1).slice(0,-5)))routes[pathname]='public/browser-hitbox/'+pathname.split('/').at(-1);
  const file=routes[pathname];if(!file){res.writeHead(404);return res.end('Not found');}
  try{
-  const path=resolve(root,file);await stat(path);
-  const zip=/\bgzip\b/.test(req.headers['accept-encoding']||'');
-  res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain','X-Content-Type-Options':'nosniff','Cache-Control':'no-cache','Vary':'Accept-Encoding',...(zip?{'Content-Encoding':'gzip'}:{})});
-  // Backpressure bounds memory when two devices download large models together.
-  const stream=createReadStream(path);
-  await pipeline(...(zip?[stream,createGzip(),res]:[stream,res]));
+  await deliverStatic(req,res,file,mime);
  }catch{if(!res.headersSent){res.writeHead(500);res.end('Asset unavailable');}else res.destroy();}
 });
 const wss=new WebSocketServer({server,maxPayload:2048,perMessageDeflate:{threshold:256}});

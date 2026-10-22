@@ -1,11 +1,11 @@
 {
-  "version": "2026-10-21-free-preview",
-  "files": 780,
+  "version": "2026-10-21-loading-optimization",
+  "files": 784,
   "entries": [
     {
       "path": ".dockerignore",
-      "bytes": 36,
-      "sha256": "8609f1d11ab80781e0e6aecadc0c5cbda2c4574c812363010d876706339e2ec8"
+      "bytes": 49,
+      "sha256": "8adacebd701e68bfaef40bc92edef830f47d614a0f5df6e3b0038e219049e60d"
     },
     {
       "path": "accuracy.mjs",
@@ -24,8 +24,8 @@
     },
     {
       "path": "Dockerfile",
-      "bytes": 375,
-      "sha256": "ef9cb2ace3104e167f7b3bccfd40ef6fc42650ee292ea672bca101c19c87b9b9"
+      "bytes": 411,
+      "sha256": "3a2b004831533927bd8e90970a992edbb241f4e9ec0b23fb677a45ee5d9f6b06"
     },
     {
       "path": "equipment-catalog.mjs",
@@ -3854,13 +3854,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1092,
-      "sha256": "6951410d3cbfc172986b87745283b03e0e9f10957ba6b15c2f6b7679ca7832d2"
+      "bytes": 1453,
+      "sha256": "8a9cda786a619974c0e842161cc163f3f24bc06f305ede48cd185ee9878e8a9f"
     },
     {
       "path": "render.yaml",
-      "bytes": 521,
-      "sha256": "4a64edc4637bea88645d9368e24d94377cba9bd4cfbffdfbe046f10af469deab"
+      "bytes": 555,
+      "sha256": "f7b906a5aa439e809fc7aaa2dc9929bd7047ad8552997a210c8a0cb45dae3e7e"
     },
     {
       "path": "server-data/combat.json",
@@ -3889,8 +3889,8 @@
     },
     {
       "path": "server.mjs",
-      "bytes": 31973,
-      "sha256": "aba76955d93174d79b83ade27025c9d046a85c5528ac8a94850887a9c671784a"
+      "bytes": 31452,
+      "sha256": "89e970cb5f2911a6b9bc7845ec8594a29c1bd33c3b344b9e88d456bad524c7b3"
     },
     {
       "path": "shared.mjs",
@@ -3901,6 +3901,26 @@
       "path": "weapons.mjs",
       "bytes": 16753,
       "sha256": "b0e31872bf5bd8b9346e5bf8d9eee0452e4fa7b433c4d1057a962d3d02ba25a3"
+    },
+    {
+      "path": "prepare-static-assets.mjs",
+      "bytes": 2298,
+      "sha256": "bb909b3acf40f9050802da6b711dd0d8574c3622cb2956f4a9b5f97fa4e51354"
+    },
+    {
+      "path": "static-assets.mjs",
+      "bytes": 2155,
+      "sha256": "eb203db2d1734351a268c6c6c5315d990b250afaf48c7ec1cce56ccb14b3f98f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 61,
+      "sha256": "aaebc0e6ce97d42425bc31592e922ed66bbf0ae802dfbb881f4b4d8349de7b93"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
     }
   ]
 }

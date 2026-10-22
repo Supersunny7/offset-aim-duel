@@ -17,3 +17,9 @@ typically takes about one minute to wake. Check account bandwidth/build quotas.
 No hosted service has been created by preparing this folder.
 
 Docker definition included; Docker image has not been built locally.
+
+## Loading optimization
+The Render build command is `npm ci --omit=dev --ignore-scripts && node prepare-static-assets.mjs`.
+It creates private .static-gzip files before startup. Runtime streams these bytes and
+uses ETags so unchanged resources return 304. Do not commit generated gzip files.
+No models, textures, animation curves, or game rules were changed.

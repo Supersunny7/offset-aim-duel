@@ -6,7 +6,7 @@ services:
     region: ohio
     plan: free
     numInstances: 1
-    buildCommand: npm ci --omit=dev --ignore-scripts
+    buildCommand: npm ci --omit=dev --ignore-scripts && node prepare-static-assets.mjs
     startCommand: node server.mjs
     healthCheckPath: /health
     autoDeployTrigger: "off"

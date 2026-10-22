@@ -6,6 +6,7 @@ RUN npm ci --omit=dev --ignore-scripts
 COPY --chown=node:node *.mjs ./
 COPY --chown=node:node server-data ./server-data
 COPY --chown=node:node public ./public
+RUN node prepare-static-assets.mjs
 ENV NODE_OPTIONS=--max-old-space-size=256
 USER node
 EXPOSE 8080
