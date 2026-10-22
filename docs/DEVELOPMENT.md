@@ -63,6 +63,8 @@ Dockerfile                 Optional container definition
 
 `/?debug=1` exposes diagnostic DOM output; `/?hitboxes=1` shows hitbox overlays. Labs are available in development and blocked by production routes.
 
+In debug mode, `#diagnostics` includes `frameProfile`: the latest 600 unsmoothed RAF intervals, p50/p95/p99, CPU update/world/viewmodel submission timings, a bounded hitch history, scope windows and shader-program counts. Inactive/hidden gaps are excluded. CPU submission/wait time is not a GPU timer-query result. The optional Chromium heap reading is approximate, can include shared contexts, and is `null` when unsupported; actual VRAM bytes are not measured. Profiling histories are bounded and the profiler is not created in normal play.
+
 Loading optimization must preserve original skeleton bases, clip keys/timing, and approved holding views. Check parsed/bound clips, native grip/ADS references, resident FP/TP models, hitbox chunks, textures, materials and buffers rather than treating download completion as readiness.
 
 Exercise Esc toggling, B toggling, movement while shopping, delayed resources, lost pointer capture, returning to earlier guns, and firing after closing the shop. Async readiness must not override explicit settings or leave actions.

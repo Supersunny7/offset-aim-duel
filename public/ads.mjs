@@ -43,6 +43,13 @@ export const ADS_VIEW_PROFILES=Object.freeze({
 });
 export function scopeViewmodelOpacity(amount,scoped){return scoped?1-Math.max(0,Math.min(1,(amount-.65)/.35)):1;}
 const materialCache=new WeakMap();
+// Compile the real fading variant during loading. Do not enter ADS, sample a
+// pose, clone a material, or populate the live opacity cache with altered flags.
+export function warmScopeMaterialVariant(roots,draw){
+ const saved=new Map();for(const root of roots)root?.traverse(o=>{if(!o.isMesh)return;for(const m of Array.isArray(o.material)?o.material:[o.material])if(m&&!saved.has(m))saved.set(m,{opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite});});
+ try{for(const [m,old] of saved){if(!m.transparent){m.transparent=true;m.needsUpdate=true;}m.opacity=old.opacity*.5;}return draw();}
+ finally{for(const [m,old] of saved){if(m.transparent!==old.transparent){m.transparent=old.transparent;m.needsUpdate=true;}m.opacity=old.opacity;m.depthWrite=old.depthWrite;}}
+}
 // Only scope transitions touch alpha. Hip restores exact original material flags.
 export function applyScopeViewmodelOpacity(root,opacity){
  if(!root)return;let entries=materialCache.get(root);

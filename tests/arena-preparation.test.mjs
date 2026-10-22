@@ -25,8 +25,8 @@ test('graphics preparation uploads each shared texture once then compiles hidden
 
 test('offscreen buffer warm-up restores hidden meshes, culling and target even on failure',async()=>{
  for(const fail of [false,true]){
-  const node={isMesh:true,visible:false,frustumCulled:true},scene={traverse:fn=>fn(node)},camera={constructor:class {copy(){this.layers={enableAll(){}};return this;}}};let target='screen',disposed=false;
-  const renderer={compileAsync:async()=>{},getRenderTarget:()=>target,setRenderTarget:t=>{target=t;},render:()=>{assert.equal(node.visible,true);assert.equal(node.frustumCulled,false);if(fail)throw Error('context lost');}};
+  const node={isMesh:true,visible:false,frustumCulled:true},scene={traverse:fn=>fn(node)},camera={constructor:class {copy(){this.layers={set(){}};return this;}}};let target='screen',disposed=false;
+  const renderer={compileAsync:async()=>{},clearDepth(){},getRenderTarget:()=>target,setRenderTarget:t=>{target=t;},render:()=>{assert.equal(node.visible,true);assert.equal(node.frustumCulled,false);if(fail)throw Error('context lost');}};
   const pending=warmArenaGraphics(renderer,scene,camera,{createRenderTarget:()=>({dispose(){disposed=true;}})});
   if(fail)await assert.rejects(pending,/context lost/);else await pending;
   assert.equal(node.visible,false);assert.equal(node.frustumCulled,true);assert.equal(target,'screen');assert(disposed);

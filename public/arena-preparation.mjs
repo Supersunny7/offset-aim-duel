@@ -41,7 +41,7 @@ export function createArenaPreparation({weapons,gun,opponent,ensureHitbox,isHitb
 
 // Upload decoded textures and compile every retained material while the loading
 // screen covers the arena. Three's compile traverses hidden weapon meshes too.
-export async function warmArenaGraphics(renderer,scene,camera,{yieldFrame=nextFrame,createRenderTarget}={}){
+export async function warmArenaGraphics(renderer,scene,camera,{yieldFrame=nextFrame,createRenderTarget,scopeVariant,canvasWarmup}={}){
  const textures=new Set();scene.traverse(object=>{
   for(const material of Array.isArray(object.material)?object.material:[object.material])if(material)for(const value of Object.values(material))if(value?.isTexture)textures.add(value);
  });
@@ -51,9 +51,30 @@ export async function warmArenaGraphics(renderer,scene,camera,{yieldFrame=nextFr
   // A tiny offscreen draw allocates geometry and skinning buffers for hidden
   // guns. Restore visibility/culling and target before yielding. No mixer,
   // animation event, authored transform or visible canvas is advanced.
-  const target=createRenderTarget(),previous=renderer.getRenderTarget(),saved=[],warmCamera=new camera.constructor().copy(camera,false);warmCamera.layers.enableAll();
+  const target=createRenderTarget(),previous=renderer.getRenderTarget(),saved=[],warmCamera=new camera.constructor().copy(camera,false),autoClear=renderer.autoClear,shadowAuto=renderer.shadowMap?.autoUpdate;
+  // Warm buffers using the real world/FP light-layer passes. A texture's color
+  // tag alone does not select the canvas shader in Three.js (targets use linear).
+  if(target.texture)target.texture.colorSpace=renderer.outputColorSpace;
   scene.traverse(object=>{saved.push([object,object.visible,object.frustumCulled]);object.visible=true;if(object.isMesh)object.frustumCulled=false;});
-  try{renderer.setRenderTarget(target);renderer.render(scene,warmCamera);}
-  finally{for(const [object,visible,culled] of saved){object.visible=visible;object.frustumCulled=culled;}renderer.setRenderTarget(previous);target.dispose();}
+  try{
+   renderer.setRenderTarget(target);renderer.autoClear=true;warmCamera.layers.set(0);renderer.render(scene,warmCamera);
+   renderer.autoClear=false;if(renderer.shadowMap)renderer.shadowMap.autoUpdate=false;
+   warmCamera.layers.set(1);renderer.clearDepth();renderer.render(scene,warmCamera);
+   if(canvasWarmup){renderer.setRenderTarget(previous);canvasWarmup(()=>{renderer.clearDepth();renderer.render(scene,warmCamera);scopeVariant?.(()=>{renderer.clearDepth();renderer.render(scene,warmCamera);});});}
+  }
+  finally{for(const [object,visible,culled] of saved){object.visible=visible;object.frustumCulled=culled;}renderer.autoClear=autoClear;if(renderer.shadowMap)renderer.shadowMap.autoUpdate=shadowAuto;renderer.setRenderTarget(previous);target.dispose();}
+  // Compile against the restored canvas target without drawing to it. Capture
+  // compileAsync's work synchronously, restoring flags before it can yield.
+  // FP meshes stay hidden until this entire preparation promise has completed.
+  warmCamera.layers.set(1);await renderer.compileAsync(scene,warmCamera);
+  if(scopeVariant){let compiling;scopeVariant(()=>{compiling=renderer.compileAsync(scene,warmCamera);});await compiling;await renderer.compileAsync(scene,warmCamera);}
  }
+}
+
+// The loading screen covers the game. Restrict actual canvas pipeline draws
+// to one CSS pixel and restore the caller's exact scissor state on every exit.
+export function withCanvasWarmup(renderer,draw){
+ const saved=renderer.getScissor({copy(v){this.x=v.x;this.y=v.y;this.z=v.z;this.w=v.w;return this;}}),enabled=renderer.getScissorTest();
+ try{renderer.setScissor(0,0,1,1);renderer.setScissorTest(true);return draw();}
+ finally{renderer.setScissor(saved.x,saved.y,saved.z,saved.w);renderer.setScissorTest(enabled);}
 }

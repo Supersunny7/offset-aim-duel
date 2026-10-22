@@ -30,3 +30,10 @@ VM and Three.js CPU tests do not replace GPU rendering or human playtests. Use s
 - The Docker definition has not been independently built/accepted in the recorded release.
 
 The root `release-manifest.json` is an earlier retained snapshot, not a validator of the current repository.
+
+## 2026-10-22 first-scope pipeline validation
+
+- Local IAB/Chromium, same machine: original Operator first scope added 8 shader programs and reached 113.4 ms in the viewmodel render submission/wait stage (117 ms maximum RAF interval).
+- Final loading warm-up includes a one-pixel covered canvas draw of opaque and fading scope materials. First Operator scope added no programs: 2.3 ms maximum viewmodel stage, 17.1 ms maximum interval over 45 frames. Marshal: 1.5 ms and 17.4 ms, no added programs.
+- Operator 2.5x/5x and Marshal scope/fire/exit verified through real UI input; ammunition decreased and play continued without Esc/Resume. Original animation keys, view transforms and gameplay values were not changed.
+- Full local suite: 260/260 passed. Added bounded raw frame/stage and approximate Chromium heap diagnostics in debug mode only. CPU submission/wait is not GPU timing; heap may include shared contexts; exact VRAM remains unavailable. Background-tab throttling must not be interpreted as an in-game rendering regression. These are device-specific samples, not universal FPS guarantees.

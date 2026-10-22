@@ -23,6 +23,8 @@ flowchart LR
 
 Original grip/ADS references are prepared without changing the player's loadout or dispatching equip audio. The final stage uploads textures, compiles materials, and draws offscreen to allocate geometry/skinning buffers. Visibility, culling and render targets are restored. Later purchases use resident resources. Esc/settings and leave actions still cancel stale entry callbacks.
 
+Scope warm-up also uses the actual canvas output and FP light layer: ordinary offscreen targets select linear-output shaders in Three.js even when the texture is tagged sRGB. A one-pixel scissor draw under the loading screen initializes opaque and fading variants with the real canvas pipeline, followed by program readiness checks. Scissor, material flags, visibility, culling, targets and renderer state are restored; no animation pose or clip clock is advanced.
+
 ## Memory and delivery
 
 The original generated source tables remain versioned. Node reads equivalent `server-data/` JSON to avoid parsing giant JS literals. The generator manifest and verification tool check source/data equality.
