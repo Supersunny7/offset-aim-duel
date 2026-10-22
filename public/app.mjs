@@ -220,7 +220,8 @@ $('play').onclick=async()=>{
  const audioLoad=gameAudio.unlock();canvas.focus();
  try{if(document.pointerLockElement!==canvas&&!dragLook)pointerInputMode=await requestGamePointerLock(canvas);if(generation===entryGeneration){if(document.pointerLockElement===canvas)dragLook=false;$('overlay').hidden=true;}}
  catch{if(generation===entryGeneration)startFallback();}
- await audioLoad;
+ // Audio retries must not hold an already-entered arena behind entryPending.
+ if(!hasEnteredArena)await audioLoad;
  if(generation!==entryGeneration||!id||!connected){entryPending=false;refreshPlayButton();return;}
  const player=state?.players.find(p=>p.id===id);
  if(!dataReady()||!gun.userData.isWeaponReady()||!player?.hp||!['waiting','active','countdown'].includes(state?.phase)){pauseControls();return;}
@@ -319,7 +320,7 @@ function loop(now){requestAnimationFrame(loop);const rawElapsed=(now-lastFrame)/
   }
  }else{camera.position.set(7.5,5.3,10.5);camera.lookAt(-1,1,-3);}
  const adsAmount=ads.update(elapsed,adsState());gun.userData.ads=adsAmount;const fov=adsFov(74,adsAmount,ads.zoom),near=gun.userData.weapon==='knife'?.015:.05;if(Math.abs(camera.fov-fov)>.001||camera.near!==near){camera.fov=fov;camera.near=near;camera.updateProjectionMatrix();}adsReticle.setAmount(adsAmount,{scoped:!!WEAPONS[gun.userData.weapon]?.ads?.scope,weapon:gun.userData.weapon,now});document.body.classList.toggle('ads',adsAmount>.8);$('adsIndicator').hidden=adsAmount<.5;$('adsIndicator').textContent='ADS ×'+Number(ads.zoom.toFixed(2));
- document.querySelector('.grain').hidden=!!id;gun.visible=!!(playing()||shopPreview()||armoryResumePending)&&gun.userData.isWeaponReady()&&!!state?.players.find(p=>p.id===id)?.hp;if(shopPreview()&&gun.userData.isWeaponReady()&&gun.userData.previewWeapon!==gun.userData.weapon){gun.userData.previewWeapon=gun.userData.weapon;gun.userData.previewStartedAt=now;}const walk=Math.hypot(self.vx,self.vz);document.documentElement.style.setProperty('--gap',(Number($('crossGap').value)+Math.min(12,walk*1.2+(self.grounded===false?7:0)+kick*45))+'px');animateWeapon(gun,{time:now/1000,dt:!connected||state?.phase==='paused'?0:elapsed,speed:walk,kick,crouch:self.crouch,grounded:self.grounded,ads:adsAmount,...ownWeaponDeadline(now)});if(shopPreview()&&gun.userData.isWeaponReady())gun.userData.previewWeapon=gun.userData.weapon;kick*=Math.exp(-dt*18);flash.userData.effects.update(now);
+ updateWeaponRecovery();document.querySelector('.grain').hidden=!!id;gun.visible=!!(playing()||shopPreview()||armoryResumePending||hasEnteredArena&&!settingsOpen&&!resultShown&&!entryPending)&&gun.userData.isWeaponReady()&&!!state?.players.find(p=>p.id===id)?.hp;if(shopPreview()&&gun.userData.isWeaponReady()&&gun.userData.previewWeapon!==gun.userData.weapon){gun.userData.previewWeapon=gun.userData.weapon;gun.userData.previewStartedAt=now;}const walk=Math.hypot(self.vx,self.vz);document.documentElement.style.setProperty('--gap',(Number($('crossGap').value)+Math.min(12,walk*1.2+(self.grounded===false?7:0)+kick*45))+'px');animateWeapon(gun,{time:now/1000,dt:!connected||state?.phase==='paused'?0:elapsed,speed:walk,kick,crouch:self.crouch,grounded:self.grounded,ads:adsAmount,...ownWeaponDeadline(now)});if(shopPreview()&&gun.userData.isWeaponReady())gun.userData.previewWeapon=gun.userData.weapon;kick*=Math.exp(-dt*18);flash.userData.effects.update(now);
  for(let i=pendingEjections.length-1;i>=0;i--){const event=pendingEjections[i];
   if(!playing()||!gun.visible||event.weapon!==gun.userData.weapon){pendingEjections.splice(i,1);continue;}
   if(now>=event.at){const origin=getEjectionPosition(gun);if(origin)shotEffects.eject({origin,orientation:camera.getWorldQuaternion(new T.Quaternion()),weapon:event.weapon,seed:event.seed,now});pendingEjections.splice(i,1);}
@@ -357,7 +358,7 @@ if(new URL(location.href).searchParams.has('debug')){
   hitboxes:hitboxDebugEnabled?hitboxDebug:undefined,network:{viewSnapshot:shotView(),lastRewind,snapshotAt:state?.now,ageMs:state?Math.max(0,performance.now()-stateReceivedAt):null,opponentLife:enemyTarget?.lifeEpoch,opponentMoveEpoch:enemyTarget?.spawnEpoch,opponentMotion:enemyTarget?.hitboxMotion,opponentAction:enemyTarget?.hitboxAction,opponentFire:enemyTarget?.hitboxFire},shots:shotFeedbacks,audio:{active:gameAudio.diagnostics.active,events:gameAudio.diagnostics.events,scheduled:gameAudio.diagnostics.scheduled,lastAsset:gameAudio.diagnostics.lastAssetId,errors:gameAudio.diagnostics.errors},assetsReady:gun.userData.isWeaponReady()
  });
 
- setInterval(()=>{const direction=camera.getWorldDirection(new T.Vector3());diagnostic.textContent=JSON.stringify({accuracy:accuracyReadout(),map:mapScene.diagnostics,hitboxSync:hitboxDebugEnabled?{comparison:hitboxDebug.comparison,peaks:hitboxDebug.peaks}:undefined,opponent:enemyGroup.userData.diagnostics,characterOcclusion:characterOcclusion.diagnostics,characterPosition:enemyGroup.position.toArray(),movement:movement.diagnostics,serverPosition:state?.players.find(p=>p.id===id)?[state.players.find(p=>p.id===id).x,state.players.find(p=>p.id===id).y,state.players.find(p=>p.id===id).z]:null,audio:gameAudio.diagnostics,shotEffects:shotEffects.diagnostics,muzzleEffects:flash.userData.effects.diagnostics,tracers:tracerCount,lastTracer,clientShotId,attack:gun.userData.attackKind,phase:state?.phase,playing:!!playing(),viewTrace:viewTrace.diagnostics,look:{inputMode:pointerInputMode,...lookInput.diagnostics,locked:document.pointerLockElement===canvas,fallback:dragLook,fire,secondaryFire,yaw:self.yaw},feetY:self.y,cameraY:camera.position.y,cameraNear:camera.near,crouch:self.crouch,grounded:self.grounded,pitch:self.pitch,aimRecoil,recoil:recoil.diagnostics,cameraDirectionY:direction.y,x:self.x,z:self.z,health:state?.players.find(p=>p.id===id)?.hp,armor:state?.players.find(p=>p.id===id)?.armor,roomArmor:state?.armor,ammo:state?.players.find(p=>p.id===id)?.ammo,shots:shotFeedbacks,frameMs:Math.round(frameMs),calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,ads:{requested:ads.requested,amount:ads.amount,fov:camera.fov,sensitivityScale:ads.sensitivityScale},weapon:gun.userData.weapon,weaponAsset:gun.userData.assetStatus,hitboxData:browserHitboxDataStatus(),assetLoading:gun.userData.loadingDiagnostics,assetsReady:gun.userData.isWeaponReady(),entryPending,localEquipReadyAt,localReadyAt,weaponTriangles:gun.userData.activeAsset?.userData.triangles||gun.userData.activeAsset?.userData.assetDiagnostics?.triangles,weaponClips:gun.userData.activeAsset?.userData.clips,reloadContact:gun.userData.activeAsset?.userData.fpReloadContact?.diagnostics,weaponAnimation:gun.userData.activeAsset?.userData.animationDiagnostics,handsAnimation:gun.userData.getActiveArms?.()?.diagnostics||gun.userData.firstPersonArms?.diagnostics,muzzle:getMuzzlePosition(gun).toArray(),muzzleFlashError:flash.getWorldPosition(new T.Vector3()).distanceTo(getMuzzlePosition(gun))});},100);
+ setInterval(()=>{const direction=camera.getWorldDirection(new T.Vector3());diagnostic.textContent=JSON.stringify({accuracy:accuracyReadout(),map:mapScene.diagnostics,hitboxSync:hitboxDebugEnabled?{comparison:hitboxDebug.comparison,peaks:hitboxDebug.peaks}:undefined,opponent:enemyGroup.userData.diagnostics,characterOcclusion:characterOcclusion.diagnostics,characterPosition:enemyGroup.position.toArray(),movement:movement.diagnostics,serverPosition:state?.players.find(p=>p.id===id)?[state.players.find(p=>p.id===id).x,state.players.find(p=>p.id===id).y,state.players.find(p=>p.id===id).z]:null,audio:gameAudio.diagnostics,shotEffects:shotEffects.diagnostics,muzzleEffects:flash.userData.effects.diagnostics,tracers:tracerCount,lastTracer,clientShotId,attack:gun.userData.attackKind,phase:state?.phase,playing:!!playing(),viewTrace:viewTrace.diagnostics,look:{inputMode:pointerInputMode,...lookInput.diagnostics,locked:document.pointerLockElement===canvas,fallback:dragLook,fire,secondaryFire,yaw:self.yaw},feetY:self.y,cameraY:camera.position.y,cameraNear:camera.near,crouch:self.crouch,grounded:self.grounded,pitch:self.pitch,aimRecoil,recoil:recoil.diagnostics,cameraDirectionY:direction.y,x:self.x,z:self.z,health:state?.players.find(p=>p.id===id)?.hp,armor:state?.players.find(p=>p.id===id)?.armor,roomArmor:state?.armor,ammo:state?.players.find(p=>p.id===id)?.ammo,shots:shotFeedbacks,frameMs:Math.round(frameMs),calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,ads:{requested:ads.requested,amount:ads.amount,fov:camera.fov,sensitivityScale:ads.sensitivityScale},weapon:gun.userData.weapon,weaponAsset:gun.userData.assetStatus,controls:{entryPending,entryGeneration,hasEnteredArena,settingsOpen,suspended,armoryResumePending,pendingLoadoutRequest,pendingLoadoutWeapon,recovery:weaponRecoveryState()},hitboxData:browserHitboxDataStatus(),assetLoading:gun.userData.loadingDiagnostics,assetsReady:gun.userData.isWeaponReady(),entryPending,localEquipReadyAt,localReadyAt,weaponTriangles:gun.userData.activeAsset?.userData.triangles||gun.userData.activeAsset?.userData.assetDiagnostics?.triangles,weaponClips:gun.userData.activeAsset?.userData.clips,reloadContact:gun.userData.activeAsset?.userData.fpReloadContact?.diagnostics,weaponAnimation:gun.userData.activeAsset?.userData.animationDiagnostics,handsAnimation:gun.userData.getActiveArms?.()?.diagnostics||gun.userData.firstPersonArms?.diagnostics,muzzle:getMuzzlePosition(gun).toArray(),muzzleFlashError:flash.getWorldPosition(new T.Vector3()).distanceTo(getMuzzlePosition(gun))});},100);
 }
 
 function openArmory(){
@@ -400,14 +401,48 @@ async function closeArmory(){
  const generation=entryGeneration;
  // Acquire pointer lock in the B gesture, while resources continue loading.
  try{const mode=await requestGamePointerLock(canvas);if(generation!==entryGeneration)return;pointerInputMode=mode;dragLook=false;}catch{if(generation===entryGeneration)startFallback();}
- const deadline=performance.now()+20000;
- while(generation===entryGeneration&&id&&!settingsOpen&&(!gun.userData.isWeaponReady()||!dataReady()||!mapReady||pendingLoadoutRequest||pendingLoadoutWeapon&&gun.userData.weapon!==pendingLoadoutWeapon)&&performance.now()<deadline)await new Promise(resolve=>setTimeout(resolve,40));
+ // A slow asset is not a pause request. Keep this transition alive until
+ // ready, failed, or explicitly superseded by Esc, blur, leave, or a new shop.
+ const failed=()=>gun.userData.loadingDiagnostics?.states[gun.userData.weapon]==='failed';
+ while(generation===entryGeneration&&id&&!settingsOpen&&!resultShown&&(!gun.userData.isWeaponReady()||!dataReady()||!mapReady||pendingLoadoutRequest||pendingLoadoutWeapon&&gun.userData.weapon!==pendingLoadoutWeapon)&&!failed())await new Promise(resolve=>setTimeout(resolve,40));
  if(generation!==entryGeneration){if(settingsOpen)releaseGamePointer();return;}
  armoryResumePending=false;
- if(!gun.userData.isWeaponReady()||!dataReady()||!mapReady||pendingLoadoutRequest||pendingLoadoutWeapon&&gun.userData.weapon!==pendingLoadoutWeapon){pauseControls();return;}
+ if(!id||settingsOpen||resultShown)return;
+ if(failed()){refreshPlayButton();return;}
+ // A resolved browser request is not proof that the lock survived loading.
+ // Preserve a granted lock; otherwise keep the existing playable fallback.
+ if(document.pointerLockElement!==canvas&&!dragLook)startFallback();
  hasEnteredArena=true;suspended=false;$('overlay').hidden=true;canvas.focus();gameAudio.unlock();
 }
 $('closeArmory').onclick=closeArmory;
+// A small in-game recovery strip, never the full-screen initial loading page.
+const weaponRecovery=document.createElement('div');weaponRecovery.id='weaponRecovery';weaponRecovery.className='weaponRecovery';weaponRecovery.hidden=true;
+const recoveryText=document.createElement('span'),recoveryButton=document.createElement('button');recoveryText.setAttribute('role','status');recoveryButton.type='button';recoveryButton.textContent='Continue';weaponRecovery.append(recoveryText,recoveryButton);document.body.append(weaponRecovery);
+function weaponRecoveryState(){
+ if(!id||!hasEnteredArena||settingsOpen||resultShown||!$('armory').hidden||!$('overlay').hidden||document.hidden)return null;
+ if(!connected)return {message:'Reconnecting…',action:null};
+ const failed=gun.userData.loadingDiagnostics.states[gun.userData.weapon]==='failed'||!!browserHitboxDataStatus().errors[gun.userData.weapon];
+ if(failed)return {message:'Weapon could not load.',action:'Retry'};
+ if(!gun.userData.isWeaponReady()||!dataReady()||armoryResumePending||pendingLoadoutRequest||pendingLoadoutWeapon)return {message:'Preparing weapon…',action:null};
+ if(!entryPending&&document.pointerLockElement!==canvas&&!dragLook)return {message:'Click to continue.',action:'Continue'};
+ return null;
+}
+function updateWeaponRecovery(){
+ const status=weaponRecoveryState();weaponRecovery.hidden=!status;if(!status)return;
+ if(recoveryText.textContent!==status.message)recoveryText.textContent=status.message;
+ recoveryButton.hidden=!status.action;recoveryButton.textContent=status.action||'Continue';
+}
+recoveryButton.onclick=async()=>{
+ const status=weaponRecoveryState();if(!status?.action)return;
+ if(status.action==='Retry'){
+  const generation=entryGeneration;
+  await Promise.allSettled([gun.userData.retryAssets(),ensureBrowserHitboxData(gun.userData.weapon)]);
+  if(generation!==entryGeneration||settingsOpen||resultShown||!id)return;
+ }
+ return $('play').onclick();
+};
+canvas.addEventListener('click',()=>{if(weaponRecoveryState()?.action==='Continue')$('play').onclick();});
+
 $('armoryButton').onclick=openArmory;$('pauseArmory').onclick=openArmory;
 let escapeDownHandled=false;
 function closeSettings(){settingsOpen=false;document.querySelector('.settings').hidden=true;$('overlay').hidden=true;return $('play').onclick();}

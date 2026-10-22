@@ -52,6 +52,7 @@ async function createController(camera){
  let current=null,active='idlepose',actionAge=0,wasVisible=false,wasReload=false,wasGrounded=true,fireAge=Infinity,listener=null,adsAmount=0,fireKind='fire';
  const reloadClock=createSourceReloadTimeline();
  function captureAdsReferences(set){
+  const started=performance.now();
   // Sample only original held clips on an isolated FK copy. Fire and walking
   // must never feed back into the alignment and cancel authored recoil.
   const virtualCamera=new T.Group(),referenceMount=new T.Group(),referenceModel=model.clone(true);
@@ -68,8 +69,9 @@ async function createController(camera){
   set.adsReferences=[];
   for(let i=0;i<=32;i++){sample(i/32);set.adsReferences.push({position:master.localToWorld(localPoint.clone()),rotation:master.getWorldQuaternion(new T.Quaternion()).multiply(localRotation)});}
   referenceMixer.stopAllAction();referenceMixer.uncacheRoot(referenceModel);
+  if(diagnostics.preparation[set.index.weapon])diagnostics.preparation[set.index.weapon].adsReferenceMs=performance.now()-started;
  }
- const diagnostics={isolated:true,weapon:null,source:'original Shared FP Carbine / Revolver on jettFirstPerson bind',loaded:[],errors:[],active:null,fireLeadIn:.020,movement:null,matchedBones:0,adsPose:'source held pose + geometry sight-axis alignment; no full AltIdlePose in supplied Carbine pack'};
+ const diagnostics={preparation:{},isolated:true,weapon:null,source:'original Shared FP Carbine / Revolver on jettFirstPerson bind',loaded:[],errors:[],active:null,fireLeadIn:.020,movement:null,matchedBones:0,adsPose:'source held pose + geometry sight-axis alignment; no full AltIdlePose in supplied Carbine pack'};
  function restore(){mixer.stopAllAction();for(const {b,p,q,s} of rest){b.position.copy(p);b.quaternion.copy(q);b.scale.copy(s);}sourceGrip.forgetHands();reloadClock.reset();fireAge=Infinity;active='idlepose';actionAge=0;}
  function play(kind,metadata={}){
   const set=sets[current],previousFireKind=fireKind;
@@ -103,10 +105,14 @@ async function createController(camera){
  async function ensureWeapon(weapon){
   if(sets[weapon])return;if(tasks[weapon])return tasks[weapon];
   tasks[weapon]=(async()=>{
+   const started=performance.now(),profile={parseMs:0,longestParseMs:0,clipBuildMs:0,longestClipMs:0,adsReferenceMs:0,totalMs:0};
+   diagnostics.preparation[weapon]=profile;
    const index=await loadNativeWeaponIndex(weapon),kinds=['idlepose','equip','reload','fire','neutral-delta','altidlepose','runadd','walkadd','jumpadd','jumplandadd','inspect',...(!['phantom','sheriff'].includes(weapon)?['firezoomed','altfireadd','adsidlepose','altidleadd','altwalkadd','altrunadd','altjumpadd','altjumplandadd']:[])].filter(k=>index.fp[k]);
-   const entries=await Promise.all(kinds.map(async kind=>{const r=await fetch('/assets/packs/animations/'+index.fp[kind]);if(!r.ok)throw Error(`${weapon} FP ${kind}: HTTP ${r.status}`);return[kind,await r.json()];}));
+   const entries=await Promise.all(kinds.map(async kind=>{const r=await fetch('/assets/packs/animations/'+index.fp[kind]);if(!r.ok)throw Error(`${weapon} FP ${kind}: HTTP ${r.status}`);const text=await r.text(),parseStarted=performance.now(),data=JSON.parse(text),ms=performance.now()-parseStarted;profile.parseMs+=ms;profile.longestParseMs=Math.max(profile.longestParseMs,ms);return[kind,data];}));
+   profile.fetchAndParseMs=performance.now()-started;
    const sources=Object.fromEntries(entries),actions={},clips={};
    for(const [kind,source] of entries){if(kind==='neutral-delta')continue;
+    const clipStarted=performance.now();
     // Fire and locomotion use original component-space deltas. Parent compensation
     // prevents the same recoil being multiplied down both arm chains.
     const isFire=fireKinds.includes(kind),delta=isFire||motionKinds.includes(kind),alternate=kind.startsWith('alt')||kind==='firezoomed';
@@ -114,7 +120,9 @@ async function createController(camera){
     const clip=isFire?source.sourceSemantics==='absolute'?createNativeBoneClip(model,source):createSourceMeshSpaceClip(model,source,reference,held):delta?createMeshSpaceFireClip(model,source,reference,held):createNativeBoneClip(model,source);
     if(isFire)for(const track of clip.tracks){const [uuid,p]=track.name.split('.'),first=source.sourceSemantics==='absolute'?model.getObjectByProperty('uuid',uuid)[p].toArray():track.ValueTypeName==='quaternion'?[0,0,0,1]:[0,0,0];track.times=new Float32Array([0,...Array.from(track.times,t=>t+.020)]);track.values=new Float32Array([...first,...track.values]);}if(isFire)clip.duration+=.020;
     const a=mixer.clipAction(clip);const loop=['idlepose','altidlepose','adsidlepose','runadd','walkadd','altrunadd','altwalkadd'].includes(kind);a.setLoop(loop?T.LoopRepeat:T.LoopOnce,loop?Infinity:1);a.clampWhenFinished=true;actions[kind]=a;clips[kind]=clip;
+    const ms=performance.now()-clipStarted;profile.clipBuildMs+=ms;profile.longestClipMs=Math.max(profile.longestClipMs,ms);
    }
+   profile.totalMs=performance.now()-started;
    sets[weapon]={index,sources,actions,clips};diagnostics.loaded=Object.keys(sets);diagnostics.matchedBones=clips.idlepose.userData.matchedBones.length;
   })().finally(()=>delete tasks[weapon]);return tasks[weapon];
  }
